@@ -1,0 +1,6 @@
+---
+title: "Publications"
+editor: visual
+---
+
+List publications of projects here.

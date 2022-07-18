@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OASE/OAUNI Dashboard",
+    "section": "",
+    "text": "This dashboard serves as an interactive display of important results obtained in the BMBF projects OASE and OAUNI."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Something on funding stream and projects."
+  },
+  {
+    "objectID": "planning-document.html",
+    "href": "planning-document.html",
+    "title": "OASE/OAUNI Dashboard",
+    "section": "",
+    "text": "This is the place to collect some organizing stuff.\n\n\n\nOASE working mainly on the dashboard right away, finish by the end of July\nOAUNI working on dashboard parallely to other stuff, focus on technical aspects for now\nbeginning of July: deadline for submissions to tool market place at OA Tage\nSeptember: OA Tage\n\n\n\n\nThe following can be done already in preparation before a template for the dashboard is ready:\n\nChoosing content:\n\nWhat results from which studies are interesting for practitioners?\nWhat figures shall be displayed?\nWhat interaction options are useful and feasible?\n\nPreparing content:\n\nWrite accompanying text, e.g. description of project, description of study, explanation of figures and underlying data, explanation of interaction options\nGenerate interactive plots or (esp. in case of Nick’s papers) give links to code of figures"
+  },
+  {
+    "objectID": "oase.html",
+    "href": "oase.html",
+    "title": "OASE",
+    "section": "",
+    "text": "Project desription of OASE"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "List publications of projects here."
+  },
+  {
+    "objectID": "oauni.html",
+    "href": "oauni.html",
+    "title": "OAUNI",
+    "section": "",
+    "text": "Project description of OAUNI."
+  }
+]

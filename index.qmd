@@ -1,11 +1,5 @@
 ---
-title: "dash-quarto"
+title: "OASE/OAUNI Dashboard"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This dashboard serves as an interactive display of important results obtained in the BMBF projects [OASE](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oase/oase_node.html) and [OAUNI](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oauni/oauni_node.html).
