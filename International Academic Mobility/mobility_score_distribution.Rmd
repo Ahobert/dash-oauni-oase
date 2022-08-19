@@ -1,0 +1,79 @@
+---
+title: "Distribution of researchers' Mobility score, filtered by gender and field!"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+```{r setup}
+library(knitr)
+library(kableExtra)
+library(flexdashboard)
+library(WDI)
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+library(ggthemes)
+library(DT)
+library(scales)
+
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+
+myfont="Times New Roman"
+knitr::opts_chunk$set(echo = FALSE)
+
+m_score_distrubtion_filtered<-read.table("mobility_score.csv",header=TRUE,sep=",",quote="\r",dec = ".")
+
+shared_m_score <- SharedData$new(m_score_distrubtion_filtered)
+
+
+#####Distribution of mobile researchers based on mobility score
+g<-ggplot(aes(x=factor(m_score),y=n,fill = GENDER),data=shared_m_score)+
+  geom_bar(position="dodge", stat = "identity")+ theme(legend.position="top",
+        legend.title=element_blank())
+gg<-ggplotly(g)
+bscols(widths = c(2,2,12,12),
+       div(style = css(width="2%", height="2px", background_color="gray")),
+      list(
+           filter_select(id = "GENDER", label = "Gender",
+                   sharedData = shared_m_score, group = ~ GENDER,multiple=T,allLevels = FALSE),
+           filter_select(id = "MAIN_FIELD", label = "scientific field",
+                   sharedData = shared_m_score, group = ~ MAIN_FIELD,multiple=F,allLevels = FALSE)
+     ),
+      gg)
+
+
+
+
+```
+
+
+```{css}
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-size: 13.5px;
+  white-space: pre;
+}
+
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 6px;
+  height: 22px;
+}
+
+.bar {
+  height: 100%;
+}
+```

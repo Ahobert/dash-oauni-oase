@@ -1,0 +1,901 @@
+MAIN_FIELD;ORIGIN_COUNTRY;ntotal;n_men;n_women;mobile_percent;womenTomenmobile
+Physical Sciences;Afghanistan;1;1;0;1;0
+Health Sciences;Afghanistan;2;1;1;1;1
+Physical Sciences;Albania;35;27;8;0.51;0.38
+Health Sciences;Albania;20;15;5;0.5;0.25
+Life Sciences;Albania;2;2;0;1;0
+Social Sciences;Albania;4;2;2;0.75;2
+Physical Sciences;Algeria;886;711;175;0.46;0.22
+Health Sciences;Algeria;63;34;29;0.49;1.07
+Life Sciences;Algeria;79;55;24;0.43;0.31
+Social Sciences;Algeria;5;5;0;0.6;0
+Life Sciences;AmericanSamoa;1;1;0;1;0
+Health Sciences;Andorra;2;2;0;1;0
+Physical Sciences;Angola;5;5;0;1;0
+Health Sciences;Angola;5;5;0;1;0
+Physical Sciences;Antarctica;2;2;0;1;0
+Physical Sciences;Argentina;2760;1716;1044;0.52;0.4
+Health Sciences;Argentina;2400;1305;1095;0.39;0.63
+Life Sciences;Argentina;3436;1586;1850;0.44;0.78
+Social Sciences;Argentina;109;70;39;0.5;0.38
+Physical Sciences;Armenia;252;204;48;0.63;0.14
+Health Sciences;Armenia;17;6;11;0.53;1.25
+Life Sciences;Armenia;46;22;24;0.54;0.79
+Social Sciences;Armenia;3;3;0;0.67;0
+Social Sciences;Aruba;1;1;0;1;0
+Physical Sciences;Australia;7264;6053;1211;0.62;0.19
+Health Sciences;Australia;9645;6153;3492;0.57;0.44
+Life Sciences;Australia;7251;5027;2224;0.55;0.4
+Social Sciences;Australia;3152;2109;1043;0.43;0.36
+Physical Sciences;Austria;2710;2443;267;0.68;0.11
+Health Sciences;Austria;3985;3060;925;0.63;0.24
+Life Sciences;Austria;1722;1223;499;0.66;0.35
+Social Sciences;Austria;344;287;57;0.58;0.16
+Physical Sciences;Azerbaijan;101;87;14;0.6;0.11
+Health Sciences;Azerbaijan;10;8;2;0.4;0.33
+Life Sciences;Azerbaijan;10;7;3;0.8;0.33
+Social Sciences;Azerbaijan;1;0;1;1;Inf
+Physical Sciences;Bahamas;1;1;0;1;0
+Health Sciences;Bahamas;1;1;0;1;0
+Life Sciences;Bahamas;1;1;0;1;0
+Physical Sciences;Bahrain;42;39;3;0.64;0.04
+Health Sciences;Bahrain;50;34;16;0.38;0.36
+Life Sciences;Bahrain;1;1;0;0;0
+Social Sciences;Bahrain;2;2;0;1;0
+Physical Sciences;Bangladesh;212;189;23;0.77;0.1
+Health Sciences;Bangladesh;279;213;66;0.72;0.27
+Life Sciences;Bangladesh;148;125;23;0.64;0.13
+Social Sciences;Bangladesh;18;15;3;0.83;0.25
+Physical Sciences;Barbados;7;7;0;0.86;0
+Health Sciences;Barbados;21;15;6;0.86;0.5
+Life Sciences;Barbados;6;4;2;1;0.5
+Social Sciences;Barbados;2;2;0;1;0
+Physical Sciences;Belarus;823;683;140;0.61;0.16
+Health Sciences;Belarus;69;43;26;0.59;0.41
+Life Sciences;Belarus;141;96;45;0.76;0.45
+Social Sciences;Belarus;2;1;1;0.5;0
+Physical Sciences;Belgium;3696;3063;633;0.69;0.18
+Health Sciences;Belgium;5099;3543;1556;0.62;0.36
+Life Sciences;Belgium;2775;1843;932;0.62;0.42
+Social Sciences;Belgium;815;628;187;0.59;0.3
+Health Sciences;Belize;2;1;1;0.5;Inf
+Life Sciences;Belize;5;4;1;1;0.25
+Physical Sciences;Benin;13;11;2;0.92;0.2
+Health Sciences;Benin;40;30;10;0.8;0.39
+Life Sciences;Benin;40;36;4;0.78;0.11
+Physical Sciences;Bermuda;11;10;1;1;0.1
+Life Sciences;Bermuda;8;3;5;0.75;1
+Physical Sciences;Bhutan;1;1;0;1;0
+Life Sciences;Bhutan;1;1;0;1;0
+Physical Sciences;Bolivia;20;18;2;0.8;0.07
+Health Sciences;Bolivia;27;14;13;0.85;1.09
+Life Sciences;Bolivia;30;21;9;0.87;0.44
+Social Sciences;Bolivia;2;2;0;1;0
+Physical Sciences;BosniaandHerzegovina;30;25;5;0.6;0.29
+Health Sciences;BosniaandHerzegovina;121;65;56;0.51;0.55
+Life Sciences;BosniaandHerzegovina;1;1;0;0;0
+Social Sciences;BosniaandHerzegovina;1;1;0;0;0
+Physical Sciences;Botswana;33;29;4;0.76;0.19
+Health Sciences;Botswana;11;7;4;0.73;0.6
+Life Sciences;Botswana;19;12;7;0.89;0.42
+Social Sciences;Botswana;32;29;3;0.78;0.14
+Physical Sciences;Brazil;7268;5412;1856;0.45;0.25
+Health Sciences;Brazil;7674;4303;3371;0.38;0.63
+Life Sciences;Brazil;6470;3594;2876;0.36;0.66
+Social Sciences;Brazil;280;181;99;0.44;0.41
+Life Sciences;BritishIndianOceanTerritory;1;1;0;1;0
+Physical Sciences;Brunei;8;8;0;0.62;0
+Health Sciences;Brunei;3;3;0;1;0
+Life Sciences;Brunei;4;3;1;1;0.33
+Social Sciences;Brunei;7;6;1;0.86;0.2
+Physical Sciences;Bulgaria;1587;991;596;0.55;0.47
+Health Sciences;Bulgaria;644;348;296;0.32;0.95
+Life Sciences;Bulgaria;628;259;369;0.44;1.38
+Social Sciences;Bulgaria;31;21;10;0.61;0.36
+Physical Sciences;BurkinaFaso;15;14;1;0.6;0.12
+Health Sciences;BurkinaFaso;111;92;19;0.83;0.21
+Life Sciences;BurkinaFaso;35;29;6;0.91;0.14
+Social Sciences;BurkinaFaso;2;1;1;1;1
+Physical Sciences;Burundi;4;2;2;1;1
+Health Sciences;Burundi;7;7;0;0.86;0
+Life Sciences;Burundi;4;4;0;1;0
+Physical Sciences;Côted'Ivoire;13;9;4;0.92;0.33
+Health Sciences;Côted'Ivoire;126;86;40;0.83;0.46
+Life Sciences;Côted'Ivoire;59;45;14;0.86;0.31
+Social Sciences;Côted'Ivoire;1;1;0;1;0
+Physical Sciences;Cambodia;1;1;0;1;0
+Health Sciences;Cambodia;12;8;4;0.92;0.38
+Social Sciences;Cambodia;1;1;0;1;0
+Physical Sciences;Cameroon;86;80;6;0.79;0.05
+Health Sciences;Cameroon;130;94;36;0.75;0.41
+Life Sciences;Cameroon;102;86;16;0.6;0.2
+Social Sciences;Cameroon;8;8;0;0.75;0
+Physical Sciences;Canada;12476;10529;1947;0.63;0.16
+Health Sciences;Canada;13975;9050;4925;0.62;0.44
+Life Sciences;Canada;11141;7784;3357;0.59;0.37
+Social Sciences;Canada;4238;2794;1444;0.46;0.43
+Life Sciences;CaymanIslands;2;2;0;1;0
+Social Sciences;CaymanIslands;1;1;0;1;0
+Health Sciences;CentralAfricanRepublic;21;20;1;1;0.05
+Life Sciences;CentralAfricanRepublic;3;1;2;1;2
+Health Sciences;Chad;1;1;0;1;0
+Physical Sciences;Chile;1029;814;215;0.56;0.18
+Health Sciences;Chile;926;608;318;0.43;0.35
+Life Sciences;Chile;1028;702;326;0.48;0.32
+Social Sciences;Chile;94;74;20;0.59;0.22
+Physical Sciences;China;28255;15866;12389;0.33;0.73
+Health Sciences;China;6614;3517;3097;0.27;0.82
+Life Sciences;China;4629;2499;2130;0.44;0.78
+Social Sciences;China;163;95;68;0.55;0.56
+Physical Sciences;Colombia;271;217;54;0.75;0.24
+Health Sciences;Colombia;360;235;125;0.72;0.48
+Life Sciences;Colombia;286;190;96;0.67;0.44
+Social Sciences;Colombia;27;26;1;0.67;0.06
+Health Sciences;Comoros;1;1;0;1;0
+Life Sciences;Comoros;1;1;0;1;0
+Physical Sciences;Congo;2;2;0;0.5;0
+Health Sciences;Congo;20;17;3;0.7;0.08
+Life Sciences;Congo;18;11;7;0.83;0.5
+Health Sciences;Congo,theDemocraticRepublicofthe;10;9;1;1;0.11
+Life Sciences;Congo,theDemocraticRepublicofthe;3;3;0;1;0
+Physical Sciences;CostaRica;45;39;6;0.82;0.16
+Health Sciences;CostaRica;58;27;31;0.79;1.3
+Life Sciences;CostaRica;128;94;34;0.7;0.27
+Social Sciences;CostaRica;6;6;0;1;0
+Physical Sciences;Croatia;1109;760;349;0.31;0.39
+Health Sciences;Croatia;1648;967;681;0.24;0.71
+Life Sciences;Croatia;584;284;300;0.26;1.05
+Social Sciences;Croatia;219;122;97;0.14;0.63
+Physical Sciences;Cuba;235;194;41;0.79;0.18
+Health Sciences;Cuba;314;179;135;0.44;0.53
+Life Sciences;Cuba;427;219;208;0.38;0.55
+Social Sciences;Cuba;9;3;6;0.67;2
+Physical Sciences;Cyprus;103;87;16;0.7;0.14
+Health Sciences;Cyprus;52;39;13;0.67;0.4
+Life Sciences;Cyprus;19;11;8;0.47;0.5
+Social Sciences;Cyprus;67;53;14;0.67;0.22
+Physical Sciences;CzechRepublic;2917;2526;391;0.48;0.11
+Health Sciences;CzechRepublic;2348;1592;756;0.43;0.32
+Life Sciences;CzechRepublic;1685;1164;521;0.44;0.34
+Social Sciences;CzechRepublic;184;144;40;0.35;0.3
+Physical Sciences;Denmark;2281;1998;283;0.64;0.14
+Health Sciences;Denmark;3787;2623;1164;0.51;0.35
+Life Sciences;Denmark;2200;1530;670;0.59;0.35
+Social Sciences;Denmark;427;346;81;0.49;0.23
+Physical Sciences;Djibouti;1;1;0;0;0
+Health Sciences;Djibouti;4;3;1;1;0.33
+Health Sciences;Dominica;2;1;1;1;1
+Health Sciences;DominicanRepublic;18;9;9;0.83;1.14
+Life Sciences;DominicanRepublic;2;1;1;1;1
+Physical Sciences;Ecuador;28;26;2;0.75;0.05
+Health Sciences;Ecuador;62;49;13;0.85;0.23
+Life Sciences;Ecuador;42;30;12;0.71;0.3
+Physical Sciences;Egypt;2342;1832;510;0.48;0.13
+Health Sciences;Egypt;803;544;259;0.46;0.27
+Life Sciences;Egypt;711;473;238;0.46;0.34
+Social Sciences;Egypt;36;25;11;0.78;0.56
+Physical Sciences;ElSalvador;6;5;1;1;0.2
+Health Sciences;ElSalvador;6;4;2;0.83;0.25
+Life Sciences;ElSalvador;1;1;0;1;0
+Social Sciences;ElSalvador;2;1;1;1;1
+Health Sciences;EquatorialGuinea;2;2;0;1;0
+Physical Sciences;Eritrea;2;2;0;0.5;0
+Social Sciences;Eritrea;1;1;0;0;0
+Physical Sciences;Estonia;431;323;108;0.38;0.3
+Health Sciences;Estonia;206;99;107;0.44;0.88
+Life Sciences;Estonia;241;142;99;0.45;0.48
+Social Sciences;Estonia;57;35;22;0.46;0.62
+Physical Sciences;Ethiopia;28;28;0;0.71;0
+Health Sciences;Ethiopia;105;91;14;0.62;0.2
+Life Sciences;Ethiopia;60;44;16;0.77;0.39
+Social Sciences;Ethiopia;9;7;2;0.89;0.33
+Life Sciences;FalklandIslands(Malvinas);3;3;0;1;0
+Health Sciences;FaroeIslands;4;3;1;0.75;0.5
+Life Sciences;FaroeIslands;2;2;0;0.5;0
+Physical Sciences;FaroeIslands;4;0;4;0.75;Inf
+Physical Sciences;Fiji;7;4;3;1;0.75
+Health Sciences;Fiji;4;4;0;1;0
+Life Sciences;Fiji;12;11;1;0.92;0
+Social Sciences;Fiji;7;6;1;0.57;0
+Physical Sciences;Finland;3369;2782;587;0.43;0.18
+Health Sciences;Finland;3970;2337;1633;0.45;0.61
+Life Sciences;Finland;2205;1303;902;0.48;0.65
+Social Sciences;Finland;597;409;188;0.36;0.34
+Physical Sciences;France;27729;22032;5697;0.51;0.22
+Health Sciences;France;21127;13340;7787;0.44;0.47
+Life Sciences;France;17211;10040;7171;0.51;0.57
+Social Sciences;France;2239;1567;672;0.41;0.36
+Physical Sciences;FrenchGuiana;2;2;0;1;0
+Health Sciences;FrenchGuiana;10;5;5;1;1
+Life Sciences;FrenchGuiana;2;0;2;1;Inf
+Physical Sciences;FrenchPolynesia;3;1;2;1;2
+Health Sciences;FrenchPolynesia;6;3;3;1;1
+Life Sciences;FrenchPolynesia;17;15;2;0.94;0.14
+Social Sciences;FrenchPolynesia;1;1;0;1;0
+Physical Sciences;Gabon;2;1;1;0.5;0
+Health Sciences;Gabon;31;21;10;0.68;0.62
+Life Sciences;Gabon;15;8;7;0.8;1
+Health Sciences;Gambia;49;42;7;0.96;0.17
+Life Sciences;Gambia;2;1;1;1;1
+Physical Sciences;Georgia;239;186;53;0.62;0.27
+Health Sciences;Georgia;58;36;22;0.72;0.56
+Life Sciences;Georgia;37;20;17;0.51;0.58
+Social Sciences;Georgia;23;18;5;0.87;0.18
+Physical Sciences;Germany;27110;24405;2705;0.57;0.11
+Health Sciences;Germany;23719;19228;4491;0.5;0.21
+Life Sciences;Germany;15176;11292;3884;0.6;0.32
+Social Sciences;Germany;2813;2326;487;0.47;0.24
+Physical Sciences;Ghana;30;26;4;0.63;0.12
+Health Sciences;Ghana;110;94;16;0.72;0.18
+Life Sciences;Ghana;53;44;9;0.58;0.24
+Social Sciences;Ghana;12;11;1;0.5;0
+Physical Sciences;Gibraltar;2;1;1;1;1
+Physical Sciences;Greece;3735;3143;592;0.41;0.14
+Health Sciences;Greece;4329;2984;1345;0.37;0.32
+Life Sciences;Greece;1370;870;500;0.36;0.54
+Social Sciences;Greece;441;319;122;0.3;0.33
+Physical Sciences;Greenland;1;1;0;1;0
+Health Sciences;Greenland;6;6;0;0.83;0
+Life Sciences;Greenland;2;2;0;0.5;0
+Social Sciences;Greenland;1;1;0;0;0
+Health Sciences;Grenada;2;2;0;1;0
+Life Sciences;Grenada;1;1;0;1;0
+Physical Sciences;Guadeloupe;5;4;1;1;0.25
+Health Sciences;Guadeloupe;15;6;9;0.93;1.33
+Life Sciences;Guadeloupe;21;14;7;1;0.5
+Physical Sciences;Guam;7;6;1;0.86;0.2
+Health Sciences;Guam;5;3;2;1;0.67
+Life Sciences;Guam;17;15;2;1;0.13
+Social Sciences;Guam;4;4;0;1;0
+Physical Sciences;Guatemala;1;1;0;0;0
+Health Sciences;Guatemala;35;19;16;0.77;0.8
+Life Sciences;Guatemala;8;7;1;0.88;0.17
+Health Sciences;Guinea;21;16;5;0.86;0.2
+Physical Sciences;Guinea-Bissau;1;1;0;1;0
+Health Sciences;Guinea-Bissau;8;6;2;1;0.33
+Physical Sciences;Guyana;2;2;0;1;0
+Life Sciences;Guyana;4;3;1;1;0.33
+Social Sciences;Guyana;1;0;1;1;Inf
+Physical Sciences;Haiti;1;1;0;1;0
+Health Sciences;Haiti;14;9;5;0.86;0.5
+Life Sciences;Haiti;1;1;0;1;0
+Health Sciences;Honduras;11;7;4;0.64;0.75
+Life Sciences;Honduras;3;2;1;0.67;1
+Social Sciences;Honduras;3;3;0;1;0
+Physical Sciences;HongKong;1186;850;336;0.83;0.4
+Health Sciences;HongKong;1132;714;418;0.81;0.54
+Life Sciences;HongKong;369;231;138;0.83;0.59
+Social Sciences;HongKong;474;335;139;0.73;0.47
+Physical Sciences;Hungary;1708;1436;272;0.56;0.14
+Health Sciences;Hungary;1720;1195;525;0.49;0.3
+Life Sciences;Hungary;1403;914;489;0.6;0.45
+Social Sciences;Hungary;123;90;33;0.48;0.34
+Physical Sciences;Iceland;99;79;20;0.57;0.3
+Health Sciences;Iceland;175;127;48;0.65;0.39
+Life Sciences;Iceland;124;76;48;0.47;0.71
+Social Sciences;Iceland;23;18;5;0.39;0
+Physical Sciences;India;10075;8504;1571;0.45;0.15
+Health Sciences;India;5171;3922;1249;0.36;0.26
+Life Sciences;India;5159;4016;1143;0.42;0.27
+Social Sciences;India;379;287;92;0.43;0.33
+Physical Sciences;Indonesia;185;150;35;0.65;0.19
+Health Sciences;Indonesia;151;95;56;0.59;0.59
+Life Sciences;Indonesia;126;87;39;0.6;0.5
+Social Sciences;Indonesia;24;18;6;0.54;0.3
+Physical Sciences;Iran,IslamicRepublicof;1870;1668;202;0.38;0.09
+Health Sciences;Iran,IslamicRepublicof;955;763;192;0.31;0.23
+Life Sciences;Iran,IslamicRepublicof;471;373;98;0.36;0.26
+Social Sciences;Iran,IslamicRepublicof;23;18;5;0.43;0.25
+Physical Sciences;Iraq;45;41;4;0.6;0.04
+Health Sciences;Iraq;28;25;3;0.5;0.08
+Life Sciences;Iraq;10;10;0;0.2;0
+Physical Sciences;Ireland;902;763;139;0.61;0.18
+Health Sciences;Ireland;1243;838;405;0.67;0.4
+Life Sciences;Ireland;612;410;202;0.59;0.46
+Social Sciences;Ireland;278;203;75;0.55;0.33
+Physical Sciences;Israel;3463;2893;570;0.63;0.17
+Health Sciences;Israel;5010;3432;1578;0.49;0.33
+Life Sciences;Israel;2846;1716;1130;0.57;0.47
+Social Sciences;Israel;1164;793;371;0.43;0.36
+Physical Sciences;Italy;19718;14616;5102;0.44;0.29
+Health Sciences;Italy;29760;18624;11136;0.31;0.47
+Life Sciences;Italy;12913;6263;6650;0.35;0.87
+Social Sciences;Italy;1422;926;496;0.35;0.38
+Physical Sciences;Jamaica;28;21;7;0.71;0.25
+Health Sciences;Jamaica;84;50;34;0.65;0.9
+Life Sciences;Jamaica;23;15;8;0.48;0.22
+Social Sciences;Jamaica;14;7;7;0.64;0.8
+Physical Sciences;Japan;38079;35597;2482;0.3;0.09
+Health Sciences;Japan;35826;32599;3227;0.32;0.09
+Life Sciences;Japan;21953;19025;2928;0.35;0.17
+Social Sciences;Japan;709;609;100;0.29;0.19
+Physical Sciences;Jordan;320;309;11;0.6;0.05
+Health Sciences;Jordan;177;146;31;0.52;0.21
+Life Sciences;Jordan;109;90;19;0.49;0.2
+Social Sciences;Jordan;15;13;2;0.33;0
+Physical Sciences;Kazakhstan;114;77;37;0.57;0.33
+Health Sciences;Kazakhstan;12;8;4;0.33;1
+Life Sciences;Kazakhstan;23;10;13;0.61;1.33
+Social Sciences;Kazakhstan;2;1;1;0.5;0
+Physical Sciences;Kenya;52;48;4;0.6;0.15
+Health Sciences;Kenya;247;185;62;0.66;0.34
+Life Sciences;Kenya;220;187;33;0.72;0.21
+Social Sciences;Kenya;24;19;5;0.92;0.29
+Physical Sciences;Kuwait;255;220;35;0.51;0.09
+Health Sciences;Kuwait;230;152;78;0.38;0.47
+Life Sciences;Kuwait;57;40;17;0.37;0.17
+Social Sciences;Kuwait;12;9;3;0.33;1
+Physical Sciences;Kyrgyzstan;23;22;1;0.78;0.06
+Health Sciences;Kyrgyzstan;5;5;0;0.6;0
+Life Sciences;LaoPeople'sDemocraticRepublic;2;2;0;0.5;0
+Health Sciences;LaoPeople'sDemocraticRepublic;1;0;1;0;0
+Physical Sciences;Latvia;297;179;118;0.35;0.51
+Health Sciences;Latvia;64;31;33;0.31;0.67
+Life Sciences;Latvia;97;39;58;0.38;1.31
+Social Sciences;Latvia;6;2;4;0.33;0
+Physical Sciences;Lebanon;101;90;11;0.71;0.14
+Health Sciences;Lebanon;343;254;89;0.64;0.36
+Life Sciences;Lebanon;50;33;17;0.66;0.38
+Social Sciences;Lebanon;24;15;9;0.5;0.33
+Life Sciences;Lesotho;1;1;0;1;0
+Health Sciences;Lesotho;1;0;1;1;Inf
+Social Sciences;Lesotho;1;0;1;0;0
+Life Sciences;Liberia;1;0;1;1;Inf
+Physical Sciences;Libya;15;14;1;0.67;0
+Health Sciences;Libya;8;8;0;0.75;0
+Life Sciences;Libya;3;3;0;1;0
+Social Sciences;Libya;1;1;0;1;0
+Physical Sciences;Liechtenstein;8;8;0;0.62;0
+Social Sciences;Liechtenstein;2;2;0;1;0
+Physical Sciences;Lithuania;687;533;154;0.31;0.2
+Health Sciences;Lithuania;269;151;118;0.25;0.76
+Life Sciences;Lithuania;182;96;86;0.41;0.79
+Social Sciences;Lithuania;33;20;13;0.15;1.5
+Physical Sciences;Luxembourg;20;18;2;0.6;0
+Health Sciences;Luxembourg;35;25;10;0.71;0.47
+Life Sciences;Luxembourg;20;13;7;0.8;0.6
+Social Sciences;Luxembourg;3;3;0;0.67;0
+Physical Sciences;Macao;13;9;4;1;0.44
+Social Sciences;Macao;2;1;1;0.5;0
+Physical Sciences;Macedonia,theformerYugoslavRepublicof;128;74;54;0.55;0.63
+Health Sciences;Macedonia,theformerYugoslavRepublicof;85;38;47;0.41;0.94
+Life Sciences;Macedonia,theformerYugoslavRepublicof;23;12;11;0.48;1.2
+Social Sciences;Macedonia,theformerYugoslavRepublicof;1;1;0;1;0
+Physical Sciences;Madagascar;10;6;4;0.9;0.5
+Health Sciences;Madagascar;25;15;10;0.92;0.64
+Life Sciences;Madagascar;23;15;8;0.78;0.64
+Social Sciences;Madagascar;1;1;0;0;0
+Physical Sciences;Malawi;5;5;0;0.8;0
+Health Sciences;Malawi;47;34;13;0.85;0.38
+Life Sciences;Malawi;15;13;2;0.73;0.22
+Social Sciences;Malawi;4;3;1;1;0.33
+Physical Sciences;Malaysia;624;499;125;0.48;0.17
+Health Sciences;Malaysia;298;172;126;0.44;0.73
+Life Sciences;Malaysia;253;172;81;0.44;0.4
+Social Sciences;Malaysia;77;48;29;0.49;0.46
+Life Sciences;Maldives;2;2;0;1;0
+Physical Sciences;Mali;6;6;0;0.83;0
+Health Sciences;Mali;64;56;8;0.8;0.16
+Life Sciences;Mali;22;18;4;0.82;0.29
+Physical Sciences;Malta;20;19;1;0.65;0
+Health Sciences;Malta;24;17;7;0.75;0.5
+Life Sciences;Malta;16;15;1;0.38;0
+Social Sciences;Malta;16;16;0;0.44;0
+Life Sciences;MarshallIslands;2;1;1;1;1
+Health Sciences;Martinique;25;18;7;1;0.39
+Life Sciences;Martinique;7;6;1;0.86;0.2
+Social Sciences;Martinique;1;1;0;1;0
+Physical Sciences;Mauritania;1;1;0;1;0
+Health Sciences;Mauritania;3;3;0;1;0
+Life Sciences;Mauritania;1;1;0;1;0
+Physical Sciences;Mauritius;8;5;3;0.25;1
+Health Sciences;Mauritius;4;4;0;0.75;0
+Life Sciences;Mauritius;7;4;3;0.71;0.67
+Social Sciences;Mauritius;1;1;0;0;0
+Physical Sciences;Mexico;2764;2186;578;0.5;0.22
+Health Sciences;Mexico;1984;1240;744;0.42;0.5
+Life Sciences;Mexico;2555;1612;943;0.44;0.47
+Social Sciences;Mexico;124;86;38;0.58;0.31
+Health Sciences;Micronesia,FederatedStatesof;3;2;1;1;0.5
+Life Sciences;Micronesia,FederatedStatesof;1;1;0;1;0
+Physical Sciences;Moldova,Republicof;149;114;35;0.74;0.22
+Health Sciences;Moldova,Republicof;8;5;3;0.75;1
+Life Sciences;Moldova,Republicof;11;7;4;0.82;0.5
+Social Sciences;Moldova,Republicof;1;0;1;1;Inf
+Physical Sciences;Monaco;21;14;7;0.9;0.46
+Health Sciences;Monaco;6;3;3;1;1
+Life Sciences;Monaco;7;3;4;1;1.33
+Physical Sciences;Mongolia;5;1;4;0.4;Inf
+Life Sciences;Mongolia;2;1;1;1;1
+Social Sciences;Mongolia;1;1;0;1;0
+Health Sciences;Mongolia;1;0;1;1;Inf
+Physical Sciences;Montenegro;26;22;4;0.77;0.25
+Social Sciences;Montenegro;1;1;0;1;0
+Health Sciences;Montenegro;1;0;1;1;Inf
+Life Sciences;Montenegro;1;0;1;1;Inf
+Physical Sciences;Montserrat;5;5;0;1;0
+Physical Sciences;Morocco;859;750;109;0.37;0.14
+Health Sciences;Morocco;575;371;204;0.42;0.51
+Life Sciences;Morocco;167;131;36;0.38;0.12
+Social Sciences;Morocco;16;13;3;0.56;0.12
+Physical Sciences;Mozambique;2;2;0;0;0
+Health Sciences;Mozambique;30;15;15;0.67;1
+Life Sciences;Mozambique;4;3;1;1;0.33
+Social Sciences;Mozambique;1;0;1;1;Inf
+Physical Sciences;Myanmar;4;2;2;0.5;1
+Health Sciences;Myanmar;10;6;4;0.6;1
+Life Sciences;Myanmar;1;1;0;1;0
+Physical Sciences;Namibia;9;9;0;0.89;0
+Health Sciences;Namibia;2;1;1;0.5;Inf
+Life Sciences;Namibia;16;10;6;0.56;0.5
+Social Sciences;Namibia;5;4;1;0.6;0
+Physical Sciences;Nepal;20;19;1;0.5;0
+Health Sciences;Nepal;85;69;16;0.73;0.22
+Life Sciences;Nepal;19;15;4;0.79;0.25
+Social Sciences;Nepal;3;3;0;0.67;0
+Physical Sciences;Netherlands;5424;4800;624;0.59;0.13
+Health Sciences;Netherlands;9712;6704;3008;0.47;0.36
+Life Sciences;Netherlands;4443;3289;1154;0.53;0.3
+Social Sciences;Netherlands;2180;1714;466;0.43;0.24
+Health Sciences;NetherlandsAntilles;8;7;1;1;0.14
+Life Sciences;NetherlandsAntilles;1;1;0;1;0
+Physical Sciences;NewCaledonia;14;11;3;1;0.27
+Health Sciences;NewCaledonia;9;7;2;0.78;0.17
+Life Sciences;NewCaledonia;24;19;5;1;0.26
+Social Sciences;NewCaledonia;2;2;0;1;0
+Physical Sciences;NewZealand;1071;930;141;0.6;0.16
+Health Sciences;NewZealand;1157;774;383;0.64;0.46
+Life Sciences;NewZealand;1708;1211;497;0.51;0.36
+Social Sciences;NewZealand;603;401;202;0.55;0.39
+Physical Sciences;Nicaragua;1;1;0;1;0
+Health Sciences;Nicaragua;18;10;8;0.89;0.6
+Life Sciences;Nicaragua;3;2;1;1;0.5
+Social Sciences;Nicaragua;4;3;1;0.75;0.5
+Physical Sciences;Niger;3;3;0;1;0
+Health Sciences;Niger;12;10;2;0.92;0.22
+Life Sciences;Niger;13;11;2;1;0.18
+Social Sciences;Niger;1;1;0;1;0
+Physical Sciences;Nigeria;166;140;26;0.5;0.14
+Health Sciences;Nigeria;515;413;102;0.45;0.24
+Life Sciences;Nigeria;298;247;51;0.49;0.2
+Social Sciences;Nigeria;34;30;4;0.47;0.14
+Life Sciences;NorthernMarianaIslands;2;2;0;1;0
+Physical Sciences;Norway;1966;1661;305;0.49;0.15
+Health Sciences;Norway;2727;1874;853;0.45;0.35
+Life Sciences;Norway;1701;1162;539;0.38;0.33
+Social Sciences;Norway;627;478;149;0.35;0.26
+Physical Sciences;Oman;68;63;5;0.72;0.04
+Health Sciences;Oman;97;72;25;0.6;0.16
+Life Sciences;Oman;35;32;3;0.71;0.09
+Social Sciences;Oman;3;3;0;1;0
+Physical Sciences;Pakistan;524;430;94;0.51;0.12
+Health Sciences;Pakistan;594;445;149;0.44;0.32
+Life Sciences;Pakistan;428;344;84;0.46;0.17
+Social Sciences;Pakistan;51;36;15;0.33;0.42
+Health Sciences;Palau;1;1;0;1;0
+Life Sciences;Palau;2;1;1;1;1
+Physical Sciences;PalestinianTerritory,Occupied;27;27;0;0.59;0
+Health Sciences;PalestinianTerritory,Occupied;14;11;3;0.86;0.33
+Life Sciences;PalestinianTerritory,Occupied;4;4;0;0.75;0
+Social Sciences;PalestinianTerritory,Occupied;6;4;2;0.67;1
+Physical Sciences;Panama;5;3;2;0.6;0.5
+Health Sciences;Panama;17;13;4;0.82;0.4
+Life Sciences;Panama;87;56;31;0.95;0.57
+Social Sciences;Panama;1;1;0;1;0
+Physical Sciences;PapuaNewGuinea;7;6;1;0.57;0
+Health Sciences;PapuaNewGuinea;33;28;5;0.82;0.17
+Life Sciences;PapuaNewGuinea;10;8;2;0.6;0.2
+Social Sciences;PapuaNewGuinea;3;3;0;1;0
+Physical Sciences;Paraguay;5;4;1;0.4;1
+Health Sciences;Paraguay;18;9;9;0.89;0.78
+Life Sciences;Paraguay;10;3;7;0.5;1.5
+Social Sciences;Paraguay;1;1;0;1;0
+Physical Sciences;Peru;22;17;5;0.77;0.21
+Health Sciences;Peru;168;112;56;0.71;0.43
+Life Sciences;Peru;88;64;24;0.58;0.5
+Social Sciences;Peru;9;7;2;0.89;0.14
+Physical Sciences;Philippines;87;61;26;0.68;0.48
+Health Sciences;Philippines;107;49;58;0.66;1.09
+Life Sciences;Philippines;231;135;96;0.55;0.41
+Social Sciences;Philippines;19;12;7;0.79;0.5
+Physical Sciences;Poland;9127;6905;2222;0.31;0.26
+Health Sciences;Poland;6811;3887;2924;0.22;0.56
+Life Sciences;Poland;3544;1790;1754;0.32;0.77
+Social Sciences;Poland;219;151;68;0.28;0.39
+Physical Sciences;Portugal;2626;1738;888;0.41;0.39
+Health Sciences;Portugal;1235;633;602;0.37;0.75
+Life Sciences;Portugal;1270;539;731;0.41;1.03
+Social Sciences;Portugal;197;104;93;0.47;0.53
+Physical Sciences;PuertoRico;142;117;25;0.96;0.2
+Health Sciences;PuertoRico;110;62;48;0.81;0.75
+Life Sciences;PuertoRico;144;102;42;0.9;0.37
+Social Sciences;PuertoRico;14;12;2;0.86;0.2
+Physical Sciences;Qatar;35;28;7;0.66;0.05
+Health Sciences;Qatar;48;43;5;0.33;0.14
+Life Sciences;Qatar;2;1;1;1;1
+Social Sciences;Qatar;1;0;1;1;Inf
+Health Sciences;Réunion;2;2;0;1;0
+Life Sciences;Réunion;3;3;0;1;0
+Physical Sciences;Romania;2599;1535;1064;0.41;0.59
+Health Sciences;Romania;654;327;327;0.34;1
+Life Sciences;Romania;194;93;101;0.45;0.89
+Social Sciences;Romania;39;26;13;0.38;0.36
+Physical Sciences;Russia;19564;15392;4172;0.38;0.21
+Health Sciences;Russia;2348;1425;923;0.28;0.56
+Life Sciences;Russia;4969;2680;2289;0.51;0.71
+Social Sciences;Russia;336;236;100;0.27;0.46
+Health Sciences;Rwanda;3;2;1;1;0.5
+Social Sciences;Rwanda;1;0;1;1;Inf
+Physical Sciences;SaintKittsandNevis;1;1;0;1;0
+Social Sciences;SaintKittsandNevis;1;1;0;1;0
+Life Sciences;SaintLucia;1;0;1;1;Inf
+Life Sciences;Samoa;1;1;0;1;0
+Health Sciences;Samoa;2;0;2;1;Inf
+Health Sciences;SanMarino;2;2;0;1;0
+Social Sciences;SanMarino;1;1;0;1;0
+Physical Sciences;SanMarino;1;0;1;1;Inf
+Physical Sciences;SaoTomeandPrincipe;1;0;1;1;Inf
+Health Sciences;SaoTomeandPrincipe;1;0;1;1;Inf
+Physical Sciences;SaudiArabia;664;620;44;0.56;0.05
+Health Sciences;SaudiArabia;751;655;96;0.46;0.13
+Life Sciences;SaudiArabia;194;175;19;0.47;0.12
+Social Sciences;SaudiArabia;12;12;0;0.67;0
+Physical Sciences;Senegal;48;42;6;0.5;0.09
+Health Sciences;Senegal;221;181;40;0.72;0.2
+Life Sciences;Senegal;53;42;11;0.74;0.34
+Social Sciences;Senegal;7;6;1;0.71;0.25
+Physical Sciences;Serbia;1175;739;436;0.7;0.57
+Health Sciences;Serbia;1075;617;458;0.61;0.73
+Life Sciences;Serbia;460;189;271;0.62;1.68
+Social Sciences;Serbia;20;14;6;0.4;0.33
+Health Sciences;Seychelles;2;2;0;1;0
+Life Sciences;Seychelles;1;1;0;0;0
+Physical Sciences;SierraLeone;1;1;0;1;0
+Health Sciences;SierraLeone;5;3;2;1;0.67
+Life Sciences;SierraLeone;3;3;0;0.67;0
+Social Sciences;SierraLeone;1;1;0;1;0
+Physical Sciences;Singapore;1092;761;331;0.68;0.38
+Health Sciences;Singapore;600;377;223;0.59;0.51
+Life Sciences;Singapore;276;181;95;0.67;0.41
+Social Sciences;Singapore;241;170;71;0.61;0.32
+Physical Sciences;Slovakia;1080;847;233;0.48;0.22
+Health Sciences;Slovakia;584;314;270;0.5;0.75
+Life Sciences;Slovakia;734;389;345;0.53;0.68
+Social Sciences;Slovakia;61;38;23;0.38;0.35
+Physical Sciences;Slovenia;1118;874;244;0.37;0.25
+Health Sciences;Slovenia;571;358;213;0.34;0.52
+Life Sciences;Slovenia;333;187;146;0.37;0.71
+Social Sciences;Slovenia;151;88;63;0.25;0.48
+Physical Sciences;SolomonIslands;1;1;0;0;0
+Life Sciences;SolomonIslands;1;1;0;1;0
+Health Sciences;SolomonIslands;1;0;1;1;Inf
+Physical Sciences;South Korea;8980;7051;1929;0.39;0.26
+Health Sciences;South Korea;3442;2560;882;0.39;0.32
+Life Sciences;South Korea;3214;2291;923;0.49;0.4
+Social Sciences;South Korea;180;137;43;0.37;0.34
+Physical Sciences;SouthAfrica;1046;878;168;0.49;0.16
+Health Sciences;SouthAfrica;1216;771;445;0.57;0.45
+Life Sciences;SouthAfrica;1146;790;356;0.48;0.42
+Social Sciences;SouthAfrica;550;381;169;0.45;0.37
+Physical Sciences;Spain;13070;9699;3371;0.46;0.29
+Health Sciences;Spain;13832;9199;4633;0.32;0.45
+Life Sciences;Spain;8564;4851;3713;0.51;0.66
+Social Sciences;Spain;1583;1055;528;0.28;0.38
+Physical Sciences;SriLanka;53;42;11;0.74;0.18
+Health Sciences;SriLanka;91;59;32;0.59;0.59
+Life Sciences;SriLanka;42;35;7;0.5;0.17
+Social Sciences;SriLanka;11;3;8;0.91;4
+Physical Sciences;Sudan;14;13;1;0.86;0.09
+Health Sciences;Sudan;50;40;10;0.6;0.3
+Life Sciences;Sudan;15;13;2;0.67;0.11
+Social Sciences;Sudan;2;2;0;1;0
+Health Sciences;Suriname;1;1;0;1;0
+Life Sciences;Suriname;2;2;0;1;0
+Physical Sciences;Swaziland;2;2;0;1;0
+Social Sciences;Swaziland;2;2;0;1;0
+Health Sciences;Swaziland;3;0;3;0.67;Inf
+Life Sciences;Swaziland;1;0;1;1;Inf
+Physical Sciences;Sweden;4194;3541;653;0.55;0.17
+Health Sciences;Sweden;6861;4305;2556;0.47;0.44
+Life Sciences;Sweden;3497;2227;1270;0.59;0.47
+Social Sciences;Sweden;787;600;187;0.43;0.21
+Physical Sciences;Switzerland;5125;4525;600;0.76;0.13
+Health Sciences;Switzerland;5253;4063;1190;0.73;0.26
+Life Sciences;Switzerland;3621;2708;913;0.72;0.3
+Social Sciences;Switzerland;523;411;112;0.67;0.23
+Physical Sciences;SyrianArabRepublic;40;38;2;0.32;0.08
+Health Sciences;SyrianArabRepublic;12;10;2;0.67;0.33
+Life Sciences;SyrianArabRepublic;39;32;7;0.62;0.26
+Social Sciences;SyrianArabRepublic;2;1;1;0.5;0
+Physical Sciences;Taiwan;3475;1982;1493;0.37;0.68
+Health Sciences;Taiwan;2272;1181;1091;0.4;0.89
+Life Sciences;Taiwan;1095;529;566;0.37;0.92
+Social Sciences;Taiwan;215;96;119;0.31;1.06
+Physical Sciences;Tajikistan;7;5;2;0.57;0.33
+Life Sciences;Tajikistan;1;1;0;0;0
+Physical Sciences;Tanzania,UnitedRepublicof;22;17;5;0.64;0.27
+Health Sciences;Tanzania,UnitedRepublicof;117;91;26;0.76;0.31
+Life Sciences;Tanzania,UnitedRepublicof;39;32;7;0.56;0.22
+Social Sciences;Tanzania,UnitedRepublicof;5;4;1;0.4;1
+Physical Sciences;Thailand;402;284;118;0.45;0.46
+Health Sciences;Thailand;922;497;425;0.39;0.75
+Life Sciences;Thailand;327;170;157;0.45;0.69
+Social Sciences;Thailand;42;30;12;0.57;0.26
+Physical Sciences;Togo;2;2;0;1;0
+Health Sciences;Togo;15;15;0;0.53;0
+Life Sciences;Togo;5;4;1;0.6;0.5
+Physical Sciences;TrinidadandTobago;15;14;1;0.8;0.09
+Health Sciences;TrinidadandTobago;42;34;8;0.57;0.33
+Life Sciences;TrinidadandTobago;28;21;7;0.54;0.5
+Social Sciences;TrinidadandTobago;6;4;2;0.67;1
+Physical Sciences;Tunisia;745;579;166;0.41;0.21
+Health Sciences;Tunisia;1016;609;407;0.33;0.56
+Life Sciences;Tunisia;271;180;91;0.32;0.38
+Social Sciences;Tunisia;12;11;1;0.42;0
+Physical Sciences;Turkey;4091;3197;894;0.29;0.24
+Health Sciences;Turkey;10198;7379;2819;0.23;0.37
+Life Sciences;Turkey;1719;1153;566;0.2;0.57
+Social Sciences;Turkey;262;167;95;0.32;0.63
+Physical Sciences;Turkmenistan;1;1;0;1;0
+Life Sciences;Turkmenistan;1;1;0;1;0
+Physical Sciences;Uganda;7;5;2;0.71;0.67
+Health Sciences;Uganda;140;102;38;0.81;0.36
+Life Sciences;Uganda;65;58;7;0.66;0.16
+Social Sciences;Uganda;6;5;1;0.67;0.33
+Physical Sciences;Ukraine;4170;3260;910;0.47;0.24
+Health Sciences;Ukraine;311;175;136;0.31;0.75
+Life Sciences;Ukraine;566;307;259;0.58;0.6
+Social Sciences;Ukraine;18;9;9;0.33;1
+Physical Sciences;United Arab Emirates;116;105;11;0.86;0.12
+Health Sciences;United Arab Emirates;110;84;26;0.63;0.28
+Life Sciences;United Arab Emirates;48;42;6;0.67;0.1
+Social Sciences;United Arab Emirates;28;24;4;0.61;0.13
+Physical Sciences;United Kingdom;20865;17958;2907;0.62;0.16
+Health Sciences;United Kingdom;26682;18416;8266;0.54;0.38
+Life Sciences;United Kingdom;16836;11944;4892;0.58;0.36
+Social Sciences;United Kingdom;10698;7776;2922;0.42;0.32
+Physical Sciences;United States;84059;71527;12532;0.35;0.17
+Health Sciences;United States;103363;69133;34230;0.31;0.37
+Life Sciences;United States;78129;54159;23970;0.28;0.35
+Social Sciences;United States;34955;23997;10958;0.21;0.35
+Physical Sciences;Uruguay;128;94;34;0.57;0.26
+Health Sciences;Uruguay;113;66;47;0.49;0.77
+Life Sciences;Uruguay;241;124;117;0.56;0.66
+Social Sciences;Uruguay;5;4;1;0.8;0.33
+Physical Sciences;Uzbekistan;88;78;10;0.69;0.09
+Health Sciences;Uzbekistan;10;7;3;0.6;0.5
+Life Sciences;Uzbekistan;31;22;9;0.61;0.73
+Social Sciences;Uzbekistan;1;1;0;1;0
+Physical Sciences;Vanuatu;1;1;0;1;0
+Health Sciences;Vanuatu;2;2;0;0.5;0
+Life Sciences;Vanuatu;1;1;0;1;0
+Social Sciences;Vanuatu;1;0;1;1;Inf
+Physical Sciences;Venezuela;522;370;152;0.56;0.33
+Health Sciences;Venezuela;390;209;181;0.47;0.7
+Life Sciences;Venezuela;272;148;124;0.5;0.84
+Social Sciences;Venezuela;26;15;11;0.54;0.75
+Physical Sciences;Vietnam;88;75;13;0.55;0.23
+Health Sciences;Vietnam;63;50;13;0.63;0.29
+Life Sciences;Vietnam;28;23;5;0.64;0.2
+Physical Sciences;VirginIslands,U.S.;2;1;1;1;1
+Health Sciences;VirginIslands,U.S.;1;1;0;0;0
+Life Sciences;VirginIslands,U.S.;2;0;2;1;Inf
+Physical Sciences;Yemen;9;8;1;0.56;0.25
+Health Sciences;Yemen;10;10;0;0.6;0
+Life Sciences;Yemen;1;1;0;1;0
+Physical Sciences;Zambia;7;6;1;0.86;0.2
+Health Sciences;Zambia;38;29;9;0.71;0.35
+Life Sciences;Zambia;19;17;2;0.74;0.17
+Social Sciences;Zambia;1;1;0;1;0
+Physical Sciences;Zimbabwe;35;30;5;0.77;0.23
+Health Sciences;Zimbabwe;99;67;32;0.83;0.58
+Life Sciences;Zimbabwe;50;41;9;0.78;0.11
+Social Sciences;Zimbabwe;17;13;4;0.88;0.25
+All;Afghanistan;3;2;1;1;0.5
+All;Albania;61;46;15;0.54;0.38
+All;Algeria;1033;805;228;0.46;0.26
+All;AmericanSamoa;1;1;0;1;0
+All;Andorra;2;2;0;1;0
+All;Angola;10;10;0;1;0
+All;Antarctica;2;2;0;1;0
+All;Argentina;8705;4677;4028;0.45;0.58
+All;Armenia;318;235;83;0.61;0.22
+All;Aruba;1;1;0;1;0
+All;Australia;27312;19342;7970;0.56;0.34
+All;Austria;8761;7013;1748;0.65;0.21
+All;Azerbaijan;122;102;20;0.61;0.16
+All;Bahamas;3;3;0;1;0
+All;Bahrain;95;76;19;0.51;0.14
+All;Bangladesh;657;542;115;0.72;0.18
+All;Barbados;36;28;8;0.89;0.33
+All;Belarus;1035;823;212;0.63;0.22
+All;Belgium;12385;9077;3308;0.63;0.3
+All;Belize;7;5;2;0.86;0.5
+All;Benin;93;77;16;0.81;0.23
+All;Bermuda;19;13;6;0.89;0.31
+All;Bhutan;2;2;0;1;0
+All;Bolivia;79;55;24;0.85;0.46
+All;BosniaandHerzegovina;153;92;61;0.52;0.48
+All;Botswana;95;77;18;0.79;0.25
+All;Brazil;21692;13490;8202;0.4;0.47
+All;BritishIndianOceanTerritory;1;1;0;1;0
+All;Brunei;22;20;2;0.82;0.12
+All;Bulgaria;2890;1619;1271;0.47;0.66
+All;BurkinaFaso;163;136;27;0.83;0.19
+All;Burundi;15;13;2;0.93;0.17
+All;Côted'Ivoire;199;141;58;0.85;0.4
+All;Cambodia;14;10;4;0.93;0.3
+All;Cameroon;326;268;58;0.71;0.21
+All;Canada;41830;30157;11673;0.6;0.32
+All;CaymanIslands;3;3;0;1;0
+All;CentralAfricanRepublic;24;21;3;1;0.14
+All;Chad;1;1;0;1;0
+All;Chile;3077;2198;879;0.49;0.27
+All;China;39661;21977;17684;0.33;0.75
+All;Colombia;944;668;276;0.71;0.37
+All;Comoros;2;2;0;1;0
+All;Congo;40;30;10;0.75;0.25
+All;Congo,theDemocraticRepublicofthe;13;12;1;1;0.08
+All;CostaRica;237;166;71;0.75;0.39
+All;Croatia;3560;2133;1427;0.26;0.62
+All;Cuba;985;595;390;0.5;0.39
+All;Cyprus;241;190;51;0.67;0.23
+All;CzechRepublic;7134;5426;1708;0.45;0.23
+All;Denmark;8695;6497;2198;0.56;0.28
+All;Djibouti;5;4;1;0.8;0.33
+All;Dominica;2;1;1;1;1
+All;DominicanRepublic;20;10;10;0.85;1.12
+All;Ecuador;132;105;27;0.79;0.21
+All;Egypt;3892;2874;1018;0.47;0.2
+All;ElSalvador;15;11;4;0.93;0.27
+All;EquatorialGuinea;2;2;0;1;0
+All;Eritrea;3;3;0;0.33;0
+All;Estonia;935;599;336;0.42;0.47
+All;Ethiopia;202;170;32;0.69;0.23
+All;FalklandIslands(Malvinas);3;3;0;1;0
+All;FaroeIslands;10;5;5;0.7;1.33
+All;Fiji;30;25;5;0.87;0.13
+All;Finland;10141;6831;3310;0.45;0.43
+All;France;68306;46979;21327;0.48;0.37
+All;FrenchGuiana;14;7;7;1;1
+All;FrenchPolynesia;27;20;7;0.96;0.37
+All;Gabon;48;30;18;0.71;0.7
+All;Gambia;51;43;8;0.96;0.2
+All;Georgia;357;260;97;0.64;0.33
+All;Germany;68818;57251;11567;0.55;0.19
+All;Ghana;205;175;30;0.66;0.17
+All;Gibraltar;2;1;1;1;1
+All;Greece;9875;7316;2559;0.38;0.26
+All;Greenland;10;10;0;0.7;0
+All;Grenada;3;3;0;1;0
+All;Guadeloupe;41;24;17;0.98;0.67
+All;Guam;33;28;5;0.97;0.19
+All;Guatemala;44;27;17;0.77;0.62
+All;Guinea;21;16;5;0.86;0.2
+All;Guinea-Bissau;9;7;2;1;0.29
+All;Guyana;7;5;2;1;0.4
+All;Haiti;16;11;5;0.88;0.4
+All;Honduras;17;12;5;0.71;0.5
+All;HongKong;3161;2130;1031;0.81;0.48
+All;Hungary;4954;3635;1319;0.55;0.28
+All;Iceland;421;300;121;0.56;0.41
+All;India;20784;16729;4055;0.42;0.21
+All;Indonesia;486;350;136;0.61;0.37
+All;Iran,IslamicRepublicof;3319;2822;497;0.36;0.15
+All;Iraq;83;76;7;0.52;0.05
+All;Ireland;3035;2214;821;0.63;0.33
+All;Israel;12483;8834;3649;0.54;0.31
+All;Italy;63813;40429;23384;0.36;0.45
+All;Jamaica;149;93;56;0.64;0.61
+All;Japan;96567;87830;8737;0.32;0.11
+All;Jordan;621;558;63;0.55;0.11
+All;Kazakhstan;151;96;55;0.56;0.45
+All;Kenya;543;439;104;0.69;0.26
+All;Kuwait;554;421;133;0.44;0.22
+All;Kyrgyzstan;28;27;1;0.75;0.05
+All;LaoPeople'sDemocraticRepublic;3;2;1;0.33;0
+All;Latvia;464;251;213;0.35;0.65
+All;Lebanon;518;392;126;0.65;0.31
+All;Lesotho;3;1;2;0.67;1
+All;Liberia;1;0;1;1;Inf
+All;Libya;27;26;1;0.74;0
+All;Liechtenstein;10;10;0;0.7;0
+All;Lithuania;1171;800;371;0.31;0.39
+All;Luxembourg;78;59;19;0.71;0.34
+All;Macao;15;10;5;0.93;0.4
+All;Macedonia,theformerYugoslavRepublicof;237;125;112;0.49;0.75
+All;Madagascar;59;37;22;0.85;0.61
+All;Malawi;71;55;16;0.83;0.31
+All;Malaysia;1252;891;361;0.46;0.33
+All;Maldives;2;2;0;1;0
+All;Mali;92;80;12;0.8;0.17
+All;Malta;76;67;9;0.58;0.16
+All;MarshallIslands;2;1;1;1;1
+All;Martinique;33;25;8;0.97;0.33
+All;Mauritania;5;5;0;1;0
+All;Mauritius;20;14;6;0.5;0.43
+All;Mexico;7427;5124;2303;0.46;0.36
+All;Micronesia,FederatedStatesof;4;3;1;1;0.33
+All;Moldova,Republicof;169;126;43;0.75;0.27
+All;Monaco;34;20;14;0.94;0.68
+All;Mongolia;9;3;6;0.67;2
+All;Montenegro;29;23;6;0.79;0.35
+All;Montserrat;5;5;0;1;0
+All;Morocco;1617;1265;352;0.39;0.25
+All;Mozambique;37;20;17;0.68;0.92
+All;Myanmar;15;9;6;0.6;0.8
+All;Namibia;32;24;8;0.66;0.24
+All;Nepal;127;106;21;0.7;0.19
+All;Netherlands;21759;16507;5252;0.51;0.26
+All;NetherlandsAntilles;9;8;1;1;0.12
+All;NewCaledonia;49;39;10;0.96;0.24
+All;NewZealand;4539;3316;1223;0.57;0.33
+All;Nicaragua;26;16;10;0.88;0.53
+All;Niger;29;25;4;0.97;0.17
+All;Nigeria;1013;830;183;0.47;0.21
+All;NorthernMarianaIslands;2;2;0;1;0
+All;Norway;7021;5175;1846;0.43;0.27
+All;Oman;203;170;33;0.67;0.1
+All;Pakistan;1597;1255;342;0.46;0.21
+All;Palau;3;2;1;1;0.5
+All;PalestinianTerritory,Occupied;51;46;5;0.69;0.17
+All;Panama;110;73;37;0.92;0.53
+All;PapuaNewGuinea;53;45;8;0.75;0.14
+All;Paraguay;34;17;17;0.71;0.85
+All;Peru;287;200;87;0.68;0.41
+All;Philippines;444;257;187;0.61;0.56
+All;Poland;19701;12733;6968;0.28;0.42
+All;Portugal;5328;3014;2314;0.4;0.58
+All;PuertoRico;410;293;117;0.9;0.36
+All;Qatar;86;72;14;0.49;0.14
+All;Réunion;5;5;0;1;0
+All;Romania;3486;1981;1505;0.4;0.66
+All;Russia;27217;19733;7484;0.4;0.32
+All;Rwanda;4;2;2;1;1
+All;SaintKittsandNevis;2;2;0;1;0
+All;SaintLucia;1;0;1;1;Inf
+All;Samoa;3;1;2;1;2
+All;SanMarino;4;3;1;1;0.33
+All;SaoTomeandPrincipe;2;0;2;1;Inf
+All;SaudiArabia;1621;1462;159;0.5;0.09
+All;Senegal;329;271;58;0.69;0.21
+All;Serbia;2730;1559;1171;0.65;0.75
+All;Seychelles;3;3;0;0.67;0
+All;SierraLeone;10;8;2;0.9;0.29
+All;Singapore;2209;1489;720;0.65;0.41
+All;Slovakia;2459;1588;871;0.5;0.45
+All;Slovenia;2173;1507;666;0.35;0.38
+All;SolomonIslands;3;2;1;0.67;1
+All;South Korea;15816;12039;3777;0.41;0.31
+All;SouthAfrica;3958;2820;1138;0.51;0.34
+All;Spain;37049;24804;12245;0.41;0.43
+All;SriLanka;197;139;58;0.63;0.43
+All;Sudan;81;68;13;0.67;0.2
+All;Suriname;3;3;0;1;0
+All;Swaziland;8;4;4;0.88;0.75
+All;Sweden;15339;10673;4666;0.52;0.35
+All;Switzerland;14522;11707;2815;0.73;0.22
+All;SyrianArabRepublic;93;81;12;0.49;0.21
+All;Taiwan;7057;3788;3269;0.38;0.79
+All;Tajikistan;8;6;2;0.5;0.33
+All;Tanzania,UnitedRepublicof;183;144;39;0.69;0.3
+All;Thailand;1693;981;712;0.42;0.64
+All;Togo;22;21;1;0.59;0.08
+All;TrinidadandTobago;91;73;18;0.6;0.34
+All;Tunisia;2044;1379;665;0.36;0.37
+All;Turkey;16270;11896;4374;0.24;0.35
+All;Turkmenistan;2;2;0;1;0
+All;Uganda;218;170;48;0.76;0.31
+All;Ukraine;5065;3751;1314;0.47;0.29
+All;United Arab Emirates;302;255;47;0.72;0.17
+All;United Kingdom;75081;56094;18987;0.55;0.29
+All;United States;300506;218816;81690;0.3;0.29
+All;Uruguay;487;288;199;0.55;0.54
+All;Uzbekistan;130;108;22;0.67;0.21
+All;Vanuatu;5;4;1;0.8;0.33
+All;Venezuela;1210;742;468;0.52;0.53
+All;Vietnam;179;148;31;0.59;0.25
+All;VirginIslands,U.S.;5;2;3;0.8;3
+All;Yemen;20;19;1;0.6;0.09
+All;Zambia;65;53;12;0.74;0.26
+All;Zimbabwe;201;151;50;0.81;0.35
