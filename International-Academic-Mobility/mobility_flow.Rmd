@@ -1,0 +1,87 @@
+---
+title: "Mobility flows"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(kableExtra)
+library(flexdashboard)
+library(WDI)
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+library(ggthemes)
+library(DT)
+library(scales)
+
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+library(manipulateWidget)
+
+myfont="Times New Roman"
+knitr::opts_chunk$set(echo = FALSE)
+
+source("mobility_flow_income.R",local = knitr::knit_global())
+
+data_long_income<-rbind(data_long_income_1,data_long_income_2,data_long_income_3)
+
+# htmlwidgets::onRender(sankey1_income,
+#   '
+#   function(el,x) {
+#     d3.select(el)
+#       .selectAll(".node text")
+#       .filter(function(d) { return d.name == "High"; })
+#       .attr("x", x.options.nodeWidth - 16)
+#       .attr("text-anchor", "end");
+# 
+#     d3
+#       .selectAll("rect")
+#       .filter(function (d, i) { return i === 5;})
+#       .attr("width", x.options.nodeWidth * 2);
+#   }
+#   '
+# )
+sankey1 <- htmlwidgets::prependContent(sankey1_income)
+
+sankey2 <- htmlwidgets::prependContent(sankey2_income)
+sankey3 <- htmlwidgets::prependContent(sankey3_income)
+
+
+combineWidgets(ncol=3,width=1200,sankey1,sankey2,sankey3, myComment <- tags$div(
+    class="text",
+    tags$hr(),
+    "early career stage"
+  ),myComment <- tags$div(
+    class="text",
+    tags$hr(),
+    "mid career stage"
+  ),myComment <- tags$div(
+    class="text", 
+    tags$hr(),
+    "late career stage"
+  ))
+
+
+
+
+
+```
+
+```{css}
+
+.text {
+  height:100%;
+  text-align: center;
+}
+```

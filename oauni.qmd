@@ -3,4 +3,14 @@ title: "OAUNI"
 editor: visual
 ---
 
-Project description of OAUNI.
+In view of the importance of Open Access (OA), the project [**OAUNI**](https://www.sub.uni-goettingen.de/en/projects-research/project-details/projekt/oauni/)**- Open Access publication at universities in Germany: Development and influencing factors** investigates how the publication output of German universities has changed towards open access and what role subject-specific and organizational factors play in adopting OA. The aim is to describe the state of the art of OA publishing for all German universities and to develop empirical explanatory models.
+
+With its science-reflective and insight-oriented objective, the project differs from initiatives that focus on the infrastructural implementation of OA. The research design induces three areas of work, which will be addressed at Göttingen State and University Library and at the Institute for Interdisciplinary Studies of Science (I²SoS) Bielefeld:
+
+1.  Generation of *university OA publication profiles:* Publication data of German universities in the period 2008 to 2017 from the Web of Science database of the Competence Center Bibliometry (WoS-CB) will be supplemented with information on OA status by novel OA detection sources such as Unpaywall Data, which are to be made accessible for bibliometric analyses in a preceding step.
+
+2.  Establishment of *determinants of university OA profiles:* In order to explain the differences in the publication profiles, the influence of organizational factors such as the locally available OA infrastructure or financial support offers and subject-specific factors such as the respective publication culture will be examined. Both factors will be integrated into explanatory models and statistically tested. The corresponding information is again collected from the WoS-CB database in combination with OA detection sources as well as from established data sources in research on science and university reporting.
+
+3.  Validation of results by means of *semi-structured expert interviews*: Possible further factors that could influence the OA profile of universities are to be identified in interviews with those responsible for OA at universities. However, this does not serve to expand the focus of the analysis, but rather to assess the research results, that is, to determine the informative value and limits of the quantitative explanatory model.
+
+The project aims to improve the understanding of current transformation processes in the scientific publication system. It thus also addresses current challenges in the areas of scientific literature supply and public participation in the scientific knowledge process. The results, including the data and analytical routines, will be prepared for specific target groups and, if legally possible, published under an open license. With this, the project also contributes to the development of a methodology and the creation of data resources for a monitoring of the development towards OA publishing.

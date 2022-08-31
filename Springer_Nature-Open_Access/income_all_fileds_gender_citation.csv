@@ -1,0 +1,91 @@
+INCOME_GROUP,Model,percentage_women,percentage_men,percentage_nogender,FIELD,Percentage_totalgender
+High,Closed Access,57,56,42,all fields,51
+High,Gold Open Access,59,59,55,all fields,57
+High,Hybrid Closed Access,49,46,45,all fields,46
+High,Hybrid Open Access,59,57,55,all fields,56
+Low,Closed Access,0,0,40,all fields,25
+Low,Gold Open Access,45,43,43,all fields,43
+Low,Hybrid Closed Access,24,32,34,all fields,33
+Low,Hybrid Open Access,50,53,48,all fields,49
+Lower Middle,Closed Access,13,25,26,all fields,24
+Lower Middle,Gold Open Access,46,51,48,all fields,49
+Lower Middle,Hybrid Closed Access,37,44,40,all fields,41
+Lower Middle,Hybrid Open Access,38,41,41,all fields,41
+Upper middle,Closed Access,24,24,23,all fields,23
+Upper middle,Gold Open Access,56,56,55,all fields,55
+Upper middle,Hybrid Closed Access,45,46,44,all fields,45
+Upper middle,Hybrid Open Access,51,47,49,all fields,49
+High,Closed Access,67,66,53,Health Sciences,63
+High,Closed Access,70,74,58,Life Sciences,69
+High,Closed Access,0,0,10,Multidisciplinary,4
+High,Closed Access,38,38,32,Physical Sciences,35
+High,Closed Access,46,41,46,Social Sciences,44
+High,Gold Open Access,57,57,52,Health Sciences,54
+High,Gold Open Access,70,71,66,Life Sciences,69
+High,Gold Open Access,53,52,51,Multidisciplinary,52
+High,Gold Open Access,79,77,70,Physical Sciences,75
+High,Gold Open Access,58,53,52,Social Sciences,53
+High,Hybrid Closed Access,52,50,46,Health Sciences,48
+High,Hybrid Closed Access,51,48,46,Life Sciences,47
+High,Hybrid Closed Access,0,19,19,Multidisciplinary,18
+High,Hybrid Closed Access,45,43,44,Physical Sciences,44
+High,Hybrid Closed Access,48,46,45,Social Sciences,45
+High,Hybrid Open Access,64,62,60,Health Sciences,62
+High,Hybrid Open Access,62,62,60,Life Sciences,61
+High,Hybrid Open Access,33,36,42,Multidisciplinary,38
+High,Hybrid Open Access,51,51,52,Physical Sciences,51
+High,Hybrid Open Access,57,54,54,Social Sciences,54
+Low,Closed Access,0,0,0,Life Sciences,0
+Low,Closed Access,0,0,40,Physical Sciences,29
+Low,Gold Open Access,54,49,48,Health Sciences,49
+Low,Gold Open Access,35,36,36,Life Sciences,36
+Low,Gold Open Access,0,33,57,Multidisciplinary,53
+Low,Gold Open Access,50,30,36,Physical Sciences,35
+Low,Gold Open Access,0,56,53,Social Sciences,50
+Low,Hybrid Closed Access,25,21,26,Health Sciences,25
+Low,Hybrid Closed Access,33,24,36,Life Sciences,33
+Low,Hybrid Closed Access,0,0,100,Multidisciplinary,100
+Low,Hybrid Closed Access,14,41,37,Physical Sciences,37
+Low,Hybrid Closed Access,0,53,39,Social Sciences,41
+Low,Hybrid Open Access,0,60,60,Health Sciences,55
+Low,Hybrid Open Access,67,56,39,Life Sciences,44
+Low,Hybrid Open Access,100,33,50,Physical Sciences,49
+Low,Hybrid Open Access,67,71,55,Social Sciences,60
+Lower Middle,Closed Access,67,40,29,Health Sciences,40
+Lower Middle,Closed Access,14,11,13,Life Sciences,13
+Lower Middle,Closed Access,13,27,28,Physical Sciences,27
+Lower Middle,Closed Access,0,19,13,Social Sciences,14
+Lower Middle,Gold Open Access,46,48,46,Health Sciences,47
+Lower Middle,Gold Open Access,46,52,45,Life Sciences,48
+Lower Middle,Gold Open Access,48,53,55,Multidisciplinary,53
+Lower Middle,Gold Open Access,47,57,51,Physical Sciences,53
+Lower Middle,Gold Open Access,56,56,53,Social Sciences,54
+Lower Middle,Hybrid Closed Access,34,36,31,Health Sciences,34
+Lower Middle,Hybrid Closed Access,36,40,36,Life Sciences,37
+Lower Middle,Hybrid Closed Access,44,36,27,Multidisciplinary,31
+Lower Middle,Hybrid Closed Access,38,46,43,Physical Sciences,44
+Lower Middle,Hybrid Closed Access,35,41,42,Social Sciences,41
+Lower Middle,Hybrid Open Access,39,38,29,Health Sciences,33
+Lower Middle,Hybrid Open Access,41,45,42,Life Sciences,43
+Lower Middle,Hybrid Open Access,0,0,14,Multidisciplinary,11
+Lower Middle,Hybrid Open Access,31,41,45,Physical Sciences,43
+Lower Middle,Hybrid Open Access,46,50,53,Social Sciences,51
+Upper middle,Closed Access,34,35,33,Health Sciences,34
+Upper middle,Closed Access,11,16,13,Life Sciences,13
+Upper middle,Closed Access,28,25,25,Physical Sciences,25
+Upper middle,Closed Access,50,0,11,Social Sciences,17
+Upper middle,Gold Open Access,56,56,54,Health Sciences,55
+Upper middle,Gold Open Access,68,68,68,Life Sciences,68
+Upper middle,Gold Open Access,49,49,49,Multidisciplinary,49
+Upper middle,Gold Open Access,63,63,61,Physical Sciences,62
+Upper middle,Gold Open Access,57,50,45,Social Sciences,48
+Upper middle,Hybrid Closed Access,49,48,46,Health Sciences,47
+Upper middle,Hybrid Closed Access,43,45,43,Life Sciences,44
+Upper middle,Hybrid Closed Access,12,19,15,Multidisciplinary,16
+Upper middle,Hybrid Closed Access,44,46,45,Physical Sciences,45
+Upper middle,Hybrid Closed Access,49,49,45,Social Sciences,47
+Upper middle,Hybrid Open Access,56,54,54,Health Sciences,54
+Upper middle,Hybrid Open Access,54,54,55,Life Sciences,54
+Upper middle,Hybrid Open Access,0,14,14,Multidisciplinary,12
+Upper middle,Hybrid Open Access,47,44,45,Physical Sciences,45
+Upper middle,Hybrid Open Access,55,41,45,Social Sciences,45

@@ -2,4 +2,4 @@
 title: "OASE/OAUNI Dashboard"
 ---
 
-This dashboard serves as an interactive display of important results obtained in the BMBF projects [OASE](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oase/oase_node.html) and [OAUNI](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oauni/oauni_node.html).
+This dashboard serves as an interactive display of important results obtained in the BMBF projects [OASE](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oase/oase_node.html) and [OAUNI](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oauni/oauni_node.html) within the funding stream [Quantitative research on the science sector](https://www.wihoforschung.de/wihoforschung/en/bmbf-funding-projects/funding-lines/quantitative-research-on-the-science-sector/quantitative-research-on-the-science-sector_node.html).

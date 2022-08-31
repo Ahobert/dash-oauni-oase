@@ -9,6 +9,8 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
+      - text: "Mobility"
+        href: mobility.qmd
     right:
       - text: "Publications"
         href: pubs.qmd
@@ -19,8 +21,17 @@ website:
       style: "docked"
       contents:
         - about.qmd
-        - oase.qmd
         - oauni.qmd
+        - oase.qmd
+    - title: "Mobility"
+      style: "docked"
+      contents: 
+        - mobility.qmd
+        - International-Academic-Mobility/mobility_proportion_filed_gender.Rmd
+        - International-Academic-Mobility/mobility_score_distribution.Rmd
+        - International-Academic-Mobility/country_gender_field.Rmd
+        - International-Academic-Mobility/mobility_flow.Rmd
+        - International-Academic-Mobility/centrality.Rmd
 
 format:
   html:

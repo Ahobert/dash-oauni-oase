@@ -1,0 +1,98 @@
+---
+title: "Distribution per country"
+subtitle: "Mobility distrubtion among countries (origin), fields and Genders"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(kableExtra)
+library(flexdashboard)
+library(WDI)
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+library(ggthemes)
+library(DT)
+library(scales)
+
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+
+
+myfont="Times New Roman"
+knitr::opts_chunk$set(echo = FALSE)
+
+
+origin_country_distrubtion_all<-read.table("data_country.csv",header=TRUE,sep=";",quote="\r",dec = ".")
+
+
+htmltools::browsable(
+  tagList(
+    div(
+      div(tags$label("Filter based on field", `for` = "MAIN_FIELD-filter")),
+      tags$select(
+        id = "MAIN_FIELD-filter",
+        onchange = "Reactable.setFilter('field-filter-table', 'MAIN_FIELD', this.value)",
+        lapply(unique(origin_country_distrubtion_all$MAIN_FIELD), tags$option)
+      )
+    ),
+    tags$hr("aria-hidden" = "false"),
+
+    reactable(
+  origin_country_distrubtion_all,elementId = "field-filter-table",
+  columns = list(
+    MAIN_FIELD = colDef(show = FALSE),
+    ORIGIN_COUNTRY =colDef(name="origin country"),
+    ntotal  = colDef(name = "#total researchers",format = colFormat( separators = TRUE)),
+    n_men  = colDef(name = "#total male researchers",format = colFormat( separators = TRUE)),
+    n_women  = colDef(name = "#total female researchers",format = colFormat( separators = TRUE)),
+    womenTomenmobile= colDef(name="proportion of female to male mobile researchers"),
+    mobile_percent = colDef( name = "mobility percentage",
+      cell = function(value){
+            width <- paste0(value*100, "%")
+            value <- format(value, big.mark = ",")
+            value <- format(value, width = 10, justify = "right")
+            bar <- div(style = list(background = "#00bfc4", width = width, height = "16px"))
+            chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
+            div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
+        },format = colFormat(percent = TRUE, digits = 1))
+  ),defaultPageSize = 250,showPageSizeOptions = TRUE,
+  pageSizeOptions = c(4, 8, 12)
+)
+  )
+)
+
+```
+
+```{css}
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-size: 13.5px;
+  white-space: pre;
+}
+
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 6px;
+  height: 22px;
+}
+
+.bar {
+  height: 100%;
+}
+```

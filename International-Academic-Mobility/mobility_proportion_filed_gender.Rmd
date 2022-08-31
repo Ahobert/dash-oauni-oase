@@ -1,0 +1,98 @@
+---
+title: "Mobility per field and gender" 
+subtitle: "Proportion of international mobility per field and gender"
+output: html_document
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
+```
+
+```{r}
+library(crosstalk)
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(tidyverse)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+
+data1<-read.table("table2_.csv",header=TRUE,sep=",",quote="\r",dec = ".")
+#data<-select(data1,MAIN_FIELD,percent_nonmobile_men,mobile_men,nonmobile_men,percent_nonmobile_women,mobile_women,nonmobile_women)
+data<-select(data1,MAIN_FIELD,gender,nonmobile,mobile,percent_mobile)
+
+#data <- MASS::Cars93[1:15, c("Manufacturer", "Model", "Type", "Price")]
+
+
+htmltools::browsable(
+  tagList(
+    div(
+      div(tags$label("Filter based on field", `for` = "MAIN_FIELD-filter")),
+      tags$select(
+        id = "MAIN_FIELD-filter",
+        onchange = "Reactable.setFilter('cars-filter-table', 'MAIN_FIELD', this.value)",
+        tags$option("All", value = ""),
+        lapply(unique(data$MAIN_FIELD), tags$option)
+      )
+    ),
+    tags$hr("aria-hidden" = "false"),
+
+    reactable(
+  data,elementId = "cars-filter-table",
+  groupBy = "MAIN_FIELD",
+  columns = list(
+    mobile = colDef(aggregate = "sum",format = colFormat( separators = TRUE)),
+    nonmobile = colDef(aggregate = "sum",format = colFormat( separators = TRUE)),
+    percent_mobile = colDef(
+      # Calculate the aggregate Avg.Price as `sum(Price) / sum(Units)`
+      aggregate = JS("function(values, rows) {
+        let totalmobile = 0
+        let totalnonmobile = 0
+        rows.forEach(function(row) {
+          totalmobile += row['mobile']
+          totalnonmobile += row['nonmobile']
+        })
+        return totalmobile / (totalmobile+totalnonmobile)
+      }"),
+      cell = function(value){
+            width <- paste0(value*100, "%")
+            value <- format(value, big.mark = ",")
+            value <- format(value, width = 10, justify = "right")
+            bar <- div(style = list(background = "#00bfc4", width = width, height = "16px"))
+            chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
+            div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
+        },format = colFormat(percent = TRUE, digits = 1))
+  )
+)
+  )
+)
+
+
+
+
+
+
+```
+
+```{css}
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-size: 13.5px;
+  white-space: pre;
+}
+
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 6px;
+  height: 22px;
+}
+
+.bar {
+  height: 100%;
+}
+```

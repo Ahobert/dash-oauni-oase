@@ -1,0 +1,77 @@
+---
+title: "Centrality scores"
+subtitle: "Authors' centrality scores in co-authorship networks!"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+
+```{js, echo = FALSE, message = FALSE, warning = FALSE}
+function filter_default() {
+    document.getElementById("GENDER").getElementsByClassName("selectized") 
+[0].selectize.setValue("both", false);
+ }
+$(document).ready(filter_default);
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(knitr)
+library(kableExtra)
+library(flexdashboard)
+library(WDI)
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+library(ggthemes)
+library(DT)
+library(scales)
+library(manipulateWidget); 
+
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+
+myfont="Times New Roman"
+knitr::opts_chunk$set(echo = FALSE)
+
+
+centralities<-read.table("centralities.csv",header=TRUE,sep=";",quote="\r",dec = ".")
+sharedCentrality<-SharedData$new(centralities)
+
+p_degree<-ggplot(sharedCentrality, aes(x=YEAR-1999, y=score_mean, group=MOBILITY, color=MOBILITY)) + 
+  geom_line(size=0.5) +
+  geom_point(shape=21, size=0.5, fill="red") +
+  geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=1.5,colour="red",
+                position=position_dodge(0.01))+
+  labs( x="Career age", y = "score")+
+  theme_classic()+ 
+  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="20",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=20),axis.title  =  element_text( family=myfont,size=20,face = "bold"))+
+  scale_color_manual(values=c('#0000FF','#808080'))+
+  facet_wrap( ~ score, ncol=2, scales = "free")+ labs(color = "")
+
+gg_degree<-ggplotly(p_degree)
+
+
+
+bscols(widths = c(2,2,12,12),
+       div(style = css(width="2%", height="2px", background_color="gray")),
+       list(
+         filter_select(id = "GENDER", label = "Gender",
+                       sharedData = sharedCentrality, group = ~ GENDER,multiple=FALSE,allLevels = FALSE)
+       ),div(style = css(width="100%", height="2px", background_color="gray")),
+       gg_degree)
+  
+  
+
+
+
+
+
+```

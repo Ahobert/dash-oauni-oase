@@ -1,5 +1,7 @@
 ---
-title: "About"
+title: "About the funding stream"
 ---
 
-Something on funding stream and projects.
+Both projects are part of the **funding stream 'Quantitative research on the science sector'** of the German Federal ministry of Education and Research (BMBF). The following short description and more information on the funding stream can be found [here](https://www.wihoforschung.de/wihoforschung/en/bmbf-funding-projects/funding-lines/quantitative-research-on-the-science-sector/quantitative-research-on-the-science-sector_node.html).
+
+The science sector has been acquiring great significance for more and more areas of our society. This makes it all the more important for the science system to be structured and funded as advantageously as possible. To an increasing degree, quality and productivity issues in science and research are being studied with the help of indicators that yield information about quality, the factors that define it and the factors that bring it about. One aim of the funding line "Quantitative research on the science sector" is to make even better use of such indicators' usefulness for research on the science system -- and, in the process, to develop new indicators where appropriate. Quantitative research in this context is designed to improve our understanding of the science system's workings, structural dependencies and dynamics. It also considers the impacts of data-based evaluation of research.

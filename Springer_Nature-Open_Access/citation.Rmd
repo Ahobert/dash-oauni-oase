@@ -1,0 +1,157 @@
+---
+title: "Percentage of highly cited papers among fields, genders, model and country (grouped by their income level) of  corresponding authors"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
+```
+
+```{js}
+function filter_default() {
+    var select_field=document.getElementById("FIELD-filter");
+    select_field.selectedIndex = "0";
+    select_field.onchange();
+ }
+$(document).ready(filter_default);
+```
+
+```{r}
+library(crosstalk)
+library(reactable)
+library(lubridate)
+library(hrbrthemes)
+library(tidyverse)
+library(htmltools)
+library(sparkline)
+library(dplyr)
+
+income_field_gender_citation1<-read.table("income_all_fileds_gender_citation.csv",header=TRUE,sep=",",quote="\r",dec = ".")
+income_field_gender_citation<-select(income_field_gender_citation1,INCOME_GROUP,
+                                  FIELD,Model,percentage_women ,percentage_men ,percentage_nogender,Percentage_totalgender)
+
+htmltools::browsable(
+  tagList(
+    div(
+      div(tags$label("Filter based on field", `for` = "FIELD-filter")),
+      tags$select(
+        id = "FIELD-filter",
+        onchange = "Reactable.setFilter('filter-table', 'FIELD', this.value)",
+        #tags$option("All", value = ""),
+        lapply(unique(income_field_gender_citation$FIELD), tags$option)
+      )
+    ),
+    tags$hr("aria-hidden" = "false"),
+
+    reactable(defaultPageSize = 50,
+      defaultColDef = colDef(show = F),
+  income_field_gender_citation,elementId = "filter-table",
+  groupBy = "INCOME_GROUP",
+  columns = list(
+    INCOME_GROUP = colDef(name="income level",show=T),
+    Model = colDef(name="publishing model",show = T,
+      style = function(value) {
+        if (value == "Gold Open Access") {
+              color <- "#feb24c"
+            } else if (value == "Closed Access") {
+              color <- "red"
+            } else if (value == "Hybrid Open Access") {
+              color <- "#8856a7"
+            } else if (value == "Hybrid Closed Access") {
+              color <- "#bcbddc"
+            }
+        list(color = color)
+      }),
+    percentage_men = colDef(show=T,name="percentage of highly cited articles among men",
+      cell = function(value,index){
+            if (income_field_gender_citation$Model[index] == "Gold Open Access") {
+              color <- "#feb24c"
+            } else if (income_field_gender_citation$Model[index] == "Closed Access") {
+              color <- "red"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Open Access") {
+              color <- "#8856a7"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Closed Access") {
+              color <- "#bcbddc"
+            }
+            width <- paste0(value, "%")
+            value <- format(value, big.mark = ",")
+            value <- format(value, width = 10, justify = "right")
+            bar <- div(style = list(background = color, width = width, height = "16px"))
+            chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
+            div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
+        },format = colFormat(percent = TRUE, digits = 1)),
+    percentage_women = colDef(show=T,name="percentage of highly cited articles among women",
+      cell = function(value,index){
+            if (income_field_gender_citation$Model[index] == "Gold Open Access") {
+              color <- "#feb24c"
+            } else if (income_field_gender_citation$Model[index] == "Closed Access") {
+              color <- "red"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Open Access") {
+              color <- "#8856a7"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Closed Access") {
+              color <- "#bcbddc"
+            }
+            width <- paste0(value, "%")
+            value <- format(value, big.mark = ",")
+            value <- format(value, width = 10, justify = "right")
+            bar <- div(style = list(background = color, width = width, height = "16px"))
+            chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
+            div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
+        },format = colFormat(percent = TRUE, digits = 1)),
+    Percentage_totalgender = colDef(show=T,name="percentage of highly cited articles among all researchers (authors without gender status are included too)",
+      cell = function(value,index){
+            if (income_field_gender_citation$Model[index] == "Gold Open Access") {
+              color <- "#feb24c"
+            } else if (income_field_gender_citation$Model[index] == "Closed Access") {
+              color <- "red"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Open Access") {
+              color <- "#8856a7"
+            } else if (income_field_gender_citation$Model[index] == "Hybrid Closed Access") {
+              color <- "#bcbddc"
+            }
+            width <- paste0(value, "%")
+            value <- format(value, big.mark = ",")
+            value <- format(value, width = 10, justify = "right")
+            bar <- div(style = list(background = color, width = width, height = "16px"))
+            chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
+            div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
+        },format = colFormat(percent = TRUE, digits = 1))
+  )
+)
+  )
+)
+
+
+
+
+
+
+```
+
+```{css}
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  font-size: 13.5px;
+  white-space: pre;
+}
+
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 6px;
+  height: 22px;
+}
+
+.bar {
+  height: 100%;
+}
+```
