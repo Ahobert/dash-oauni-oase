@@ -14,7 +14,7 @@ library(grid)
 library(gridExtra)
 library(scales)
 library(networkD3)
-lable_size=60
+lable_size=100
 node_padding=75
 node_Width=50
 myfont="Times New Roman"
@@ -26,18 +26,12 @@ org_c<-ORG_DEST_INCOME_DISTRIBUTION$ORG_INCOME
 dest_c<-ORG_DEST_INCOME_DISTRIBUTION$DEST_INCOME
 MOVE_STAGE<-ORG_DEST_INCOME_DISTRIBUTION$MOVE_STAGE
 movements<-ORG_DEST_INCOME_DISTRIBUTION$n
-dat_move<-data.frame(org_c,dest_c,MOVE_STAGE,movements)
 
-####Chord diagram########
-#########################
-#format the data as numeric
-dat_move$movements <- as.numeric( gsub(",","",dat_move$movements))
-#library(reshape2)
-data<-acast(dat_move,org_c~dest_c,value.var = "movements")
-replaceStrings <- data.frame( from = c("High income","Upper middle income","Lower middle income", "Low income"), to = c("H", "UM", "LM", "L"))
-
-dat_move <- FindReplace(data = as.data.frame(dat_move), Var = "org_c", replaceData = replaceStrings, from = "from", to = "to", exact = FALSE)
-dat_move <- FindReplace(data = as.data.frame(dat_move), Var = "dest_c", replaceData = replaceStrings, from = "from", to = "to", exact = FALSE)
+#ORG_DEST_INCOME_DISTRIBUTION <- sapply(ORG_DEST_INCOME_DISTRIBUTION,function(x) {x <- gsub("High","H",x)})
+ORG_DEST_INCOME_DISTRIBUTION[] <- lapply(ORG_DEST_INCOME_DISTRIBUTION, gsub, pattern = "High", replacement = "H", fixed = TRUE)
+ORG_DEST_INCOME_DISTRIBUTION[] <- lapply(ORG_DEST_INCOME_DISTRIBUTION, gsub, pattern = "Upper middle", replacement = "UM", fixed = TRUE)
+ORG_DEST_INCOME_DISTRIBUTION[] <- lapply(ORG_DEST_INCOME_DISTRIBUTION, gsub, pattern = "Lower middle", replacement = "LM", fixed = TRUE)
+ORG_DEST_INCOME_DISTRIBUTION[] <- lapply(ORG_DEST_INCOME_DISTRIBUTION, gsub, pattern = "Low", replacement = "L", fixed = TRUE)
 
 #######sankey network######
 ###########################
@@ -53,9 +47,9 @@ data_long_income_1<-data.frame(source=origin,target=dest,value=movements,IDsourc
 data_long_income_1$group<-substring(origin, 1, 4)
 data_long_income_1$stage<-'early'
 
-ColourScal ='d3.scaleOrdinal() .domain(["HI","UP","LM","LO","HII","UPM","LMI",
-"LOI"]).range(["#7fcdbb", "red", "blue", "yellow",
-   "#7fcdbb", "red", "blue", "yellow"])'
+ColourScal ='d3.scaleOrdinal() .domain(["H","UM","LM","L","H","UM","LM",
+"L"]).range(["#7fcdbb", "yellow", "blue", "red",
+   "#7fcdbb", "yellow", "blue", "red"])'
 # Make the Network
 sankey1_income<-sankeyNetwork(Links = data_long_income_1, Nodes = nodes,
                        Source = "IDsource", Target = "IDtarget",
@@ -84,9 +78,6 @@ nodes$group<-as.character(substring(origin, 1, 4)) %>% unique()
 data_long_income_3<-data.frame(source=origin,target=dest,value=movements,IDsource=match(origin, nodes$name)-1,IDtarget=match(dest, nodes$name)-1)
 data_long_income_3$group<-substring(origin, 1, 4)
 data_long_income_3$stage<-'late'
-ColourScal ='d3.scaleOrdinal() .domain(["HI","UP","LM","LO","HII","UPM","LMI",
-"LOI"]).range(["#7fcdbb", "red", "blue", "yellow",
-   "#7fcdbb", "red", "blue", "yellow"])'
 # Make the Network
 sankey3_income<-sankeyNetwork(Links = data_long_income_3, Nodes = nodes,
                               Source = "IDsource", Target = "IDtarget",
@@ -100,7 +91,6 @@ org_c<-ORG_DEST_REGION_DISTRIBUTION$ORG_REGION
 dest_c<-ORG_DEST_REGION_DISTRIBUTION$DEST_REGION
 MOVE_STAGE<-ORG_DEST_REGION_DISTRIBUTION$MOVE_STAGE
 movements<-ORG_DEST_REGION_DISTRIBUTION$n
-dat_move<-data.frame(org_c,dest_c,MOVE_STAGE,movements)
 #######sankey network######
 ###########################
 ORG_DEST1<-filter(ORG_DEST_REGION_DISTRIBUTION,MOVE_STAGE=='early')
