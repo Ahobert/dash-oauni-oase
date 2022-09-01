@@ -1,5 +1,5 @@
 ---
-title: "Mobility flows"
+title: "Mobility flows!"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -8,8 +8,7 @@ output:
     source_code: embed
     fontsize: 16pt
 ---
-
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r setup}
 library(knitr)
 library(kableExtra)
 library(flexdashboard)
@@ -58,7 +57,7 @@ sankey2 <- htmlwidgets::prependContent(sankey2_income)
 sankey3 <- htmlwidgets::prependContent(sankey3_income)
 
 
-combineWidgets(ncol=3,width=1200,sankey1,sankey2,sankey3, myComment <- tags$div(
+combineWidgets(ncol=3,width=8500,height=2000,sankey1,sankey2,sankey3, myComment <- tags$div(
     class="text",
     tags$hr(),
     "early career stage"
@@ -75,13 +74,13 @@ combineWidgets(ncol=3,width=1200,sankey1,sankey2,sankey3, myComment <- tags$div(
 
 
 
-
 ```
+
 
 ```{css}
 
 .text {
   height:100%;
-  text-align: center;
+  text-align: left;
 }
 ```

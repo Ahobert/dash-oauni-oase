@@ -14,6 +14,9 @@ library(grid)
 library(gridExtra)
 library(scales)
 library(networkD3)
+lable_size=60
+node_padding=75
+node_Width=50
 myfont="Times New Roman"
 #effect of mobility score and stage on performance
 org_dest_cnt<-read.table("export_origin_dest_flow.csv",header=TRUE,sep=";",quote="\r",dec = ".")
@@ -57,7 +60,7 @@ ColourScal ='d3.scaleOrdinal() .domain(["HI","UP","LM","LO","HII","UPM","LMI",
 sankey1_income<-sankeyNetwork(Links = data_long_income_1, Nodes = nodes,
                        Source = "IDsource", Target = "IDtarget",
                        Value = "value", NodeID = "name",LinkGroup="group",NodeGroup="group",
-                       sinksRight=F,colourScale=ColourScal, nodeWidth=20, fontSize=10, nodePadding=25,margin = list(bottom = 50))
+                       sinksRight=F,colourScale=ColourScal, nodeWidth=node_Width, fontSize=lable_size, nodePadding=node_padding,margin = list(bottom = 50))
 
 origin <- ORG_DEST2$ORG_INCOME
 dest <- paste(ORG_DEST2$DEST_INCOME, " ", sep="")
@@ -71,7 +74,7 @@ data_long_income_2$stage<-'mid'
 sankey2_income<-sankeyNetwork(Links = data_long_income_2, Nodes = nodes,
                               Source = "IDsource", Target = "IDtarget",
                               Value = "value", NodeID = "name",LinkGroup="group",NodeGroup="group",
-                              sinksRight=F,colourScale=ColourScal, nodeWidth=20, fontSize=10, nodePadding=25,margin = list(bottom = 50),width = "100%")
+                              sinksRight=F,colourScale=ColourScal, nodeWidth=node_Width, fontSize=lable_size, nodePadding=node_padding,margin = list(bottom = 50),width = "100%")
 
 origin <- ORG_DEST3$ORG_INCOME
 dest <- paste(ORG_DEST3$DEST_INCOME, " ", sep="")
@@ -88,7 +91,7 @@ ColourScal ='d3.scaleOrdinal() .domain(["HI","UP","LM","LO","HII","UPM","LMI",
 sankey3_income<-sankeyNetwork(Links = data_long_income_3, Nodes = nodes,
                               Source = "IDsource", Target = "IDtarget",
                               Value = "value", NodeID = "name",LinkGroup="group",NodeGroup="group",
-                              sinksRight=F,colourScale=ColourScal, nodeWidth=20, fontSize=10, nodePadding=25,margin = list(bottom = 50))
+                              sinksRight=F,colourScale=ColourScal, nodeWidth=node_Width, fontSize=lable_size, nodePadding=node_padding,margin = list(bottom = 50))
 
 ###Mobility flow regions#####
 ORG_DEST_REGION_DISTRIBUTION<-org_dest_cnt %>% group_by(ORG_REGION,DEST_REGION,MOVE_STAGE) %>% count()
