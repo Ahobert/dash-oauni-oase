@@ -1,5 +1,6 @@
 ---
-title: "Distribution of the publishing model of investigated articles from hybrid journals by country's income level of corresponding authors"
+title: "Publishing model in hybrid journals "
+subtitle: "Distribution of the publishing model of investigated articles from hybrid journals by the income level of the corresponding authors' countries"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns

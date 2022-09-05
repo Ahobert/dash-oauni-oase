@@ -1,5 +1,6 @@
 ---
-title: "Business model of journals in Springer Nature"
+title: "Business models"
+subtitle: "of journals in Springer Nature"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns

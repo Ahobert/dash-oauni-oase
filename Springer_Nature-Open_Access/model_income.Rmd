@@ -1,5 +1,6 @@
 ---
-title: "Distribution of the articles' publishing model by country's income level of corresponding authors"
+title: "Publishing model by income level"
+subtitle: "Distribution of the article's publishing model by the income level of the corresponding author's country"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns

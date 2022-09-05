@@ -1,5 +1,6 @@
 ---
-title: "Percentage of highly cited papers among fields, genders, model and country (grouped by their income level) of  corresponding authors"
+title: "Citation analysis"
+subtitle: "Percentage of highly cited papers among fields, gender, publishing model and country (grouped by their income level) of corresponding authors"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
