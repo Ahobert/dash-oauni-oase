@@ -14,9 +14,9 @@ library(grid)
 library(gridExtra)
 library(scales)
 library(networkD3)
-lable_size=100
-node_padding=75
-node_Width=50
+lable_size=20
+node_padding=15
+node_Width=10
 myfont="Times New Roman"
 #effect of mobility score and stage on performance
 org_dest_cnt<-read.table("export_origin_dest_flow.csv",header=TRUE,sep=";",quote="\r",dec = ".")

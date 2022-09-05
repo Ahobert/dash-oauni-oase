@@ -57,7 +57,7 @@ sankey2 <- htmlwidgets::prependContent(sankey2_income)
 sankey3 <- htmlwidgets::prependContent(sankey3_income)
 
 
-combineWidgets(ncol=3,width=8500,height=2000,sankey1,sankey2,sankey3, myComment <- tags$div(
+combineWidgets(ncol=3,width=2000,sankey1,sankey2,sankey3, myComment <- tags$div(
     class="text",
     tags$hr(),
     "early career stage"
@@ -81,6 +81,6 @@ combineWidgets(ncol=3,width=8500,height=2000,sankey1,sankey2,sankey3, myComment 
 
 .text {
   height:100%;
-  text-align: left;
+  text-align: center;
 }
 ```
