@@ -14,7 +14,7 @@ output:
 knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 ```
 
-```{js}
+```{js include = FALSE}
 function filter_default() {
     var select_field=document.getElementById("FIELD-filter");
     select_field.selectedIndex = "0";

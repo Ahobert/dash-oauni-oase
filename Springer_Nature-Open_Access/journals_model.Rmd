@@ -10,7 +10,7 @@ output:
     fontsize: 16pt
 ---
 
-```{js}
+```{js include = FALSE}
 function filter_default() {
     document.getElementById("GENDER").getElementsByClassName("selectized") 
 [0].selectize.setValue("both", false);
