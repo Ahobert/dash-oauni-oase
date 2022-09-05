@@ -11,6 +11,8 @@ website:
         href: about.qmd
       - text: "Mobility"
         href: mobility.qmd
+      - text: "OA Nature"
+        href: oa_nature.qmd
     right:
       - text: "Publications"
         href: pubs.qmd
@@ -32,6 +34,14 @@ website:
         - International-Academic-Mobility/country_gender_field.Rmd
         - International-Academic-Mobility/mobility_flow.Rmd
         - International-Academic-Mobility/centrality.Rmd
+    - title: "OA Nature"
+      style: "docked"
+      contents: 
+        - oa_nature.qmd
+        - Springer_Nature-Open_Access/journals_model.Rmd
+        - Springer_Nature-Open_Access/model_income.Rmd
+        - Springer_Nature-Open_Access/hybrid_model_income.Rmd
+        - Springer_Nature-Open_Access/citation.Rmd
 
 format:
   html:

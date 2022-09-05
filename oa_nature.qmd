@@ -1,0 +1,7 @@
+---
+title: "General Info"
+subtitle: "on the study \"Which Factors Drive Open Access Publishing? A Springer Nature Case Study\""
+editor: visual
+---
+
+This study investigated the worldwide participation on OA publishing based on author, country, journal and paper-specific characteristics (see Table 1). Using these features and employing a machine learning classification method, we examined the driving factors of OA publishing and importance of each feature in estimating the publishing model of articles. Data have been selected from articles published by Springer Nature between 2017 and 2018. Using descriptive statistics we present the relationship between APC waiver and discount policies with OA publishing by comparing the publishing model of authors regarding the income level of their affiliation country. Also, we compared the citation impact of these authors' publications.

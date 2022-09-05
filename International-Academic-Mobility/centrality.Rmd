@@ -46,13 +46,13 @@ centralities<-read.table("centralities.csv",header=TRUE,sep=";",quote="\r",dec =
 sharedCentrality<-SharedData$new(centralities)
 
 p_degree<-ggplot(sharedCentrality, aes(x=YEAR-1999, y=score_mean, group=MOBILITY, color=MOBILITY)) + 
-  geom_line(size=0.5) +
-  geom_point(shape=21, size=0.5, fill="red") +
-  geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=1.5,colour="red",
-                position=position_dodge(0.01))+
+  geom_line(size=0.7) +
+  geom_point(shape=21, size=0.1, fill="red") +
+  geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=0.5,colour="red",
+                position=position_dodge(0.01), alpha=0.7)+
   labs( x="Career age", y = "score")+
   theme_classic()+ 
-  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="20",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=20),axis.title  =  element_text( family=myfont,size=20,face = "bold"))+
+  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="16",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=12),axis.title  =  element_text( family=myfont,size=20,face = "bold"))+
   scale_color_manual(values=c('#0000FF','#808080'))+
   facet_wrap( ~ score, ncol=2, scales = "free")+ labs(color = "")
 
@@ -75,3 +75,5 @@ bscols(widths = c(2,2,12,12),
 
 
 ```
+
+This figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. Number of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. Career age has a range of 1 to 16 years (year of first publication and 15 years after that). Using the filter, results of a specific gender can be displayed.

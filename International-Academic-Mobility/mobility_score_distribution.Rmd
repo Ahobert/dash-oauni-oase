@@ -88,3 +88,5 @@ bscols(widths = c(2,2,12,12),
   height: 100%;
 }
 ```
+
+This figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field.

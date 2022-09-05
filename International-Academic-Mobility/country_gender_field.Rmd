@@ -1,6 +1,6 @@
 ---
 title: "Distribution per country"
-subtitle: "Mobility distrubtion among countries (origin), fields and Genders"
+subtitle: "Mobility distrubtion with respect to countries (origin), scientific fields and gender"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -9,6 +9,8 @@ output:
     source_code: embed
     fontsize: 16pt
 ---
+
+The following table show the percentage of mobile researchers and the proportion of female to male mobile researchers by country of origin of the included authors. The filtering options lets you choose a specific scientific field. To sort the table by a certain value, click on the column title and again to change from ascending to descending ordering.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(knitr)

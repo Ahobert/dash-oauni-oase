@@ -17,6 +17,10 @@ function filter_default() {
 $(document).ready(filter_default);
 ```
 
+```{r include = FALSE}
+knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
+```
+
 ```{r setup}
 library(knitr)
 library(kableExtra)
@@ -36,8 +40,8 @@ library(hrbrthemes)
 library(htmltools)
 library(sparkline)
 library(dplyr)
-require(RJDBC)
-require(rJava)
+#require(RJDBC)
+#require(rJava)
 library(grid)
 library(gridExtra)
 library(sizeMat)
@@ -99,10 +103,8 @@ bscols(widths = c(2,10,10),
 
 ```
 
-
 ```{css}
 .crosstalk-input {
   margin-left: 15px;
 }
 ```
-

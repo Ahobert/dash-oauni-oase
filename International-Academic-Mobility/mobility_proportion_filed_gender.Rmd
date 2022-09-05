@@ -1,6 +1,6 @@
 ---
 title: "Mobility per field and gender" 
-subtitle: "Proportion of international mobility per field and gender"
+subtitle: "Proportion of international academic mobility per scientific field and gender of included authors"
 output: html_document
 ---
 
@@ -96,3 +96,5 @@ htmltools::browsable(
   height: 100%;
 }
 ```
+
+This table reports some descriptive statistics about the authors included in this study, according to their gender, mobility status, and scientific field. Using the filtering option you can choose to display only the results of a specific scientific field, or an overview over all fields. The drop down menu within the fields shows the results broken down by gender.

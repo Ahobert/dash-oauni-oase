@@ -8,6 +8,11 @@ output:
     source_code: embed
     fontsize: 16pt
 ---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
+```
+
 ```{r setup}
 library(knitr)
 library(kableExtra)
@@ -75,7 +80,6 @@ combineWidgets(ncol=3,width=2000,sankey1,sankey2,sankey3, myComment <- tags$div(
 
 
 ```
-
 
 ```{css}
 
