@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
+    "href": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
+    "title": "Mobility per field and gender",
+    "section": "",
+    "text": "This table reports some descriptive statistics about the authors included in this study, according to their gender, mobility status, and scientific field. Using the filtering option you can choose to display only the results of a specific scientific field, or an overview over all fields. The drop down menu within the fields shows the results broken down by gender."
+  },
+  {
+    "objectID": "International-Academic-Mobility/country_gender_field.html",
+    "href": "International-Academic-Mobility/country_gender_field.html",
+    "title": "Distribution per country",
+    "section": "",
+    "text": "Filter based on field\n\n\nPhysical Sciences\nHealth Sciences\nLife Sciences\nSocial Sciences\nAll"
+  },
+  {
+    "objectID": "International-Academic-Mobility/mobility_score_distribution.html",
+    "href": "International-Academic-Mobility/mobility_score_distribution.html",
+    "title": "Mobility score",
+    "section": "",
+    "text": "Gender\n\n\n\n\n\n\nscientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
+  },
+  {
+    "objectID": "International-Academic-Mobility/centrality.html",
+    "href": "International-Academic-Mobility/centrality.html",
+    "title": "Centrality scores",
+    "section": "",
+    "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. Number of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. Career age has a range of 1 to 16 years (year of first publication and 15 years after that). Using the filter, results of a specific gender can be displayed."
+  },
+  {
+    "objectID": "oa_nature.html",
+    "href": "oa_nature.html",
+    "title": "General Info",
+    "section": "",
+    "text": "This study investigated the worldwide participation on OA publishing based on author, country, journal and paper-specific characteristics (see Table 1). Using these features and employing a machine learning classification method, we examined the driving factors of OA publishing and importance of each feature in estimating the publishing model of articles. Data have been selected from articles published by Springer Nature between 2017 and 2018. Using descriptive statistics we present the relationship between APC waiver and discount policies with OA publishing by comparing the publishing model of authors regarding the income level of their affiliation country. Also, we compared the citation impact of these authors’ publications."
+  },
+  {
+    "objectID": "mobility.html",
+    "href": "mobility.html",
+    "title": "General Info",
+    "section": "",
+    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The preprint of the study is available via arXiv."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the funding stream",
+    "section": "",
+    "text": "The science sector has been acquiring great significance for more and more areas of our society. This makes it all the more important for the science system to be structured and funded as advantageously as possible. To an increasing degree, quality and productivity issues in science and research are being studied with the help of indicators that yield information about quality, the factors that define it and the factors that bring it about. One aim of the funding line “Quantitative research on the science sector” is to make even better use of such indicators’ usefulness for research on the science system – and, in the process, to develop new indicators where appropriate. Quantitative research in this context is designed to improve our understanding of the science system’s workings, structural dependencies and dynamics. It also considers the impacts of data-based evaluation of research."
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/hybrid_model_income.html",
+    "href": "Springer_Nature-Open_Access/hybrid_model_income.html",
+    "title": "Publishing model in hybrid journals",
+    "section": "",
+    "text": "Filter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/model_income.html",
+    "href": "Springer_Nature-Open_Access/model_income.html",
+    "title": "Publishing model by income level",
+    "section": "",
+    "text": "Filter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/citation.html",
+    "href": "Springer_Nature-Open_Access/citation.html",
+    "title": "Citation analysis",
+    "section": "",
+    "text": "Filter based on field\n\n\nall fields\nHealth Sciences\nLife Sciences\nMultidisciplinary\nPhysical Sciences\nSocial Sciences"
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/journals_model.html",
+    "href": "Springer_Nature-Open_Access/journals_model.html",
+    "title": "Business models",
+    "section": "",
+    "text": "Field"
+  },
+  {
+    "objectID": "pubs.html",
+    "href": "pubs.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Hobert, A., Jahn, N., Mayr, P. et al. Open access uptake in Germany 2010–2018: adoption in a diverse research landscape. Scientometrics 126, 9751–9777 (2021). https://doi.org/10.1007/s11192-021-04002-0\nJahn, Najko, Hobert, Anne and Haupka, Nick. “Entwicklung und Typologie des Datendiensts Unpaywall” Bibliothek Forschung und Praxis, vol. 45, no. 2, 2021, pp. 293-303. https://doi.org/10.1515/bfp-2020-0115\nPreprints:\nMomeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars’ career. Journal of Informetrics, 16(2), 101280. https://doi.org/10.1016/j.joi.2022.101280\nFraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers’ Publishing and Citing Behaviours (v1.0). Zenodo. https://doi.org/10.5281/zenodo.4771576"
+  },
+  {
+    "objectID": "planning-document.html",
+    "href": "planning-document.html",
+    "title": "OASE/OAUNI Dashboard",
+    "section": "",
+    "text": "This is the place to collect some organizing stuff.\n\n\n\nOASE working mainly on the dashboard right away, finish by the end of July\nOAUNI working on dashboard parallely to other stuff, focus on technical aspects for now\nbeginning of July: deadline for submissions to tool market place at OA Tage\nSeptember: OA Tage\n\n\n\n\nThe following can be done already in preparation before a template for the dashboard is ready:\n\nChoosing content:\n\nWhat results from which studies are interesting for practitioners?\nWhat figures shall be displayed?\nWhat interaction options are useful and feasible?\n\nPreparing content:\n\nWrite accompanying text, e.g. description of project, description of study, explanation of figures and underlying data, explanation of interaction options\nGenerate interactive plots or (esp. in case of Nick’s papers) give links to code of figures"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OASE/OAUNI Dashboard",
+    "section": "",
+    "text": "This dashboard serves as an interactive display of important results obtained in the BMBF projects OASE and OAUNI within the funding stream Quantitative research on the science sector."
+  },
+  {
+    "objectID": "oauni.html",
+    "href": "oauni.html",
+    "title": "OAUNI",
+    "section": "",
+    "text": "With its science-reflective and insight-oriented objective, the project differs from initiatives that focus on the infrastructural implementation of OA. The research design induces three areas of work, which will be addressed at Göttingen State and University Library and at the Institute for Interdisciplinary Studies of Science (I²SoS) Bielefeld:\n\nGeneration of university OA publication profiles: Publication data of German universities in the period 2008 to 2017 from the Web of Science database of the Competence Center Bibliometry (WoS-CB) will be supplemented with information on OA status by novel OA detection sources such as Unpaywall Data, which are to be made accessible for bibliometric analyses in a preceding step.\nEstablishment of determinants of university OA profiles: In order to explain the differences in the publication profiles, the influence of organizational factors such as the locally available OA infrastructure or financial support offers and subject-specific factors such as the respective publication culture will be examined. Both factors will be integrated into explanatory models and statistically tested. The corresponding information is again collected from the WoS-CB database in combination with OA detection sources as well as from established data sources in research on science and university reporting.\nValidation of results by means of semi-structured expert interviews: Possible further factors that could influence the OA profile of universities are to be identified in interviews with those responsible for OA at universities. However, this does not serve to expand the focus of the analysis, but rather to assess the research results, that is, to determine the informative value and limits of the quantitative explanatory model.\n\nThe project aims to improve the understanding of current transformation processes in the scientific publication system. It thus also addresses current challenges in the areas of scientific literature supply and public participation in the scientific knowledge process. The results, including the data and analytical routines, will be prepared for specific target groups and, if legally possible, published under an open license. With this, the project also contributes to the development of a methodology and the creation of data resources for a monitoring of the development towards OA publishing."
+  },
+  {
+    "objectID": "oase.html",
+    "href": "oase.html",
+    "title": "OASE",
+    "section": "",
+    "text": "The project studies systematically, longitudinally and comprehensively the structural and author specific influencing factors of OA impact in the social sciences, economics and selected sciences. Traditional and altmetric indicators will test the validity of popular thesis on OA. We focus on most relevant thesis and influencing factors which are discussed in the literature and seek to validate the thesis, quantify the effects, show the causal associations and answer novel problems. We ask: wherein exists the “genuine” OA effect (e.g. increased citation and altmetric rates via accessibility)? In which extent appears the OA effect in difference constellations (combination of structural and author specific properties)?\nThe study bases on articles from the Web of Science databases. These articles will be aggregated differently for the three work packages, e.g. on the author level, and will be analyzed in a bibliometric and altmetric way. In addition, we will perform quantitative surveys, interviews and workshops with authors who have published in OA and/or cited/shared OA to validate the results from the bibliometrics and altmetric studies and to gain deeper insights in the discipline specific OA publishing and OA citing behavior. These insights will flow into a model of transdisciplinary and discipline specific influencing factors. The three work packages divide into structural (WP1) and author specific properties of OA publications (WP2), author surveys (WP3) and assume in a report of the OASE “lessons learned”."
+  }
+]
