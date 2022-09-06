@@ -1,0 +1,19 @@
+---
+title: "General Info"
+subtitle: "on the study \"Open access uptake in Germany 2010–2018: adoption in a diverse research landscape\""
+editor: visual
+---
+
+The article has been published in [Scientometrics](https://link.springer.com/article/10.1007/s11192-021-04002-0).
+
+## Abstract:
+
+This study investigates the development of open access (OA) to journal articles from authors affiliated with German universities and non-university research institutions in the period 2010--2018. Beyond determining the overall share of openly available articles, a systematic classification of distinct categories of OA publishing allowed us to identify different patterns of adoption of OA. Taking into account the particularities of the German research landscape, variations in terms of productivity, OA uptake and approaches to OA are examined at the meso-level and possible explanations are discussed. The development of the OA uptake is analysed for the different research sectors in Germany (universities, non-university research institutes of the Helmholtz Association, Fraunhofer Society, Max Planck Society, Leibniz Association, and government research agencies). Combining several data sources (incl. Web of Science, Unpaywall, an authority file of standardised German affiliation information, the ISSN-Gold-OA 3.0 list, and OpenDOAR), the study confirms the growth of the OA share mirroring the international trend reported in related studies. We found that 45% of all considered articles during the observed period were openly available at the time of analysis. Our findings show that subject-specific repositories are the most prevalent type of OA. However, the percentages for publication in fully OA journals and OA via institutional repositories show similarly steep increases. Enabling data-driven decision-making regarding the implementation of OA in Germany at the institutional level, the results of this study furthermore can serve as a baseline to assess the impact recent transformative agreements with major publishers will likely have on scholarly communication.
+
+## Code and Data availability:
+
+All codes, scripts and database queries used for data gathering and analysis are openly available in a [Github repository](https://github.com/subugoe/oauni). Together with the submitted version, supplementary material is available on [Zenodo](https://doi.org/10.5281/zenodo.3892951).
+
+## Acknowledgements
+
+This work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream "Quantitative research on the science sector", projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B).

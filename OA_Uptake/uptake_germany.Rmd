@@ -1,0 +1,65 @@
+---
+title: "OA Uptake in Germany"
+output: html_document
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  echo = FALSE,
+  fig.width = 6,
+  fig.asp = 0.618,
+  out.width = "90%",
+  fig.align = "center",
+  dpi = 300
+)
+
+library(tidyverse)
+#library(urltools)
+library(cowplot)
+library(colorblindr)
+library(scales)
+library(viridis)
+```
+
+```{r, fig.asp=0.2}
+load(file = "data/pubs_oa_year.rda")
+pp <- ggplot(pubs_oa_year, aes(x = PUBYEAR,
+                           y = n_cat_year,
+                           text = paste(
+                              "<b> Publication year:",
+                              PUBYEAR,
+                              "</b>\n Number of articles:",
+                              n_cat_year),
+                           fill = fct_rev(oa_cat),
+                           group = fct_rev(oa_cat)
+                           )) +
+      geom_area(alpha = 0.8, colour = "white") +
+      scale_fill_manual(
+        values = c("Closed" = "#cccccca0", "Open Access" = "#56b4e9"),
+        name = NULL
+      ) +
+      scale_y_continuous(
+        labels = scales::number_format(big.mark = ","),
+        expand = expansion(mult = c(0, 0.05)),
+        breaks =  scales::extended_breaks()(0:110000)
+      ) +
+      labs(x = "Publication year", y = "Total articles") +
+      theme_minimal_hgrid()
+p <- plotly::ggplotly(pp, tooltip = "text") %>%
+      plotly::style(hoverlabel = list(bgcolor = "white")) %>%
+      plotly::config(toImageButtonOptions = list(format = "svg")) %>%
+      plotly::layout(legend = list(
+#        orientation = "h",
+#        x = 0.4,
+#        y = -0.4
+        x = 1.2,
+        y = 0.8
+      ))
+p
+```
+
+The figure highlights what part of journal articles from German research institutions are published in an Open Access publishing model according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. The tooltip shows the exact numbers per category.

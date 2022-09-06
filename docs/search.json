@@ -110,5 +110,40 @@
     "title": "OASE",
     "section": "",
     "text": "The project studies systematically, longitudinally and comprehensively the structural and author specific influencing factors of OA impact in the social sciences, economics and selected sciences. Traditional and altmetric indicators will test the validity of popular thesis on OA. We focus on most relevant thesis and influencing factors which are discussed in the literature and seek to validate the thesis, quantify the effects, show the causal associations and answer novel problems. We ask: wherein exists the “genuine” OA effect (e.g. increased citation and altmetric rates via accessibility)? In which extent appears the OA effect in difference constellations (combination of structural and author specific properties)?\nThe study bases on articles from the Web of Science databases. These articles will be aggregated differently for the three work packages, e.g. on the author level, and will be analyzed in a bibliometric and altmetric way. In addition, we will perform quantitative surveys, interviews and workshops with authors who have published in OA and/or cited/shared OA to validate the results from the bibliometrics and altmetric studies and to gain deeper insights in the discipline specific OA publishing and OA citing behavior. These insights will flow into a model of transdisciplinary and discipline specific influencing factors. The three work packages divide into structural (WP1) and author specific properties of OA publications (WP2), author surveys (WP3) and assume in a report of the OASE “lessons learned”."
+  },
+  {
+    "objectID": "OA_Uptake/uptake_germany.html",
+    "href": "OA_Uptake/uptake_germany.html",
+    "title": "OA Uptake in Germany",
+    "section": "",
+    "text": "The figure highlights what part of journal articles from German research institutions are published in an Open Access publishing model according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. The tooltip shows the exact numbers per category."
+  },
+  {
+    "objectID": "oa_uptake.html",
+    "href": "oa_uptake.html",
+    "title": "General Info",
+    "section": "",
+    "text": "The article has been published in Scientometrics."
+  },
+  {
+    "objectID": "oa_uptake.html#abstract",
+    "href": "oa_uptake.html#abstract",
+    "title": "General Info",
+    "section": "Abstract:",
+    "text": "Abstract:\nThis study investigates the development of open access (OA) to journal articles from authors affiliated with German universities and non-university research institutions in the period 2010–2018. Beyond determining the overall share of openly available articles, a systematic classification of distinct categories of OA publishing allowed us to identify different patterns of adoption of OA. Taking into account the particularities of the German research landscape, variations in terms of productivity, OA uptake and approaches to OA are examined at the meso-level and possible explanations are discussed. The development of the OA uptake is analysed for the different research sectors in Germany (universities, non-university research institutes of the Helmholtz Association, Fraunhofer Society, Max Planck Society, Leibniz Association, and government research agencies). Combining several data sources (incl. Web of Science, Unpaywall, an authority file of standardised German affiliation information, the ISSN-Gold-OA 3.0 list, and OpenDOAR), the study confirms the growth of the OA share mirroring the international trend reported in related studies. We found that 45% of all considered articles during the observed period were openly available at the time of analysis. Our findings show that subject-specific repositories are the most prevalent type of OA. However, the percentages for publication in fully OA journals and OA via institutional repositories show similarly steep increases. Enabling data-driven decision-making regarding the implementation of OA in Germany at the institutional level, the results of this study furthermore can serve as a baseline to assess the impact recent transformative agreements with major publishers will likely have on scholarly communication."
+  },
+  {
+    "objectID": "oa_uptake.html#code-and-data-availability",
+    "href": "oa_uptake.html#code-and-data-availability",
+    "title": "General Info",
+    "section": "Code and Data availability:",
+    "text": "Code and Data availability:\nAll codes, scripts and database queries used for data gathering and analysis are openly available in a Github repository. Together with the submitted version, supplementary material is available on Zenodo."
+  },
+  {
+    "objectID": "oa_uptake.html#acknowledgements",
+    "href": "oa_uptake.html#acknowledgements",
+    "title": "General Info",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream “Quantitative research on the science sector”, projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B)."
   }
 ]

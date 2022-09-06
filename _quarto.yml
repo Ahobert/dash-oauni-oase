@@ -10,6 +10,8 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
+      - text: "OA Uptake"
+        href: oa_uptake.qmd
       - text: "Mobility"
         href: mobility.qmd
       - text: "OA Nature"
@@ -26,6 +28,11 @@ website:
         - about.qmd
         - oauni.qmd
         - oase.qmd
+    - title: "OA Uptake"
+      style: "docked"
+      contents:
+        - oa_uptake.qmd
+        - OA_Uptake/uptake_germany.Rmd
     - title: "Mobility"
       style: "docked"
       contents: 
