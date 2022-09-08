@@ -23,6 +23,8 @@ function filter_default() {
 $(document).ready(filter_default);
 ```
 
+This table shows the percentage of highly cited articles published by corresponding authors from four country groups for different publishing models among scientific fields and gender. Generally, we observe a higher percentage of highly cited papers for corresponding authors from countries with higher income levels.
+
 ```{r}
 library(crosstalk)
 library(htmltools)
@@ -123,16 +125,10 @@ htmltools::browsable(
 )
   )
 )
-
-
-
-
-
-
 ```
-This figure shows the Percentage of highly cited articles published by corresponding authors from four country groups for different publishing models among scientific fields and genders. Generally, we observe a higher percentage of highly cited papers for corresponding authors from countries with higher income levels.
 
-*authors without gender status are included too.
+\*Authors without gender status are included too.
+
 ```{css}
 .bar-cell {
   display: flex;

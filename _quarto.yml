@@ -14,7 +14,7 @@ website:
         href: oa_uptake.qmd
       - text: "Mobility"
         href: mobility.qmd
-      - text: "OA Nature"
+      - text: "OA in Nature"
         href: oa_nature.qmd
     right:
       - text: "Publications"
@@ -41,7 +41,7 @@ website:
         - International-Academic-Mobility/country_gender_field.Rmd
         - International-Academic-Mobility/mobility_flow.Rmd
         - International-Academic-Mobility/centrality.Rmd
-    - title: "OA Nature"
+    - title: "OA in Nature"
       style: "docked"
       contents: 
         - oa_nature.qmd

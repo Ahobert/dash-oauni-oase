@@ -22,7 +22,9 @@ function filter_default() {
  }
 $(document).ready(filter_default);
 ```
-This table indicates the researchers' publishing behavior (OA against CA) in hybrid journals across four country groups and scientific fields.
+
+This table indicates the researchers' publishing behavior (Open Access against Closed Access) in hybrid journals across four country groups and scientific fields.
+
 ```{r}
 library(crosstalk)
 library(reactable)

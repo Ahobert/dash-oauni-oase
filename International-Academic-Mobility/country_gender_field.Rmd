@@ -10,7 +10,7 @@ output:
     fontsize: 16pt
 ---
 
-The following table show the percentage of mobile researchers and the proportion of female to male mobile researchers by country of origin of the included authors. The filtering options lets you choose a specific scientific field. To sort the table by a certain value, click on the column title and again to change from ascending to descending ordering.
+The following table shows the percentage of mobile researchers and the ratio of female to male mobile researchers by country of origin of the included authors. The filtering option lets you choose a specific scientific field. To sort the table by a certain value, click on the column title and again to change from ascending to descending ordering.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(knitr)

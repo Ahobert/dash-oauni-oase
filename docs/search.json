@@ -39,7 +39,7 @@
     "href": "mobility.html",
     "title": "General Info",
     "section": "",
-    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The paper has been published by ‘Journl Of Informetrics’ and the accepted version is available via arXiv."
+    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The paper has been published by ‘Journal Of Informetrics’. Preprint and accepted version are available via arXiv."
   },
   {
     "objectID": "about.html",
@@ -53,7 +53,7 @@
     "href": "Springer_Nature-Open_Access/hybrid_model_income.html",
     "title": "Publishing model in hybrid journals",
     "section": "",
-    "text": "This table indicates the researchers’ publishing behavior (OA against CA) in hybrid journals across four country groups and scientific fields.\n\n\n\n\n\nFilter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+    "text": "This table indicates the researchers’ publishing behavior (Open Access against Closed Access) in hybrid journals across four country groups and scientific fields.\n\n\n\n\n\nFilter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
   },
   {
     "objectID": "Springer_Nature-Open_Access/model_income.html",
@@ -67,7 +67,7 @@
     "href": "Springer_Nature-Open_Access/citation.html",
     "title": "Citation analysis",
     "section": "",
-    "text": "This figure shows the Percentage of highly cited articles published by corresponding authors from four country groups for different publishing models among scientific fields and genders. Generally, we observe a higher percentage of highly cited papers for corresponding authors from countries with higher income levels.\n*authors without gender status are included too."
+    "text": "Filter based on field\n\n\nall fields\nHealth Sciences\nLife Sciences\nMultidisciplinary\nPhysical Sciences\nSocial Sciences\n\n\n\n\n\n\n\n*Authors without gender status are included too."
   },
   {
     "objectID": "Springer_Nature-Open_Access/journals_model.html",
