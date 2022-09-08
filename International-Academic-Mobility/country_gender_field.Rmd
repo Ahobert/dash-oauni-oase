@@ -14,21 +14,9 @@ The following table show the percentage of mobile researchers and the proportion
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(knitr)
-library(kableExtra)
-library(flexdashboard)
-library(WDI)
-library(tidyverse)
-library(plotly)
 library(crosstalk)
-library(ggthemes)
-library(DT)
-library(scales)
-
 library(reactable)
-library(lubridate)
-library(hrbrthemes)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 
 
@@ -55,12 +43,12 @@ htmltools::browsable(
   origin_country_distrubtion_all,elementId = "field-filter-table",
   columns = list(
     MAIN_FIELD = colDef(show = FALSE),
-    ORIGIN_COUNTRY =colDef(name="origin country"),
-    ntotal  = colDef(name = "#total researchers",format = colFormat( separators = TRUE)),
-    n_men  = colDef(name = "#total male researchers",format = colFormat( separators = TRUE)),
-    n_women  = colDef(name = "#total female researchers",format = colFormat( separators = TRUE)),
-    womenTomenmobile= colDef(name="proportion of female to male mobile researchers"),
-    mobile_percent = colDef( name = "mobility percentage",
+    ORIGIN_COUNTRY =colDef(name="Country of origin"),
+    ntotal  = colDef(name = "Total researchers",format = colFormat( separators = TRUE, locales = "en-US")),
+    n_men  = colDef(name = "Total male researchers",format = colFormat( separators = TRUE, locales = "en-US")),
+    n_women  = colDef(name = "Total female researchers",format = colFormat( separators = TRUE, locales = "en-US")),
+    womenTomenmobile= colDef(name="Proportion of female to male mobile researchers"),
+    mobile_percent = colDef( name = "Mobility percentage",
       cell = function(value){
             width <- paste0(value*100, "%")
             value <- format(value, big.mark = ",")

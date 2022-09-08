@@ -22,21 +22,9 @@ knitr::opts_chunk$set(
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(knitr)
-library(kableExtra)
-library(flexdashboard)
-library(WDI)
-library(tidyverse)
 library(plotly)
 library(crosstalk)
-library(ggthemes)
-library(DT)
-library(scales)
-
-library(reactable)
-library(lubridate)
-library(hrbrthemes)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 
 myfont="Times New Roman"
@@ -49,7 +37,8 @@ shared_m_score <- SharedData$new(m_score_distrubtion_filtered)
 
 #####Distribution of mobile researchers based on mobility score
 g<-ggplot(aes(x=factor(m_score),y=n,fill = GENDER),data=shared_m_score)+
-  geom_bar(position="dodge", stat = "identity")+ theme(legend.position="top",
+  geom_bar(position="dodge", stat = "identity")+
+  labs(x="Mobility score", y="Number of researchers")+ theme(legend.position="top",
         legend.title=element_blank())
 gg<-ggplotly(g)
 bscols(widths = c(2,2,12,12),
@@ -57,7 +46,7 @@ bscols(widths = c(2,2,12,12),
       list(
            filter_select(id = "GENDER", label = "Gender",
                    sharedData = shared_m_score, group = ~ GENDER,multiple=T,allLevels = FALSE),
-           filter_select(id = "MAIN_FIELD", label = "scientific field",
+           filter_select(id = "MAIN_FIELD", label = "Scientific field",
                    sharedData = shared_m_score, group = ~ MAIN_FIELD,multiple=F,allLevels = FALSE)
      ),
       gg)

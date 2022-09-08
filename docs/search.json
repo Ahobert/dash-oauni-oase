@@ -18,28 +18,28 @@
     "href": "International-Academic-Mobility/mobility_score_distribution.html",
     "title": "Mobility score",
     "section": "",
-    "text": "Gender\n\n\n\n\n\n\nscientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
+    "text": "Gender\n\n\n\n\n\n\nScientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
   },
   {
     "objectID": "International-Academic-Mobility/centrality.html",
     "href": "International-Academic-Mobility/centrality.html",
     "title": "Centrality scores",
     "section": "",
-    "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. Number of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. Career age has a range of 1 to 16 years (year of first publication and 15 years after that). Using the filter, results of a specific gender can be displayed."
+    "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed."
   },
   {
     "objectID": "oa_nature.html",
     "href": "oa_nature.html",
     "title": "General Info",
     "section": "",
-    "text": "This study investigated the worldwide participation on OA publishing based on author, country, journal and paper-specific characteristics (see Table 1). Using these features and employing a machine learning classification method, we examined the driving factors of OA publishing and importance of each feature in estimating the publishing model of articles. Data have been selected from articles published by Springer Nature between 2017 and 2018. Using descriptive statistics we present the relationship between APC waiver and discount policies with OA publishing by comparing the publishing model of authors regarding the income level of their affiliation country. Also, we compared the citation impact of these authors’ publications."
+    "text": "The paper is under review, but a preprint version is available via arxiv: https://arxiv.org/pdf/2208.08221.pdf"
   },
   {
     "objectID": "mobility.html",
     "href": "mobility.html",
     "title": "General Info",
     "section": "",
-    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The preprint of the study is available via arXiv."
+    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The paper has been published by ‘Journl Of Informetrics’ and the accepted version is available via arXiv."
   },
   {
     "objectID": "about.html",
@@ -53,7 +53,7 @@
     "href": "Springer_Nature-Open_Access/hybrid_model_income.html",
     "title": "Publishing model in hybrid journals",
     "section": "",
-    "text": "Filter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+    "text": "This table indicates the researchers’ publishing behavior (OA against CA) in hybrid journals across four country groups and scientific fields.\n\n\n\n\n\nFilter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
   },
   {
     "objectID": "Springer_Nature-Open_Access/model_income.html",
@@ -67,21 +67,21 @@
     "href": "Springer_Nature-Open_Access/citation.html",
     "title": "Citation analysis",
     "section": "",
-    "text": "Filter based on field\n\n\nall fields\nHealth Sciences\nLife Sciences\nMultidisciplinary\nPhysical Sciences\nSocial Sciences"
+    "text": "This figure shows the Percentage of highly cited articles published by corresponding authors from four country groups for different publishing models among scientific fields and genders. Generally, we observe a higher percentage of highly cited papers for corresponding authors from countries with higher income levels.\n*authors without gender status are included too."
   },
   {
     "objectID": "Springer_Nature-Open_Access/journals_model.html",
     "href": "Springer_Nature-Open_Access/journals_model.html",
-    "title": "Business models",
+    "title": "Journals’ business model",
     "section": "",
-    "text": "Field"
+    "text": "These two charts show the journals’ business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field."
   },
   {
     "objectID": "pubs.html",
     "href": "pubs.html",
     "title": "Publications",
     "section": "",
-    "text": "Hobert, A., Jahn, N., Mayr, P. et al. Open access uptake in Germany 2010–2018: adoption in a diverse research landscape. Scientometrics 126, 9751–9777 (2021). https://doi.org/10.1007/s11192-021-04002-0\nJahn, Najko, Hobert, Anne and Haupka, Nick. “Entwicklung und Typologie des Datendiensts Unpaywall” Bibliothek Forschung und Praxis, vol. 45, no. 2, 2021, pp. 293-303. https://doi.org/10.1515/bfp-2020-0115\nPreprints:\nMomeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars’ career. Journal of Informetrics, 16(2), 101280. https://doi.org/10.1016/j.joi.2022.101280\nFraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers’ Publishing and Citing Behaviours (v1.0). Zenodo. https://doi.org/10.5281/zenodo.4771576"
+    "text": "Hobert, A., Jahn, N., Mayr, P. et al. Open access uptake in Germany 2010–2018: adoption in a diverse research landscape. Scientometrics 126, 9751–9777 (2021). https://doi.org/10.1007/s11192-021-04002-0\nJahn, Najko, Hobert, Anne and Haupka, Nick. “Entwicklung und Typologie des Datendiensts Unpaywall” Bibliothek Forschung und Praxis, vol. 45, no. 2, 2021, pp. 293-303. https://doi.org/10.1515/bfp-2020-0115\nMomeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars’ career. Journal of Informetrics, 16(2), 101280. (2022) https://doi.org/10.1016/j.joi.2022.101280\nPreprints:\nMomeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. https://arxiv.org/pdf/2208.08221.pdf\nFraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers’ Publishing and Citing Behaviours (v1.0). Zenodo. https://doi.org/10.5281/zenodo.4771576"
   },
   {
     "objectID": "planning-document.html",
@@ -145,5 +145,12 @@
     "title": "General Info",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThis work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream “Quantitative research on the science sector”, projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B)."
+  },
+  {
+    "objectID": "International-Academic-Mobility/mobility_flow.html",
+    "href": "International-Academic-Mobility/mobility_flow.html",
+    "title": "Mobility flows",
+    "section": "",
+    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels. * H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
   }
 ]

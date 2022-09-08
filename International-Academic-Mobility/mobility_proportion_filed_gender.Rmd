@@ -11,11 +11,7 @@ knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 ```{r}
 library(crosstalk)
 library(reactable)
-library(lubridate)
-library(hrbrthemes)
-library(tidyverse)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 
 data1<-read.table("table2_.csv",header=TRUE,sep=",",quote="\r",dec = ".")
@@ -42,9 +38,11 @@ htmltools::browsable(
   data,elementId = "cars-filter-table",
   groupBy = "MAIN_FIELD",
   columns = list(
-    mobile = colDef(aggregate = "sum",format = colFormat( separators = TRUE)),
-    nonmobile = colDef(aggregate = "sum",format = colFormat( separators = TRUE)),
-    percent_mobile = colDef(
+    MAIN_FIELD = colDef(name="Field"),
+    gender=colDef(name="Gender"),
+    mobile = colDef(name="Mobile",aggregate = "sum",format = colFormat( separators = TRUE, locales = "en-US")),
+    nonmobile = colDef(name="Non-mobile",aggregate = "sum",format = colFormat( separators = TRUE, locales = "en-US")),
+    percent_mobile = colDef(name = "Mobility percentage",
       # Calculate the aggregate Avg.Price as `sum(Price) / sum(Units)`
       aggregate = JS("function(values, rows) {
         let totalmobile = 0
@@ -62,7 +60,7 @@ htmltools::browsable(
             bar <- div(style = list(background = "#00bfc4", width = width, height = "16px"))
             chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
             div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
-        },format = colFormat(percent = TRUE, digits = 1))
+        },format = colFormat(percent = TRUE, digits = 1, locales = "en-US"))
   )
 )
   )

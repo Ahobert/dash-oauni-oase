@@ -20,22 +20,10 @@ $(document).ready(filter_default);
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(knitr)
-library(kableExtra)
-library(flexdashboard)
-library(WDI)
-library(tidyverse)
 library(plotly)
 library(crosstalk)
-library(ggthemes)
-library(DT)
-library(scales)
-library(manipulateWidget); 
 
-library(reactable)
-library(lubridate)
-library(hrbrthemes)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 
 myfont="Times New Roman"
@@ -50,9 +38,9 @@ p_degree<-ggplot(sharedCentrality, aes(x=YEAR-1999, y=score_mean, group=MOBILITY
   geom_point(shape=21, size=0.1, fill="red") +
   geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=0.5,colour="red",
                 position=position_dodge(0.01), alpha=0.7)+
-  labs( x="Career age", y = "score")+
+  labs( x="Career age", y = "Score")+
   theme_classic()+ 
-  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="16",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=12),axis.title  =  element_text( family=myfont,size=20,face = "bold"))+
+  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="16",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=12),axis.title  =  element_text( family=myfont,size=20,face = "bold"),plot.margin = margin(1,1,1.5,1.2, "cm"))+
   scale_color_manual(values=c('#0000FF','#808080'))+
   facet_wrap( ~ score, ncol=2, scales = "free")+ labs(color = "")
 
@@ -76,4 +64,4 @@ bscols(widths = c(2,2,12,12),
 
 ```
 
-This figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. Number of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. Career age has a range of 1 to 16 years (year of first publication and 15 years after that). Using the filter, results of a specific gender can be displayed.
+This figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed.

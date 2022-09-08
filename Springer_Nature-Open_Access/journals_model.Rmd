@@ -1,5 +1,5 @@
 ---
-title: "Business models"
+title: "Journals' business model"
 subtitle: "of journals in Springer Nature"
 output:
   flexdashboard::flex_dashboard:
@@ -24,46 +24,24 @@ knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 
 ```{r setup}
 library(knitr)
-library(kableExtra)
-library(flexdashboard)
-library(WDI)
-library(tidyverse)
 library(plotly)
 library(crosstalk)
-library(ggthemes)
-library(DT)
-library(scales)
-library(manipulateWidget); 
-
-library(reactable)
-library(lubridate)
-library(hrbrthemes)
 library(htmltools)
-library(sparkline)
 library(dplyr)
-#require(RJDBC)
-#require(rJava)
-library(grid)
-library(gridExtra)
-library(sizeMat)
-library(psych) 
-library(extrafont)
-library(ggplot2)
 
 myfont="Times New Roman"
 knitr::opts_chunk$set(echo = FALSE)
 
-#source("C:/Users/momenifi/Dropbox/OASE/waiver/qss/plots.R",local = knitr::knit_global())
 journal_model_field<-read.table("sn_journal_model_fied.csv",header=TRUE,sep=",",quote="\r",dec = ".")
 journal_model_all<-read.table("sn_journal_model.csv",header=TRUE,sep=",",quote="\r",dec = ".")
 sharedJournal_model_all<-SharedData$new(journal_model_all)
 colors=c("grey","#C08DDF", "#FFD700","red")
 plt_all<-plot_ly(data=journal_model_all,labels=~Model, values=~NUM_JOURNALS, type="pie",textinfo = "value",marker = list(colors = colors)) %>% 
     layout(title = list(text='<b>Distrubtion of all journals by business model</b>',font=list(
-      size = 10
+      size = 16
       )),
-      legend = list(font = list(size=10)),
-           width = 300, height = 300,
+      legend = list(font = list(size=16)),
+           width = 405, height = 405,
            xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
            yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
@@ -76,31 +54,25 @@ plt_field_journals<-
   theme_minimal()+
   labs(x="Scientific fields", y="Number of journals",#,
        caption = "(b)")+#"Percentage of articles published in journals 3 models across four groups of countries") +
-  theme( text = element_text(family=myfont,size=24),
+  theme( text = element_text(family=myfont,size=16),
          axis.title.x=element_blank(),
          axis.title = element_text(face="bold"),
          plot.caption = element_text(hjust = 0),
          legend.title=element_text(face = "bold"),
          legend.text= element_text(face="plain"),
          axis.text  =  element_text( family=myfont,face = "bold"),
-         axis.text.x=element_text(angle = 0))
+         axis.text.x=element_blank())
 
 
 
 ply_field_journals<-ggplotly(plt_field_journals,height=400)
 
-bscols(widths = c(2,10,10),
-       list(
-         filter_select(id = "FIELD", label = "Field",
+bscols(widths = c(10,10,10),
+       list(plt_all,
+         filter_select(id = "FIELD", label = "Filter based on field",
                        sharedData = sharedJournal_model_field, group = ~ FIELD,multiple=FALSE,allLevels = FALSE)
-       ),plt_all,ply_field_journals
+       ),ply_field_journals
        )
-  
-  
-
-
-
-
 
 ```
 
@@ -109,3 +81,4 @@ bscols(widths = c(2,10,10),
   margin-left: 15px;
 }
 ```
+These two charts show the journals' business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field.

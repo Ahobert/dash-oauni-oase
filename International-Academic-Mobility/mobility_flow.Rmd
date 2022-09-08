@@ -1,5 +1,6 @@
 ---
-title: "Mobility flows!"
+title: "Mobility flows"
+subtitle: "within four country groups based on their income level"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -15,21 +16,7 @@ knitr::opts_chunk$set(echo=FALSE,warning=FALSE,message=FALSE)
 
 ```{r setup}
 library(knitr)
-library(kableExtra)
-library(flexdashboard)
-library(WDI)
-library(tidyverse)
-library(plotly)
-library(crosstalk)
-library(ggthemes)
-library(DT)
-library(scales)
-
-library(reactable)
-library(lubridate)
-library(hrbrthemes)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 library(manipulateWidget)
 
@@ -88,3 +75,5 @@ combineWidgets(ncol=3,width=3*500,height=800,sankey1,sankey2,sankey3, myComment 
   text-align: center;
 }
 ```
+This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country.  The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels.
+* H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level.

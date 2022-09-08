@@ -19,7 +19,6 @@ website:
     right:
       - text: "Publications"
         href: pubs.qmd
-        
   sidebar: 
     - title: "Home"
     - title: "About"

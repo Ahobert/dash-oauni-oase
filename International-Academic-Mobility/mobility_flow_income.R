@@ -1,19 +1,7 @@
-library( magrittr )
-library( dplyr )
-library("reshape2")
-library( tidyr )
-library( DataCombine )
-library( circlize )
-require(ggplot2)
+
 library(tidyverse)
-library(viridis)
-library(patchwork)
-library(hrbrthemes)
-library(extrafont)
-library(grid)
-library(gridExtra)
-library(scales)
 library(networkD3)
+
 lable_size=20
 node_padding=15
 node_Width=10

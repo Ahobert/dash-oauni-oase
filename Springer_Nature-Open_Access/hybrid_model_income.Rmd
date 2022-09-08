@@ -22,15 +22,11 @@ function filter_default() {
  }
 $(document).ready(filter_default);
 ```
-
+This table indicates the researchers' publishing behavior (OA against CA) in hybrid journals across four country groups and scientific fields.
 ```{r}
 library(crosstalk)
 library(reactable)
-library(lubridate)
-library(hrbrthemes)
-library(tidyverse)
 library(htmltools)
-library(sparkline)
 library(dplyr)
 
 hybrid_income_model_field_gender1<-read.table("hybrid_income_gender_field_model.csv",header=TRUE,sep=",",quote="\r",dec = ".")
@@ -55,12 +51,12 @@ htmltools::browsable(
   hybrid_income_model_field_gender,elementId = "filter-table",
   groupBy = "INCOME_GROUP",
   columns = list(
-    INCOME_GROUP = colDef(name="income level",show=T),
-    ntotal_gender = colDef(name="number of all corresponding authors",show=T,
+    INCOME_GROUP = colDef(name="Income level",show=T),
+    ntotal_gender = colDef(name="Number of all corresponding authors",show=T,
                            aggregate = "sum",format = colFormat( separators = TRUE)),
-    n_men = colDef(name="number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
-    n_women = colDef(name="number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
-    Model = colDef(name="publishing model",show = T,
+    n_men = colDef(name="Number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
+    n_women = colDef(name="Number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
+    Model = colDef(name="Publishing model",show = T,
       style = function(value) {
         color = "black"
         if (value == "Open Access") {
@@ -72,7 +68,7 @@ htmltools::browsable(
             } 
         list(color = color)
       }),
-    percent_model = colDef(show=T,name="percentage of articles in this model",
+    percent_model = colDef(show=T,name="Percentage of articles in this model",
       cell = function(value,index){
             color = "black"
             if (hybrid_income_model_field_gender$Model[index] == "Open Access") {

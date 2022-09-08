@@ -25,12 +25,8 @@ $(document).ready(filter_default);
 
 ```{r}
 library(crosstalk)
-library(reactable)
-library(lubridate)
-library(hrbrthemes)
-library(tidyverse)
 library(htmltools)
-library(sparkline)
+library(reactable)
 library(dplyr)
 
 income_field_gender_citation1<-read.table("income_all_fileds_gender_citation.csv",header=TRUE,sep=",",quote="\r",dec = ".")
@@ -55,8 +51,8 @@ htmltools::browsable(
   income_field_gender_citation,elementId = "filter-table",
   groupBy = "INCOME_GROUP",
   columns = list(
-    INCOME_GROUP = colDef(name="income level",show=T),
-    Model = colDef(name="publishing model",show = T,
+    INCOME_GROUP = colDef(name="Income level",show=T),
+    Model = colDef(name="Publishing model",show = T,
       style = function(value) {
         if (value == "Gold Open Access") {
               color <- "#feb24c"
@@ -69,7 +65,7 @@ htmltools::browsable(
             }
         list(color = color)
       }),
-    percentage_men = colDef(show=T,name="percentage of highly cited articles among men",
+    percentage_men = colDef(show=T,name="Percentage of highly cited articles among men",
       cell = function(value,index){
             if (income_field_gender_citation$Model[index] == "Gold Open Access") {
               color <- "#feb24c"
@@ -87,7 +83,7 @@ htmltools::browsable(
             chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
             div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
         },format = colFormat(percent = TRUE, digits = 1)),
-    percentage_women = colDef(show=T,name="percentage of highly cited articles among women",
+    percentage_women = colDef(show=T,name="Percentage of highly cited articles among women",
       cell = function(value,index){
             if (income_field_gender_citation$Model[index] == "Gold Open Access") {
               color <- "#feb24c"
@@ -105,7 +101,7 @@ htmltools::browsable(
             chart <- div(style = list(flexGrow = 1, marginLeft = "8px", background = "#e1e1e1"), bar)
             div(style = list(display = "flex", alignItems = "center"),span(class = "number", width), chart)
         },format = colFormat(percent = TRUE, digits = 1)),
-    Percentage_totalgender = colDef(show=T,name="percentage of highly cited articles among all researchers (authors without gender status are included too)",
+    Percentage_totalgender = colDef(show=T,name="Percentage of highly cited articles among all researchers*",
       cell = function(value,index){
             if (income_field_gender_citation$Model[index] == "Gold Open Access") {
               color <- "#feb24c"
@@ -134,7 +130,9 @@ htmltools::browsable(
 
 
 ```
+This figure shows the Percentage of highly cited articles published by corresponding authors from four country groups for different publishing models among scientific fields and genders. Generally, we observe a higher percentage of highly cited papers for corresponding authors from countries with higher income levels.
 
+*authors without gender status are included too.
 ```{css}
 .bar-cell {
   display: flex;
