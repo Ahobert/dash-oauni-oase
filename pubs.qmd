@@ -9,10 +9,15 @@ Hobert, A., Jahn, N., Mayr, P. *et al.* Open access uptake in Germany 2010--2018
 
 Jahn, Najko, Hobert, Anne and Haupka, Nick. "Entwicklung und Typologie des Datendiensts Unpaywall" *Bibliothek Forschung und Praxis*, vol. 45, no. 2, 2021, pp. 293-303. <https://doi.org/10.1515/bfp-2020-0115>
 
-Momeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars' career. *Journal of Informetrics*, 16(2), 101280. (2022) <https://doi.org/10.1016/j.joi.2022.101280>
+Momeni, F., Mayr, P., Fraser, N., & Peters, I. (2021). What happens when a journal converts to open access? A bibliometric analysis. Scientometrics, 126(12), 9811-9827.
+
+Momeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars' career. *Journal of Informetrics*, 16(2), 101280. <https://doi.org/10.1016/j.joi.2022.101280>
 
 Preprints:
 
-Momeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. <https://arxiv.org/pdf/2208.08221.pdf>
 
 Fraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers' Publishing and Citing Behaviours (v1.0). Zenodo. <https://doi.org/10.5281/zenodo.4771576>
+
+Momeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. <https://arxiv.org/pdf/2208.08221.pdf>
+
+Momeni, F., Mayr, P., & Dietze, S. (2022). How can I improve my scientific impact? The most influential factors in predicting the h-index. arXiv preprint arXiv:2207.09655. <https://arxiv.org/pdf/2208.08221.pdf

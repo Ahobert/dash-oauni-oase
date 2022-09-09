@@ -23,7 +23,6 @@ library(dplyr)
 myfont="Times New Roman"
 knitr::opts_chunk$set(echo = FALSE)
 
-
 origin_country_distrubtion_all<-read.table("data_country.csv",header=TRUE,sep=";",quote="\r",dec = ".")
 
 
@@ -34,7 +33,8 @@ htmltools::browsable(
       tags$select(
         id = "MAIN_FIELD-filter",
         onchange = "Reactable.setFilter('field-filter-table', 'MAIN_FIELD', this.value)",
-        lapply(unique(origin_country_distrubtion_all$MAIN_FIELD), tags$option)
+                  tags$option(value = "", "All"),
+                  lapply(unique(origin_country_distrubtion_all$MAIN_FIELD), tags$option)
       )
     ),
     tags$hr("aria-hidden" = "false"),

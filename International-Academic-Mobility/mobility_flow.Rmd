@@ -75,5 +75,6 @@ combineWidgets(ncol=3,width=3*500,height=800,sankey1,sankey2,sankey3, myComment 
   text-align: center;
 }
 ```
-This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country.  The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels.
+This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.
+
 * H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level.

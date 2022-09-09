@@ -81,4 +81,4 @@ bscols(widths = c(10,10,10),
   margin-left: 15px;
 }
 ```
-These two charts show the journals' business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field.
+These two charts show the journals' business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field (each bar indicates the number of journals for each model in the filtered field).

@@ -49,15 +49,14 @@ htmltools::browsable(
     tags$hr("aria-hidden" = "false"),
 
     reactable(
-      defaultColDef = colDef(show = F),
+      defaultColDef = colDef(show = F,align = "center"),
   hybrid_income_model_field_gender,elementId = "filter-table",
   groupBy = "INCOME_GROUP",
   columns = list(
     INCOME_GROUP = colDef(name="Income level",show=T),
-    ntotal_gender = colDef(name="Number of all corresponding authors",show=T,
-                           aggregate = "sum",format = colFormat( separators = TRUE)),
-    n_men = colDef(name="Number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
-    n_women = colDef(name="Number of male corresponding authors",show=T,aggregate = "sum",format = colFormat( separators = TRUE)),
+    ntotal_gender = colDef(name="Number of all corresponding authors",show=T,minWidth = 130,aggregate = "sum",format = colFormat( separators = TRUE)),
+    n_men = colDef(name="Number of male corresponding authors",show=T,minWidth = 130,aggregate = "sum",format = colFormat( separators = TRUE)),
+    n_women = colDef(name="Number of male corresponding authors",show=T,minWidth = 130,aggregate = "sum",format = colFormat( separators = TRUE)),
     Model = colDef(name="Publishing model",show = T,
       style = function(value) {
         color = "black"

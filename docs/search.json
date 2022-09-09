@@ -11,21 +11,21 @@
     "href": "International-Academic-Mobility/country_gender_field.html",
     "title": "Distribution per country",
     "section": "",
-    "text": "Filter based on field\n\n\nPhysical Sciences\nHealth Sciences\nLife Sciences\nSocial Sciences\nAll"
+    "text": "Filter based on field\n\n\nAll\nPhysical Sciences\nHealth Sciences\nLife Sciences\nSocial Sciences\nAll"
   },
   {
     "objectID": "International-Academic-Mobility/mobility_score_distribution.html",
     "href": "International-Academic-Mobility/mobility_score_distribution.html",
     "title": "Mobility score",
     "section": "",
-    "text": "Gender\n\n\n\n\n\n\nScientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
+    "text": "Gender\n\n\n\n\n\n\nScientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility scores. The mobility score in this study indicates the frequency of researchers’ movements between countries. We calculated it by counting the number of changes in affiliation countries for each year compared to the last publishing year (more details are available in the paper, section 3.3). The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
   },
   {
     "objectID": "International-Academic-Mobility/centrality.html",
     "href": "International-Academic-Mobility/centrality.html",
     "title": "Centrality scores",
     "section": "",
-    "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed."
+    "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed.\nComparing the centrality of mobile and non-mobile researchers in the co-authorship networks displays the position and role of mobile researchers in these networks. For mobile researchers, we observe a growing trend in degree and coreness by increasing the career age. These two observations suggest that not only mobility increases the social capital of the scholars (degree), but also it helps to position the scholars into the core of the community which would allow them to get better access to highly influential people. In contrast, the lower clustering coefficient of mobile researchers indicates that by increasing their degree, they diversify their co-authors and belong to various communities and thus they act more as bridges between the communities.\nFor more information about the definition of centrality scores , please see the paper, section 3.6."
   },
   {
     "objectID": "oa_nature.html",
@@ -74,14 +74,14 @@
     "href": "Springer_Nature-Open_Access/journals_model.html",
     "title": "Journals’ business model",
     "section": "",
-    "text": "These two charts show the journals’ business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field."
+    "text": "These two charts show the journals’ business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field (each bar indicates the number of journals for each model in the filtered field)."
   },
   {
     "objectID": "pubs.html",
     "href": "pubs.html",
     "title": "Publications",
     "section": "",
-    "text": "Hobert, A., Jahn, N., Mayr, P. et al. Open access uptake in Germany 2010–2018: adoption in a diverse research landscape. Scientometrics 126, 9751–9777 (2021). https://doi.org/10.1007/s11192-021-04002-0\nJahn, Najko, Hobert, Anne and Haupka, Nick. “Entwicklung und Typologie des Datendiensts Unpaywall” Bibliothek Forschung und Praxis, vol. 45, no. 2, 2021, pp. 293-303. https://doi.org/10.1515/bfp-2020-0115\nMomeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars’ career. Journal of Informetrics, 16(2), 101280. (2022) https://doi.org/10.1016/j.joi.2022.101280\nPreprints:\nMomeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. https://arxiv.org/pdf/2208.08221.pdf\nFraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers’ Publishing and Citing Behaviours (v1.0). Zenodo. https://doi.org/10.5281/zenodo.4771576"
+    "text": "Hobert, A., Jahn, N., Mayr, P. et al. Open access uptake in Germany 2010–2018: adoption in a diverse research landscape. Scientometrics 126, 9751–9777 (2021). https://doi.org/10.1007/s11192-021-04002-0\nJahn, Najko, Hobert, Anne and Haupka, Nick. “Entwicklung und Typologie des Datendiensts Unpaywall” Bibliothek Forschung und Praxis, vol. 45, no. 2, 2021, pp. 293-303. https://doi.org/10.1515/bfp-2020-0115\nMomeni, F., Mayr, P., Fraser, N., & Peters, I. (2021). What happens when a journal converts to open access? A bibliometric analysis. Scientometrics, 126(12), 9811-9827.\nMomeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many facets of academic mobility and its impact on scholars’ career. Journal of Informetrics, 16(2), 101280. https://doi.org/10.1016/j.joi.2022.101280\nPreprints:\nFraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers’ Publishing and Citing Behaviours (v1.0). Zenodo. https://doi.org/10.5281/zenodo.4771576\nMomeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. https://arxiv.org/pdf/2208.08221.pdf\nMomeni, F., Mayr, P., & Dietze, S. (2022). How can I improve my scientific impact? The most influential factors in predicting the h-index. arXiv preprint arXiv:2207.09655. <https://arxiv.org/pdf/2208.08221.pdf"
   },
   {
     "objectID": "planning-document.html",
@@ -151,6 +151,6 @@
     "href": "International-Academic-Mobility/mobility_flow.html",
     "title": "Mobility flows",
     "section": "",
-    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels. * H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
+    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.\n\nH: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
   }
 ]

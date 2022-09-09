@@ -36,11 +36,13 @@ sharedCentrality<-SharedData$new(centralities)
 p_degree<-ggplot(sharedCentrality, aes(x=YEAR-1999, y=score_mean, group=MOBILITY, color=MOBILITY)) + 
   geom_line(size=0.7) +
   geom_point(shape=21, size=0.1, fill="red") +
-  geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=0.5,colour="red",
-                position=position_dodge(0.01), alpha=0.7)+
+  geom_errorbar(aes(ymin=score_mean -score_se , ymax=score_mean+score_se ), width=0.25,colour="red",
+               position=position_dodge(0.001), alpha=0.7)+
   labs( x="Career age", y = "Score")+
-  theme_classic()+ 
-  theme(legend.title=element_blank(),legend.text=element_text(family=myfont,size="16",face="bold"),legend.position="top",axis.text  =  element_text( family=myfont,size=12),axis.title  =  element_text( family=myfont,size=20,face = "bold"),plot.margin = margin(1,1,1.5,1.2, "cm"))+
+  #theme_classic()+
+  theme_bw()+
+  theme(legend.position = "top",legend.title=element_blank(),legend.text=element_text(family=myfont,size="12",face="bold")
+        ,axis.text  =  element_text( family=myfont,size=12),axis.title  =  element_text( family=myfont,size=16,face = "bold"),plot.margin = margin(1,1,1.5,1.2, "cm"),panel.spacing = unit(4, "lines"))+
   scale_color_manual(values=c('#0000FF','#808080'))+
   facet_wrap( ~ score, ncol=2, scales = "free")+ labs(color = "")
 
@@ -65,3 +67,13 @@ bscols(widths = c(2,2,12,12),
 ```
 
 This figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed.
+
+Comparing the centrality of mobile and non-mobile researchers in the co-authorship networks displays the position and role of mobile researchers in these networks.
+For mobile researchers, we observe a growing trend in degree and coreness by increasing the career age. These two observations suggest that not only mobility increases the social capital of the scholars (degree), but also it helps to position the scholars into the core of the community which would allow
+them to get better access to highly influential people. In contrast, the lower clustering coefficient of mobile researchers indicates that by increasing
+their degree, they diversify their co-authors and belong to various communities and thus they
+act more as bridges between the communities. 
+
+For more information about the definition of centrality scores , please see the <a href="https://doi.org/10.1016/j.joi.2022.101280">paper, section 3.6</a>. 
+
+   
