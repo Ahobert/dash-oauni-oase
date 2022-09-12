@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "oa_uptake.html",
+    "href": "oa_uptake.html",
+    "title": "General Info",
+    "section": "",
+    "text": "The article has been published in Scientometrics."
+  },
+  {
+    "objectID": "oa_uptake.html#abstract",
+    "href": "oa_uptake.html#abstract",
+    "title": "General Info",
+    "section": "Abstract:",
+    "text": "Abstract:\nThis study investigates the development of open access (OA) to journal articles from authors affiliated with German universities and non-university research institutions in the period 2010–2018. Beyond determining the overall share of openly available articles, a systematic classification of distinct categories of OA publishing allowed us to identify different patterns of adoption of OA. Taking into account the particularities of the German research landscape, variations in terms of productivity, OA uptake and approaches to OA are examined at the meso-level and possible explanations are discussed. The development of the OA uptake is analysed for the different research sectors in Germany (universities, non-university research institutes of the Helmholtz Association, Fraunhofer Society, Max Planck Society, Leibniz Association, and government research agencies). Combining several data sources (incl. Web of Science, Unpaywall, an authority file of standardised German affiliation information, the ISSN-Gold-OA 3.0 list, and OpenDOAR), the study confirms the growth of the OA share mirroring the international trend reported in related studies. We found that 45% of all considered articles during the observed period were openly available at the time of analysis. Our findings show that subject-specific repositories are the most prevalent type of OA. However, the percentages for publication in fully OA journals and OA via institutional repositories show similarly steep increases. Enabling data-driven decision-making regarding the implementation of OA in Germany at the institutional level, the results of this study furthermore can serve as a baseline to assess the impact recent transformative agreements with major publishers will likely have on scholarly communication."
+  },
+  {
+    "objectID": "oa_uptake.html#code-and-data-availability",
+    "href": "oa_uptake.html#code-and-data-availability",
+    "title": "General Info",
+    "section": "Code and Data availability:",
+    "text": "Code and Data availability:\nAll codes, scripts and database queries used for data gathering and analysis are openly available in a Github repository. Together with the submitted version, supplementary material is available on Zenodo."
+  },
+  {
+    "objectID": "oa_uptake.html#acknowledgements",
+    "href": "oa_uptake.html#acknowledgements",
+    "title": "General Info",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nThis work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream “Quantitative research on the science sector”, projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B)."
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "blabla",
+    "section": "",
+    "text": "library(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nlibrary(crosstalk)\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks plotly::filter(), stats::filter()\n✖ dplyr::lag()    masks stats::lag()"
+  },
+  {
+    "objectID": "test.html#section-1",
+    "href": "test.html#section-1",
+    "title": "blabla",
+    "section": "",
+    "text": "Filters\n\nlibrary(crosstalk)\n# Notice the 'group = ' argument - this does the trick!\nshared_df1 <- SharedData$new(df1, ~owner, group = \"Choose owner\")\nshared_df2 <- SharedData$new(df2, ~owner, group = \"Choose owner\")\n\nfilter_select(\"owner\", \"Car owner:\", shared_df1, ~owner)\n\n\nCar owner:\n\n\n\n\n\n\n# You don't need this second filter now\n# filter_select(\"owner\", \"Car owner:\", shared_df2, ~ owner)\n\n\n\nPlot1 with plotly\n\nplot_ly(shared_df1, x = ~id, y = ~hp, color = ~owner) %>% add_markers() %>% highlight(\"plotly_click\")\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\nSetting the `off` event (i.e., 'plotly_doubleclick') to match the `on` event (i.e., 'plotly_click'). You can change this default via the `highlight()` function.\n\n\n\n\n\n\n\n\nPlots with plotly\n\nplot_ly(shared_df2, x = ~owner, y = ~freq, color = ~car) %>% group_by(owner) %>% add_bars()\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels"
+  },
+  {
+    "objectID": "test.html#section-2",
+    "href": "test.html#section-2",
+    "title": "blabla",
+    "section": "",
+    "text": "Dataframe 1\n\nDT::datatable(shared_df1)\n\n\n\n\n\n\n\n\nDataframe 2\n\nDT::datatable(shared_df2)"
+  },
+  {
     "objectID": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
     "href": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
     "title": "Mobility per field and gender",
@@ -19,6 +68,13 @@
     "title": "Mobility score",
     "section": "",
     "text": "Gender\n\n\n\n\n\n\nScientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility scores. The mobility score in this study indicates the frequency of researchers’ movements between countries. We calculated it by counting the number of changes in affiliation countries for each year compared to the last publishing year (more details are available in the paper, section 3.3). The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
+  },
+  {
+    "objectID": "International-Academic-Mobility/mobility_flow.html",
+    "href": "International-Academic-Mobility/mobility_flow.html",
+    "title": "Mobility flows",
+    "section": "",
+    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.\n\nH: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
   },
   {
     "objectID": "International-Academic-Mobility/centrality.html",
@@ -91,6 +147,55 @@
     "text": "This is the place to collect some organizing stuff.\n\n\n\nOASE working mainly on the dashboard right away, finish by the end of July\nOAUNI working on dashboard parallely to other stuff, focus on technical aspects for now\nbeginning of July: deadline for submissions to tool market place at OA Tage\nSeptember: OA Tage\n\n\n\n\nThe following can be done already in preparation before a template for the dashboard is ready:\n\nChoosing content:\n\nWhat results from which studies are interesting for practitioners?\nWhat figures shall be displayed?\nWhat interaction options are useful and feasible?\n\nPreparing content:\n\nWrite accompanying text, e.g. description of project, description of study, explanation of figures and underlying data, explanation of interaction options\nGenerate interactive plots or (esp. in case of Nick’s papers) give links to code of figures"
   },
   {
+    "objectID": "OA_Uptake/uptake_germany.html",
+    "href": "OA_Uptake/uptake_germany.html",
+    "title": "OA Uptake in Germany",
+    "section": "",
+    "text": "The figure highlights what part of journal articles from German research institutions are published in an Open Access publishing model according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. The tooltip shows the exact numbers per category."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_fhg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_fhg.html",
+    "title": "Fraunhofer Society",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "title": "Max Planck Society",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "title": "Helmholtz Association",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_lg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_lg.html",
+    "title": "Leibniz Association",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_gra.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_gra.html",
+    "title": "Government Research Agencies",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "title": "Universities",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "OASE/OAUNI Dashboard",
@@ -110,89 +215,5 @@
     "title": "OASE",
     "section": "",
     "text": "The project studies systematically, longitudinally and comprehensively the structural and author specific influencing factors of OA impact in the social sciences, economics and selected sciences. Traditional and altmetric indicators will test the validity of popular thesis on OA. We focus on most relevant thesis and influencing factors which are discussed in the literature and seek to validate the thesis, quantify the effects, show the causal associations and answer novel problems. We ask: wherein exists the “genuine” OA effect (e.g. increased citation and altmetric rates via accessibility)? In which extent appears the OA effect in difference constellations (combination of structural and author specific properties)?\nThe study bases on articles from the Web of Science databases. These articles will be aggregated differently for the three work packages, e.g. on the author level, and will be analyzed in a bibliometric and altmetric way. In addition, we will perform quantitative surveys, interviews and workshops with authors who have published in OA and/or cited/shared OA to validate the results from the bibliometrics and altmetric studies and to gain deeper insights in the discipline specific OA publishing and OA citing behavior. These insights will flow into a model of transdisciplinary and discipline specific influencing factors. The three work packages divide into structural (WP1) and author specific properties of OA publications (WP2), author surveys (WP3) and assume in a report of the OASE “lessons learned”."
-  },
-  {
-    "objectID": "OA_Uptake/uptake_germany.html",
-    "href": "OA_Uptake/uptake_germany.html",
-    "title": "OA Uptake in Germany",
-    "section": "",
-    "text": "The figure highlights what part of journal articles from German research institutions are published in an Open Access publishing model according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. The tooltip shows the exact numbers per category."
-  },
-  {
-    "objectID": "oa_uptake.html",
-    "href": "oa_uptake.html",
-    "title": "General Info",
-    "section": "",
-    "text": "The article has been published in Scientometrics."
-  },
-  {
-    "objectID": "oa_uptake.html#abstract",
-    "href": "oa_uptake.html#abstract",
-    "title": "General Info",
-    "section": "Abstract:",
-    "text": "Abstract:\nThis study investigates the development of open access (OA) to journal articles from authors affiliated with German universities and non-university research institutions in the period 2010–2018. Beyond determining the overall share of openly available articles, a systematic classification of distinct categories of OA publishing allowed us to identify different patterns of adoption of OA. Taking into account the particularities of the German research landscape, variations in terms of productivity, OA uptake and approaches to OA are examined at the meso-level and possible explanations are discussed. The development of the OA uptake is analysed for the different research sectors in Germany (universities, non-university research institutes of the Helmholtz Association, Fraunhofer Society, Max Planck Society, Leibniz Association, and government research agencies). Combining several data sources (incl. Web of Science, Unpaywall, an authority file of standardised German affiliation information, the ISSN-Gold-OA 3.0 list, and OpenDOAR), the study confirms the growth of the OA share mirroring the international trend reported in related studies. We found that 45% of all considered articles during the observed period were openly available at the time of analysis. Our findings show that subject-specific repositories are the most prevalent type of OA. However, the percentages for publication in fully OA journals and OA via institutional repositories show similarly steep increases. Enabling data-driven decision-making regarding the implementation of OA in Germany at the institutional level, the results of this study furthermore can serve as a baseline to assess the impact recent transformative agreements with major publishers will likely have on scholarly communication."
-  },
-  {
-    "objectID": "oa_uptake.html#code-and-data-availability",
-    "href": "oa_uptake.html#code-and-data-availability",
-    "title": "General Info",
-    "section": "Code and Data availability:",
-    "text": "Code and Data availability:\nAll codes, scripts and database queries used for data gathering and analysis are openly available in a Github repository. Together with the submitted version, supplementary material is available on Zenodo."
-  },
-  {
-    "objectID": "oa_uptake.html#acknowledgements",
-    "href": "oa_uptake.html#acknowledgements",
-    "title": "General Info",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nThis work is based on bibliographic data from the Web of Science database of Clarivate Analytics, Philadelphia, PA, USA, and was supported by the German Federal Ministry of Education and Research within the funding stream “Quantitative research on the science sector”, projects OASE (grant number 01PU17005A) and OAUNI (grant numbers 01PU17023A and 01PU17023B)."
-  },
-  {
-    "objectID": "International-Academic-Mobility/mobility_flow.html",
-    "href": "International-Academic-Mobility/mobility_flow.html",
-    "title": "Mobility flows",
-    "section": "",
-    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels. * H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
-  },
-  {
-    "objectID": "test.html",
-    "href": "test.html",
-    "title": "blabla",
-    "section": "",
-    "text": "library(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nlibrary(crosstalk)\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks plotly::filter(), stats::filter()\n✖ dplyr::lag()    masks stats::lag()"
-  },
-  {
-    "objectID": "test.html#section-1",
-    "href": "test.html#section-1",
-    "title": "blabla",
-    "section": "",
-    "text": "Filters\n\nlibrary(crosstalk)\n# Notice the 'group = ' argument - this does the trick!\nshared_df1 <- SharedData$new(df1, ~owner, group = \"Choose owner\")\nshared_df2 <- SharedData$new(df2, ~owner, group = \"Choose owner\")\n\nfilter_select(\"owner\", \"Car owner:\", shared_df1, ~owner)\n\n\nCar owner:\n\n\n\n\n\n\n# You don't need this second filter now\n# filter_select(\"owner\", \"Car owner:\", shared_df2, ~ owner)\n\n\n\nPlot1 with plotly\n\nplot_ly(shared_df1, x = ~id, y = ~hp, color = ~owner) %>% add_markers() %>% highlight(\"plotly_click\")\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\nSetting the `off` event (i.e., 'plotly_doubleclick') to match the `on` event (i.e., 'plotly_click'). You can change this default via the `highlight()` function.\n\n\n\n\n\n\n\n\nPlots with plotly\n\nplot_ly(shared_df2, x = ~owner, y = ~freq, color = ~car) %>% group_by(owner) %>% add_bars()\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels"
-  },
-  {
-    "objectID": "test.html#section-2",
-    "href": "test.html#section-2",
-    "title": "blabla",
-    "section": "",
-    "text": "Dataframe 1\n\nDT::datatable(shared_df1)\n\n\n\n\n\n\n\n\nDataframe 2\n\nDT::datatable(shared_df2)"
-  },
-  {
-    "objectID": "OA_Uptake/scatterplot/scatterplot_uni.html",
-    "href": "OA_Uptake/scatterplot/scatterplot_uni.html",
-    "title": "Universities",
-    "section": "",
-    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
-  },
-  {
-    "objectID": "OA_Uptake/scatterplot/scatterplot_mpg.html",
-    "href": "OA_Uptake/scatterplot/scatterplot_mpg.html",
-    "title": "Max Planck Society",
-    "section": "",
-    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
-  },
-  {
-    "objectID": "OA_Uptake/scatterplot/scatterplot_hg.html",
-    "href": "OA_Uptake/scatterplot/scatterplot_hg.html",
-    "title": "Helmholtz Association",
-    "section": "",
-    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
   }
 ]
