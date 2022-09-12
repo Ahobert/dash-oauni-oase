@@ -78,4 +78,4 @@ bscols(widths = c(2,2,12,12),
 }
 ```
 
-This figure shows the distribution of mobile researchers based on their mobility score. The filtering options above the figure let you choose to show the results of a specific gender or scientific field.
+This figure shows the distribution of mobile researchers based on their mobility scores. The mobility score in this study indicates the frequency of researchers' movements between countries. We calculated it by counting the number of changes in affiliation countries for each year compared to the last publishing year (more details are available in the <a href="https://doi.org/10.1016/j.joi.2022.101280">paper, section 3.3</a>). The filtering options above the figure let you choose to show the results of a specific gender or scientific field.
