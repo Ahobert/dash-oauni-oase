@@ -32,7 +32,7 @@
     "href": "oa_nature.html",
     "title": "General Info",
     "section": "",
-    "text": "The paper is under review, but a preprint version is available via arxiv: https://arxiv.org/pdf/2208.08221.pdf"
+    "text": "The paper is under review, but a preprint version is available via arxiv."
   },
   {
     "objectID": "Unpaywall_BFP/oa_snapshots.html",
@@ -180,5 +180,47 @@
     "title": "OAUNI",
     "section": "",
     "text": "With its science-reflective and insight-oriented objective, the project differs from initiatives that focus on the infrastructural implementation of OA. The research design induces three areas of work, which will be addressed at Göttingen State and University Library and at the Institute for Interdisciplinary Studies of Science (I²SoS) Bielefeld:\n\nGeneration of university OA publication profiles: Publication data of German universities in the period 2008 to 2017 from the Web of Science database of the Competence Center Bibliometry (WoS-CB) will be supplemented with information on OA status by novel OA detection sources such as Unpaywall Data, which are to be made accessible for bibliometric analyses in a preceding step.\nEstablishment of determinants of university OA profiles: In order to explain the differences in the publication profiles, the influence of organizational factors such as the locally available OA infrastructure or financial support offers and subject-specific factors such as the respective publication culture will be examined. Both factors will be integrated into explanatory models and statistically tested. The corresponding information is again collected from the WoS-CB database in combination with OA detection sources as well as from established data sources in research on science and university reporting.\nValidation of results by means of semi-structured expert interviews: Possible further factors that could influence the OA profile of universities are to be identified in interviews with those responsible for OA at universities. However, this does not serve to expand the focus of the analysis, but rather to assess the research results, that is, to determine the informative value and limits of the quantitative explanatory model.\n\nThe project aims to improve the understanding of current transformation processes in the scientific publication system. It thus also addresses current challenges in the areas of scientific literature supply and public participation in the scientific knowledge process. The results, including the data and analytical routines, will be prepared for specific target groups and, if legally possible, published under an open license. With this, the project also contributes to the development of a methodology and the creation of data resources for a monitoring of the development towards OA publishing."
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "blabla",
+    "section": "",
+    "text": "library(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nlibrary(crosstalk)\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks plotly::filter(), stats::filter()\n✖ dplyr::lag()    masks stats::lag()"
+  },
+  {
+    "objectID": "test.html#section-1",
+    "href": "test.html#section-1",
+    "title": "blabla",
+    "section": "",
+    "text": "Filters\n\nlibrary(crosstalk)\n# Notice the 'group = ' argument - this does the trick!\nshared_df1 <- SharedData$new(df1, ~owner, group = \"Choose owner\")\nshared_df2 <- SharedData$new(df2, ~owner, group = \"Choose owner\")\n\nfilter_select(\"owner\", \"Car owner:\", shared_df1, ~owner)\n\n\nCar owner:\n\n\n\n\n\n\n# You don't need this second filter now\n# filter_select(\"owner\", \"Car owner:\", shared_df2, ~ owner)\n\n\n\nPlot1 with plotly\n\nplot_ly(shared_df1, x = ~id, y = ~hp, color = ~owner) %>% add_markers() %>% highlight(\"plotly_click\")\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\nSetting the `off` event (i.e., 'plotly_doubleclick') to match the `on` event (i.e., 'plotly_click'). You can change this default via the `highlight()` function.\n\n\n\n\n\n\n\n\nPlots with plotly\n\nplot_ly(shared_df2, x = ~owner, y = ~freq, color = ~car) %>% group_by(owner) %>% add_bars()\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels"
+  },
+  {
+    "objectID": "test.html#section-2",
+    "href": "test.html#section-2",
+    "title": "blabla",
+    "section": "",
+    "text": "Dataframe 1\n\nDT::datatable(shared_df1)\n\n\n\n\n\n\n\n\nDataframe 2\n\nDT::datatable(shared_df2)"
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "title": "Universities",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "title": "Max Planck Society",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "title": "Helmholtz Association",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
   }
 ]

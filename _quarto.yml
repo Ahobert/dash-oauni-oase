@@ -21,7 +21,9 @@ website:
     right:
       - text: "Publications"
         href: pubs.qmd
-  sidebar:
+      - icon: github
+        href: https://github.com/Ahobert/dash-oauni-oase/
+  sidebar: 
     - title: "Home"
     - title: "About"
       style: "docked"
@@ -34,6 +36,14 @@ website:
       contents:
         - oa_uptake.qmd
         - OA_Uptake/uptake_germany.Rmd
+        - section: "OA share vs. productivity"
+          contents:
+            - OA_Uptake/scatterplot/scatterplot_uni.Rmd
+            - OA_Uptake/scatterplot/scatterplot_mpg.Rmd
+            - OA_Uptake/scatterplot/scatterplot_hg.Rmd
+            - OA_Uptake/scatterplot/scatterplot_lg.Rmd
+            - OA_Uptake/scatterplot/scatterplot_fhg.Rmd
+            - OA_Uptake/scatterplot/scatterplot_gra.Rmd
     - title: "Unpaywall BFP"
       style: "docked"
       contents:
