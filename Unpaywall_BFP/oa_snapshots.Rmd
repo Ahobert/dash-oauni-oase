@@ -1,0 +1,17 @@
+---
+title: "Unpaywall Snapshots"
+subtitle: ""
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 14pt
+---
+
+```{r, echo=FALSE, out.width="130%"}
+knitr::include_url("https://oapokeh.herokuapp.com/plot", height="700px")
+```
+
+(Note: It may take a short moment until the plot is displayed.)
