@@ -1,0 +1,71 @@
+---
+title: "Universities"
+output: html_document
+---
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  echo = FALSE,
+  fig.width = 6,
+  fig.asp = 0.618,
+  out.width = "90%",
+  fig.align = "center",
+  dpi = 300
+)
+
+library(tidyverse)
+library(plotly)
+library(crosstalk)
+ library(cowplot)
+ library(colorblindr)
+ library(scales)
+ library(viridis)
+```
+
+```{r}
+## load data
+load("../data/oa_shares_inst_sector.rda")
+source("../helper_scatter.R")
+
+my_sector <- "Universities"
+# my_sector <- "Helmholtz Association"
+# my_sector <- "Max Planck Society"
+# my_sector <- "Leibniz Association"
+# my_sector <- "Fraunhofer Society"
+# my_sector <- "Government Research Agencies"
+
+oa_shares_selected <- oa_shares_inst_sector %>% filter(sector == my_sector)
+#highlight_inst <- oa_shares_inst_sector %>% filter(sector == my_sector)
+
+# ## filter for institutions
+# highlight_inst <- SharedData$new(oa_shares_selected, ~INST_NAME)
+# 
+# p <- scatterplot_oa(highlight_inst)
+# 
+# filter_select("insts", "Highlight institutions:", highlight_inst, ~INST_NAME, multiple = TRUE)
+# 
+# plotly::ggplotly(p, tooltip = "text") %>%
+# plotly::style(hoverlabel = list(bgcolor = "white"), hoveron = "fill") %>%
+# plotly::config(toImageButtonOptions = list(format = "svg"))
+
+ highlight_inst <- SharedData$new(oa_shares_selected, ~INST_NAME, group = "Highlight institutions:")
+ 
+ p <- scatterplot_oa(highlight_inst)
+ 
+ 
+ highlight(
+  plotly::ggplotly(p, tooltip = "text", width = 650, height = 300) %>%
+  plotly::style(hoverlabel = list(bgcolor = "white"), hoveron = "fill") %>%
+  plotly::config(toImageButtonOptions = list(format = "svg")),
+  selectize = TRUE,
+  persistent = TRUE
+ )
+
+
+```
+
+OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector.

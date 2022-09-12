@@ -32,7 +32,7 @@
     "href": "oa_nature.html",
     "title": "General Info",
     "section": "",
-    "text": "The paper is under review, but a preprint version is available via arxiv: https://arxiv.org/pdf/2208.08221.pdf"
+    "text": "The paper is under review, but a preprint version is available via arxiv."
   },
   {
     "objectID": "mobility.html",
@@ -152,5 +152,47 @@
     "title": "Mobility flows",
     "section": "",
     "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highst mobility flow happen between high income level countries. at the later career stage we obverve increasing the number of movement toward countries with lower income levels. * H: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "blabla",
+    "section": "",
+    "text": "library(plotly)\n\nLoading required package: ggplot2\n\n\n\nAttaching package: 'plotly'\n\n\nThe following object is masked from 'package:ggplot2':\n\n    last_plot\n\n\nThe following object is masked from 'package:stats':\n\n    filter\n\n\nThe following object is masked from 'package:graphics':\n\n    layout\n\nlibrary(crosstalk)\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✔ tibble  3.1.7     ✔ dplyr   1.0.9\n✔ tidyr   1.2.0     ✔ stringr 1.4.0\n✔ readr   2.1.2     ✔ forcats 0.5.1\n✔ purrr   0.3.4     \n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks plotly::filter(), stats::filter()\n✖ dplyr::lag()    masks stats::lag()"
+  },
+  {
+    "objectID": "test.html#section-1",
+    "href": "test.html#section-1",
+    "title": "blabla",
+    "section": "",
+    "text": "Filters\n\nlibrary(crosstalk)\n# Notice the 'group = ' argument - this does the trick!\nshared_df1 <- SharedData$new(df1, ~owner, group = \"Choose owner\")\nshared_df2 <- SharedData$new(df2, ~owner, group = \"Choose owner\")\n\nfilter_select(\"owner\", \"Car owner:\", shared_df1, ~owner)\n\n\nCar owner:\n\n\n\n\n\n\n# You don't need this second filter now\n# filter_select(\"owner\", \"Car owner:\", shared_df2, ~ owner)\n\n\n\nPlot1 with plotly\n\nplot_ly(shared_df1, x = ~id, y = ~hp, color = ~owner) %>% add_markers() %>% highlight(\"plotly_click\")\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\n\nSetting the `off` event (i.e., 'plotly_doubleclick') to match the `on` event (i.e., 'plotly_click'). You can change this default via the `highlight()` function.\n\n\n\n\n\n\n\n\nPlots with plotly\n\nplot_ly(shared_df2, x = ~owner, y = ~freq, color = ~car) %>% group_by(owner) %>% add_bars()\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels\n\nWarning in RColorBrewer::brewer.pal(N, \"Set2\"): minimal value for n is 3, returning requested palette with 3 different levels"
+  },
+  {
+    "objectID": "test.html#section-2",
+    "href": "test.html#section-2",
+    "title": "blabla",
+    "section": "",
+    "text": "Dataframe 1\n\nDT::datatable(shared_df1)\n\n\n\n\n\n\n\n\nDataframe 2\n\nDT::datatable(shared_df2)"
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_uni.html",
+    "title": "Universities",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_mpg.html",
+    "title": "Max Planck Society",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
+  },
+  {
+    "objectID": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "href": "OA_Uptake/scatterplot/scatterplot_hg.html",
+    "title": "Helmholtz Association",
+    "section": "",
+    "text": "OA percentages and publication output of German research institutions with at least 100 publications in the observed period from 2010 until 2018, grouped by sectors. The solid gray line is obtained by linear regression within the sector, the shaded gray area are pointwise symmetric 95% t-distribution confidence bands. Dashed lines represent the median values of the OA percentage (red) and the publication output (orange) of the sectors. Specific institutions may be highlighted for the chosen sector."
   }
 ]
