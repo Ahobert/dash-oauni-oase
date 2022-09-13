@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from bokeh.plotting import figure, show, column, row, curdoc
-from bokeh.models import ColumnDataSource, HoverTool, CheckboxGroup, Legend, NumeralTickFormatter
+from bokeh.models import ColumnDataSource, HoverTool, CheckboxGroup, Legend, NumeralTickFormatter, Div
 
 
 df = pd.read_csv('data.csv')
@@ -11,32 +11,32 @@ oa_names = {'bronze': 'Bronze OA',
             'hybrid': 'Hybrid OA',
             'green': 'Green OA',
             'closed': 'Closed OA'}
-           
+
 df['oa_status'] = df['oa_status'].map(oa_names)
 
 snapshot_names = {
-    'apr19': 'Snapshot April 2019',
-    'aug19': 'Snapshot August 2019',
-    'nov19': 'Snapshot November 2019',
-    'feb20': 'Snapshot February 2020',
-    'apr20': 'Snapshot April 2020',
-    'oct20': 'Snapshot October 2020',
-    'feb21': 'Snapshot February 2021',
-    'jul21': 'Snapshot July 2021'
+    'apr19': 'April 2019',
+    'aug19': 'August 2019',
+    'nov19': 'November 2019',
+    'feb20': 'February 2020',
+    'apr20': 'April 2020',
+    'oct20': 'October 2020',
+    'feb21': 'February 2021',
+    'jul21': 'July 2021'
 }
 
 df['snapshot'] = df['snapshot'].map(snapshot_names)
 
 df = df.replace({np.nan: None})
 
-snapshots = ['Snapshot April 2019',
-             'Snapshot August 2019',
-             'Snapshot November 2019',
-             'Snapshot February 2020',
-             'Snapshot April 2020',
-             'Snapshot October 2020',
-             'Snapshot February 2021',
-             'Snapshot July 2021']
+snapshots = ['April 2019',
+             'August 2019',
+             'November 2019',
+             'February 2020',
+             'April 2020',
+             'October 2020',
+             'February 2021',
+             'July 2021']
 
 palette = {'Bronze OA': '#a48300',
            'Gold OA': '#e8d651',
@@ -45,7 +45,7 @@ palette = {'Bronze OA': '#a48300',
            'Closed OA': '#410c4c'}
 
 p = figure(title='',
-           plot_width=650,
+           plot_width=800,
            x_axis_label='Year',
            y_axis_label='OA Share',
            x_range=(2008, 2018),
@@ -57,7 +57,7 @@ p = figure(title='',
                      ('Proportion', '@prop')],
            toolbar_location=None)
 
-checkbox = CheckboxGroup(labels=snapshots, active=[0], width=180, margin=(30, 0, 0, 30))
+checkbox = CheckboxGroup(labels=snapshots, active=[0], width=120, margin=(30, 0, 0, 30))
 
 def checkbox_handler(new):
     updated_snapshot_list = []
@@ -101,14 +101,16 @@ def plot_snapshots(snapshot_list):
                    line_dash=dash_style[i],
                    line_width=2)
 
-plot_snapshots(['Snapshot April 2019'])
+plot_snapshots(['April 2019'])
 
+div = Div(text="""<b>Snapshot</b>""", margin=(15, 0, -20, 30))
+
+p.legend.title = 'OA Status - Snapshot'
 p.legend.click_policy = 'hide'
-
 p.legend.location = 'top_right'
 p.add_layout(p.legend[0], 'right')
 
-layout = row(checkbox, p)
+layout = row(column(div, checkbox), p)
 
 checkbox.on_click(checkbox_handler)
 curdoc().add_root(layout)
