@@ -10,6 +10,8 @@ output:
     fontsize: 16pt
 ---
 
+The following figure shows the occurrence of evidence types in Unpaywall snapshots. The individual snapshots are indicated by a blue bar with a white border. The evidence types are sorted in ascending order of frequency of occurrence.
+
 ````{=html}
 ```{r, echo=FALSE, results='asis'}
 xfun::file_string('plotly_fig.html')
