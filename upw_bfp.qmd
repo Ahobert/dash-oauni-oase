@@ -6,7 +6,7 @@ editor: visual
 
 The article has been published in [Bibliothek Forschung und Praxis](https://www.degruyter.com/document/doi/10.1515/bfp-2020-0115/html).
 
-## Abstract:
+## Abstract
 
 Analyses in the field of open access publishing have become significantly easier with the availability
 of large connected data collections such as Unpaywall. The article examines the development of the database
@@ -14,7 +14,7 @@ and its structure since 2018. A full survey of journal articles from the period 
 share is growing continuously. However, the OA categorisation varies, which raises methodological questions
 in publication monitoring and bibliometric research.
 
-## Snapshot Info:
+## Snapshot Info
 
 The following table shows a general overview of changes in Unpaywall snapshots. For each snapshot, the columns contain information on the indexed publications (here limited to journal articles), information on the OA share, information on the ratio of publications via publishers and repositories (only publications with the attribute is_best=True were taken into account here), innovations in the data schema and a statistical evaluation of the evidence types.
 
