@@ -16,6 +16,8 @@ in publication monitoring and bibliometric research.
 
 ## Snapshot Info:
 
+The following table shows a general overview of changes in Unpaywall snapshots. For each snapshot, the columns contain information on the indexed publications (here limited to journal articles), information on the OA share, information on the ratio of publications via publishers and repositories (only publications with the attribute is_best=True were taken into account here), innovations in the data schema and a statistical evaluation of the evidence types.
+
 | Snapshot | Number of Articles | Open Access Share| Repositories/ Publisher Share | Schema modifications | Number of Evidence types |
 |--------------|-----------|------------|--------------|-----------|------------|
 | March 2018 Snapshot | 27.498.666 | 31,56% | 21,45%/78,55% | | 22 |
