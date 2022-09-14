@@ -36,7 +36,7 @@ source("../helper_scatter.R")
 # my_sector <- "Max Planck Society"
 # my_sector <- "Leibniz Association"
 # my_sector <- "Fraunhofer Society"
- my_sector <- "Government Research Agencies"
+ my_sector <- "Government Research\n Agencies"
 
 oa_shares_selected <- oa_shares_inst_sector %>% filter(sector == my_sector)
 #highlight_inst <- oa_shares_inst_sector %>% filter(sector == my_sector)
