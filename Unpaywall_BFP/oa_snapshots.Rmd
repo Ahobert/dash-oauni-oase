@@ -13,5 +13,6 @@ output:
 ```{r, echo=FALSE, out.width="130%"}
 knitr::include_url("https://oapokeh.herokuapp.com/plot", height="700px")
 ```
+The figure shows the development over time of OA variants according to Unpaywall. Journal articles between 2008 and 2018 that are available as OA according to Unpaywall are considered. Closed OA is not shown for the sake of clarity. Data of a snapshot can be included/excluded in the plot by clicking the checkbox on the left. Different snapshots are distinguished by line type, OA categories by color. Single lines (a specific category for a specific snapshot) can be excluded/included by clicking the associated legend element on the right.
 
 (Note: It may take a short moment until the plot is displayed.)
