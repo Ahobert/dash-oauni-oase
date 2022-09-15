@@ -15,9 +15,14 @@ Momeni, F., Karimi, F., Mayr, P., Peters, I., & Dietze, S. (2022). The many face
 
 Preprints:
 
-
 Fraser, Nicholas, Hobert, Anne, Jahn, Najko, Mayr, Philipp, & Peters, Isabella. (2021). No Deal: Investigating the Influence of Restricted Access to Elsevier Journals on German Researchers' Publishing and Citing Behaviours (v1.0). Zenodo. <https://doi.org/10.5281/zenodo.4771576>
 
 Momeni, F., Dietze, S., Mayr, P., Biesenbender, K., & Peters, I. (2022). Which Factors Drive Open Access Publishing? A Springer Nature Case Study. arXiv preprint arXiv:2208.08221. <https://arxiv.org/pdf/2208.08221.pdf>
 
 Momeni, F., Mayr, P., & Dietze, S. (2022). How can I improve my scientific impact? The most influential factors in predicting the h-index. arXiv preprint arXiv:2207.09655. <https://arxiv.org/pdf/2208.08221.pdf>
+
+Datasets:
+
+Bruns, A., Iravani, E., & Taubert, N. C. (2022). *Open Access-related Infrastructures and Services at German Universities (OARIS)*. Bielefeld University. <https://doi.org/10.4119/unibi/2965623>
+
+Hobert, Anne, Jahn, Najko, Mayr, Philipp, Schmidt, Birgit, & Taubert, Niels. (2020). Open Access Uptake in Germany 2010-18: Adoption in a diverse research landscape. <https://doi.org/10.5281/zenodo.3892951>

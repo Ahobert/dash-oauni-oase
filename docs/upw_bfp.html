@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.0.28">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,15 +11,10 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
 </style>
 
 
@@ -69,11 +64,9 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">OASE/OAUNI Dashboard</span>
-    </a>
-  </div>
+  </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -101,6 +94,11 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./pubs.html">Publications</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Ahobert/dash-oauni-oase/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -142,12 +140,12 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract:</a></li>
-  <li><a href="#snapshot-info" id="toc-snapshot-info" class="nav-link" data-scroll-target="#snapshot-info">Snapshot Info:</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#snapshot-info" id="toc-snapshot-info" class="nav-link" data-scroll-target="#snapshot-info">Snapshot Info</a></li>
   </ul>
 </nav>
     </div>
@@ -173,11 +171,12 @@ ul.task-list li input[type="checkbox"] {
 
 <p>The article has been published in <a href="https://www.degruyter.com/document/doi/10.1515/bfp-2020-0115/html">Bibliothek Forschung und Praxis</a>.</p>
 <section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract:</h2>
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
 <p>Analyses in the field of open access publishing have become significantly easier with the availability of large connected data collections such as Unpaywall. The article examines the development of the database and its structure since 2018. A full survey of journal articles from the period 2008–2018 shows that the OA share is growing continuously. However, the OA categorisation varies, which raises methodological questions in publication monitoring and bibliometric research.</p>
 </section>
 <section id="snapshot-info" class="level2">
-<h2 class="anchored" data-anchor-id="snapshot-info">Snapshot Info:</h2>
+<h2 class="anchored" data-anchor-id="snapshot-info">Snapshot Info</h2>
+<p>The following table shows a general overview of changes in Unpaywall snapshots. For each snapshot, the columns contain information on the indexed publications (here limited to journal articles), information on the OA share, information on the ratio of publications via publishers and repositories (only publications with the attribute is_best=True were taken into account here), innovations in the data schema and a statistical evaluation of the evidence types.</p>
 <table class="table">
 <caption>Summary of Changes in Unpaywall snapshots</caption>
 <colgroup>
@@ -355,8 +354,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      let href = ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
