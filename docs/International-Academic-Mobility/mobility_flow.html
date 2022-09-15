@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
+
 <meta name="generator" content="quarto-1.0.28">
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +13,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -70,9 +77,11 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">OASE/OAUNI Dashboard</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -86,6 +95,9 @@ ul.task-list{list-style: none;}
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../oa_uptake.html">OA Uptake</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../upw_bfp.html">Unpaywall BFP</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../mobility.html" aria-current="page">Mobility</a>
@@ -182,8 +194,8 @@ ul.task-list{list-style: none;}
 
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-d58f18a363481cdb36e0" style="width:100%;height:346px;" class="combineWidgets html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d58f18a363481cdb36e0">{"x":{"data":[{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["31119","167","1103","2626","119","12","33","20","974","31","81","131","3292","18","200","310"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["45393","192","1734","3852","209","20","60","33","1500","55","153","217","5287","42","311","458"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["64086","401","3223","7131","619","95","227","127","3496","153","473","620","11068","111","736","1370"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},"<div class=\"text\">\n  <hr/>\n  early career stage\n<\/div>","<div class=\"text\">\n  <hr/>\n  mid career stage\n<\/div>","<div class=\"text\">\n  <hr/>\n  late career stage\n<\/div>"],"widgetType":["sankeyNetwork","sankeyNetwork","sankeyNetwork","html","html","html"],"elementId":["widget175137651","widget822502099","widget762093643","widget229055734","widget411677644","widget153446863"],"html":"<div class=\"cw-container\"><div class=\"cw-subcontainer\"><div class=\"cw-content cw-by-row\"><div class=\"cw-row cw-by-row\" style=\"flex:1;-webkit-flex:1\"><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget175137651\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget822502099\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget762093643\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><\/div><div class=\"cw-row cw-by-row\" style=\"flex:1;-webkit-flex:1\"><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget229055734\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget411677644\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget153446863\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><\/div><\/div><\/div><\/div>","hasCrosstalkInputs":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-2faef0d5c1138fced3a2" style="width:100%;height:346px;" class="combineWidgets html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2faef0d5c1138fced3a2">{"x":{"data":[{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["31119","167","1103","2626","119","12","33","20","974","31","81","131","3292","18","200","310"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["45393","192","1734","3852","209","20","60","33","1500","55","153","217","5287","42","311","458"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},{"links":{"source":[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3],"target":[4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7],"value":["64086","401","3223","7131","619","95","227","127","3496","153","473","620","11068","111","736","1370"],"group":["H","L","LM","UM","H","L","LM","UM","H","L","LM","UM","H","L","LM","UM"]},"nodes":{"name":["H","L","LM","UM","H ","L ","LM ","UM "],"group":["H","L","LM","UM","H","L","LM","UM"]},"options":{"NodeID":"name","NodeGroup":"group","LinkGroup":"group","colourScale":"d3.scaleOrdinal() .domain([\"H\",\"UM\",\"LM\",\"L\",\"H\",\"UM\",\"LM\",\n\"L\"]).range([\"#7fcdbb\", \"yellow\", \"blue\", \"red\",\n   \"#7fcdbb\", \"yellow\", \"blue\", \"red\"])","fontSize":20,"fontFamily":null,"nodeWidth":10,"nodePadding":15,"units":"","margin":{"top":null,"right":null,"bottom":50,"left":null},"iterations":32,"sinksRight":false}},"<div class=\"text\">\n  <hr/>\n  early career stage\n<\/div>","<div class=\"text\">\n  <hr/>\n  mid career stage\n<\/div>","<div class=\"text\">\n  <hr/>\n  late career stage\n<\/div>"],"widgetType":["sankeyNetwork","sankeyNetwork","sankeyNetwork","html","html","html"],"elementId":["widget953845795","widget963595210","widget691174003","widget718106766","widget670915583","widget660446664"],"html":"<div class=\"cw-container\"><div class=\"cw-subcontainer\"><div class=\"cw-content cw-by-row\"><div class=\"cw-row cw-by-row\" style=\"flex:1;-webkit-flex:1\"><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget953845795\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget963595210\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget691174003\" class=\"sankeyNetwork cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><\/div><div class=\"cw-row cw-by-row\" style=\"flex:1;-webkit-flex:1\"><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget718106766\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget670915583\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><div class=\"cw-col\" style=\"flex:1;-webkit-flex:1\">\n              <div id=\"widget660446664\" class=\" cw-widget html-widget-static-bound\" style=\"width:100%;height:100%\"><\/div>\n              <\/div><\/div><\/div><\/div><\/div>","hasCrosstalkInputs":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
@@ -272,7 +284,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

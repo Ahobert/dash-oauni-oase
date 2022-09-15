@@ -12,6 +12,8 @@ website:
         href: about.qmd
       - text: "OA Uptake"
         href: oa_uptake.qmd
+      - text: "Unpaywall BFP"
+        href: upw_bfp.qmd
       - text: "Mobility"
         href: mobility.qmd
       - text: "OA in Nature"
@@ -42,9 +44,15 @@ website:
             - OA_Uptake/scatterplot/scatterplot_lg.Rmd
             - OA_Uptake/scatterplot/scatterplot_fhg.Rmd
             - OA_Uptake/scatterplot/scatterplot_gra.Rmd
+    - title: "Unpaywall BFP"
+      style: "docked"
+      contents:
+        - upw_bfp.qmd
+        - Unpaywall_BFP/evidence.Rmd
+        - Unpaywall_BFP/oa_snapshots.Rmd
     - title: "Mobility"
       style: "docked"
-      contents: 
+      contents:
         - mobility.qmd
         - International-Academic-Mobility/mobility_proportion_filed_gender.Rmd
         - International-Academic-Mobility/mobility_score_distribution.Rmd
@@ -53,7 +61,7 @@ website:
         - International-Academic-Mobility/centrality.Rmd
     - title: "OA in Nature"
       style: "docked"
-      contents: 
+      contents:
         - oa_nature.qmd
         - Springer_Nature-Open_Access/journals_model.Rmd
         - Springer_Nature-Open_Access/model_income.Rmd
@@ -67,4 +75,3 @@ format:
     toc: true
 
 editor: visual
-

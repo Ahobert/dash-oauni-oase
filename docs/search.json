@@ -53,7 +53,84 @@
     "href": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
     "title": "Mobility per field and gender",
     "section": "",
-    "text": "This table reports some descriptive statistics about the authors included in this study, according to their gender, mobility status, and scientific field. Using the filtering option you can choose to display only the results of a specific scientific field, or an overview over all fields. The drop down menu within the fields shows the results broken down by gender."
+    "text": "Filter based on field\n\n\nall fields\nHealth Sciences\nLife Sciences\nMultidisciplinary\nPhysical Sciences\nSocial Sciences\n\n\n\n\n\n\n\n*Authors without gender status are included too."
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/model_income.html",
+    "href": "Springer_Nature-Open_Access/model_income.html",
+    "title": "Publishing model by income level",
+    "section": "",
+    "text": "Filter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+  },
+  {
+    "objectID": "Springer_Nature-Open_Access/journals_model.html",
+    "href": "Springer_Nature-Open_Access/journals_model.html",
+    "title": "Journals’ business model",
+    "section": "",
+    "text": "These two charts show the journals’ business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field (each bar indicates the number of journals for each model in the filtered field)."
+  },
+  {
+    "objectID": "International-Academic-Mobility/mobility_flow.html",
+    "href": "International-Academic-Mobility/mobility_flow.html",
+    "title": "Mobility flows",
+    "section": "",
+    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.\n\nH: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
+  },
+  {
+    "objectID": "International-Academic-Mobility/centrality.html",
+    "href": "International-Academic-Mobility/centrality.html",
+    "title": "Centrality scores",
+    "section": "",
+    "text": "This table indicates the researchers’ publishing behavior (Open Access against Closed Access) in hybrid journals across four country groups and scientific fields.\n\n\n\n\n\nFilter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
+  },
+  {
+    "objectID": "oa_nature.html",
+    "href": "oa_nature.html",
+    "title": "General Info",
+    "section": "",
+    "text": "The paper is under review, but a preprint version is available via arxiv."
+  },
+  {
+    "objectID": "Unpaywall_BFP/oa_snapshots.html",
+    "href": "Unpaywall_BFP/oa_snapshots.html",
+    "title": "Unpaywall Snapshots",
+    "section": "",
+    "text": "(Note: It may take a short moment until the plot is displayed.)"
+  },
+  {
+    "objectID": "upw_bfp.html",
+    "href": "upw_bfp.html",
+    "title": "General Info",
+    "section": "",
+    "text": "The article has been published in Bibliothek Forschung und Praxis."
+  },
+  {
+    "objectID": "upw_bfp.html#abstract",
+    "href": "upw_bfp.html#abstract",
+    "title": "General Info",
+    "section": "Abstract:",
+    "text": "Abstract:\nAnalyses in the field of open access publishing have become significantly easier with the availability of large connected data collections such as Unpaywall. The article examines the development of the database and its structure since 2018. A full survey of journal articles from the period 2008–2018 shows that the OA share is growing continuously. However, the OA categorisation varies, which raises methodological questions in publication monitoring and bibliometric research."
+  },
+  {
+    "objectID": "upw_bfp.html#snapshot-info",
+    "href": "upw_bfp.html#snapshot-info",
+    "title": "General Info",
+    "section": "Snapshot Info:",
+    "text": "Snapshot Info:\n\nSummary of Changes in Unpaywall snapshots\n\n\n\n\n\n\n\n\n\n\nSnapshot\nNumber of Articles\nOpen Access Share\nRepositories/ Publisher Share\nSchema modifications\nNumber of Evidence types\n\n\n\n\nMarch 2018 Snapshot\n27.498.666\n31,56%\n21,45%/78,55%\n\n22\n\n\nApril 2018 Snapshot\n27.268.179\n32,58%\n19,80%/80,20%\n\n22\n\n\nJune 2018 Snapshot\n28.201.468\n35,55%\n19,17%/80,83%\nx_reported_noncompliant_copies removed\n23\n\n\nSeptember 2018 Snapshot\n29.908.032\n37,86%\n17,21%/82,79%\n\n15\n\n\nFebruary 2019 Snapshot\n31.159.960\n37,34%\n17,97%/82,03%\nendpoint_id added\n15\n\n\nApril 2019 Snapshot\n31.341.794\n38,11%\n17,68%/82,32%\noa_status added\n17\n\n\nAugust 2019 Snapshot\n31.602.128\n38,75%\n17,23%/82,77%\njournal_issn_l and repository_institution added\n19\n\n\nNovember 2019 Snapshot\n31.827.129\n42,63%\n26,52%/73,48%\nhas_repository_copy added\n18\n\n\nFebruary 2020 Snapshot\n31.611.299\n42,79%\n22,76%/77,24%\nis_paratext added\n17\n\n\nApril 2020 Snapshot\n31.482.103\n42,50%\n23,22%/76,78%\n\n18"
+  },
+  {
+    "objectID": "oase.html",
+    "href": "oase.html",
+    "title": "OASE",
+    "section": "",
+    "text": "The project studies systematically, longitudinally and comprehensively the structural and author specific influencing factors of OA impact in the social sciences, economics and selected sciences. Traditional and altmetric indicators will test the validity of popular thesis on OA. We focus on most relevant thesis and influencing factors which are discussed in the literature and seek to validate the thesis, quantify the effects, show the causal associations and answer novel problems. We ask: wherein exists the “genuine” OA effect (e.g. increased citation and altmetric rates via accessibility)? In which extent appears the OA effect in difference constellations (combination of structural and author specific properties)?\nThe study bases on articles from the Web of Science databases. These articles will be aggregated differently for the three work packages, e.g. on the author level, and will be analyzed in a bibliometric and altmetric way. In addition, we will perform quantitative surveys, interviews and workshops with authors who have published in OA and/or cited/shared OA to validate the results from the bibliometrics and altmetric studies and to gain deeper insights in the discipline specific OA publishing and OA citing behavior. These insights will flow into a model of transdisciplinary and discipline specific influencing factors. The three work packages divide into structural (WP1) and author specific properties of OA publications (WP2), author surveys (WP3) and assume in a report of the OASE “lessons learned”."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OASE/OAUNI Dashboard",
+    "section": "",
+    "text": "This dashboard serves as an interactive display of important results obtained in the BMBF projects OASE and OAUNI within the funding stream Quantitative research on the science sector."
   },
   {
     "objectID": "International-Academic-Mobility/country_gender_field.html",
@@ -70,13 +147,6 @@
     "text": "Gender\n\n\n\n\n\n\nScientific field\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure shows the distribution of mobile researchers based on their mobility scores. The mobility score in this study indicates the frequency of researchers’ movements between countries. We calculated it by counting the number of changes in affiliation countries for each year compared to the last publishing year (more details are available in the paper, section 3.3). The filtering options above the figure let you choose to show the results of a specific gender or scientific field."
   },
   {
-    "objectID": "International-Academic-Mobility/mobility_flow.html",
-    "href": "International-Academic-Mobility/mobility_flow.html",
-    "title": "Mobility flows",
-    "section": "",
-    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.\n\nH: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
-  },
-  {
     "objectID": "International-Academic-Mobility/centrality.html",
     "href": "International-Academic-Mobility/centrality.html",
     "title": "Centrality scores",
@@ -84,18 +154,18 @@
     "text": "Gender\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis figure compares four centrality measures of mobile and non-mobile researchers in collaboration networks during their career development. The numbers of observations are 18,734 and 29,122 for mobile and non-mobile researchers, resp. Red error bars show standard errors. X-axes show the Career age, which ranges from 1 to 16 years (year of first publication and 15 years after that), and y-axes the related centrality score. Using the filter, results of a specific gender can be displayed.\nComparing the centrality of mobile and non-mobile researchers in the co-authorship networks displays the position and role of mobile researchers in these networks. For mobile researchers, we observe a growing trend in degree and coreness by increasing the career age. These two observations suggest that not only mobility increases the social capital of the scholars (degree), but also it helps to position the scholars into the core of the community which would allow them to get better access to highly influential people. In contrast, the lower clustering coefficient of mobile researchers indicates that by increasing their degree, they diversify their co-authors and belong to various communities and thus they act more as bridges between the communities.\nFor more information about the definition of centrality scores , please see the paper, section 3.6."
   },
   {
-    "objectID": "oa_nature.html",
-    "href": "oa_nature.html",
-    "title": "General Info",
+    "objectID": "International-Academic-Mobility/mobility_flow.html",
+    "href": "International-Academic-Mobility/mobility_flow.html",
+    "title": "Mobility flows",
     "section": "",
-    "text": "The paper is under review, but a preprint version is available via arxiv."
+    "text": "This figure displays the movements within four groups of countries categorized based on their income level at three career stages. We counted the movements among all authors. The left/right side is related to the origin/destination country. The highest mobility flow happens between (and toward) high-income countries. At the later career stages, we observe increasing movements toward countries with lower income levels.\n\nH: High level, UM: Upper middle level, LM: Lower middle level, and L: Low level."
   },
   {
-    "objectID": "mobility.html",
-    "href": "mobility.html",
-    "title": "General Info",
+    "objectID": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
+    "href": "International-Academic-Mobility/mobility_proportion_filed_gender.html",
+    "title": "Mobility per field and gender",
     "section": "",
-    "text": "This study investigates international academic mobility from different aspects. The authors included in this study are those indexed in Scopus from all countries and scientific fields. We compared the mobility among countries, gender, and fields to show the inequalities. We considered the scholars’ career stages in our analyses for a more comprehensive analysis. This supplementary visualization will better present the mobility patterns among scholars with various socio-demographic characteristics. The paper has been published by ‘Journal Of Informetrics’. Preprint and accepted version are available via arXiv."
+    "text": "This table reports some descriptive statistics about the authors included in this study, according to their gender, mobility status, and scientific field. Using the filtering option you can choose to display only the results of a specific scientific field, or an overview over all fields. The drop down menu within the fields shows the results broken down by gender."
   },
   {
     "objectID": "about.html",
@@ -103,34 +173,6 @@
     "title": "About the funding stream",
     "section": "",
     "text": "The science sector has been acquiring great significance for more and more areas of our society. This makes it all the more important for the science system to be structured and funded as advantageously as possible. To an increasing degree, quality and productivity issues in science and research are being studied with the help of indicators that yield information about quality, the factors that define it and the factors that bring it about. One aim of the funding line “Quantitative research on the science sector” is to make even better use of such indicators’ usefulness for research on the science system – and, in the process, to develop new indicators where appropriate. Quantitative research in this context is designed to improve our understanding of the science system’s workings, structural dependencies and dynamics. It also considers the impacts of data-based evaluation of research."
-  },
-  {
-    "objectID": "Springer_Nature-Open_Access/hybrid_model_income.html",
-    "href": "Springer_Nature-Open_Access/hybrid_model_income.html",
-    "title": "Publishing model in hybrid journals",
-    "section": "",
-    "text": "This table indicates the researchers’ publishing behavior (Open Access against Closed Access) in hybrid journals across four country groups and scientific fields.\n\n\n\n\n\nFilter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
-  },
-  {
-    "objectID": "Springer_Nature-Open_Access/model_income.html",
-    "href": "Springer_Nature-Open_Access/model_income.html",
-    "title": "Publishing model by income level",
-    "section": "",
-    "text": "Filter based on field\n\n\n Multidisciplinary\nHealth Sciences\nLife Sciences\nPhysical Sciences\nSocial Sciences\nall fields"
-  },
-  {
-    "objectID": "Springer_Nature-Open_Access/citation.html",
-    "href": "Springer_Nature-Open_Access/citation.html",
-    "title": "Citation analysis",
-    "section": "",
-    "text": "Filter based on field\n\n\nall fields\nHealth Sciences\nLife Sciences\nMultidisciplinary\nPhysical Sciences\nSocial Sciences\n\n\n\n\n\n\n\n*Authors without gender status are included too."
-  },
-  {
-    "objectID": "Springer_Nature-Open_Access/journals_model.html",
-    "href": "Springer_Nature-Open_Access/journals_model.html",
-    "title": "Journals’ business model",
-    "section": "",
-    "text": "These two charts show the journals’ business model distribution in Springer Nature. The Pie chart presents the distribution for all journals, and the bar chart displays it per field (each bar indicates the number of journals for each model in the filtered field)."
   },
   {
     "objectID": "pubs.html",

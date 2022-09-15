@@ -2,14 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-
-<meta name="generator" content="quarto-1.0.28">
-
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>OASE/OAUNI Dashboard - Mobility per field and gender</title>
+<title>OASE/OAUNI Dashboard - Unpaywall Snapshots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,13 +59,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-<script src="../site_libs/core-js-2.5.3/shim.min.js"></script>
-<script src="../site_libs/react-17.0.0/react.min.js"></script>
-<script src="../site_libs/react-17.0.0/react-dom.min.js"></script>
-<script src="../site_libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/reactable-binding-0.3.0/reactable.js"></script>
-
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -98,10 +89,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../oa_uptake.html">OA Uptake</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../upw_bfp.html">Unpaywall BFP</a>
+    <a class="nav-link active" href="../upw_bfp.html" aria-current="page">Unpaywall BFP</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../mobility.html" aria-current="page">Mobility</a>
+    <a class="nav-link" href="../mobility.html">Mobility</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../oa_nature.html">OA in Nature</a>
@@ -111,11 +102,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../pubs.html">Publications</a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Ahobert/dash-oauni-oase/"><i class="bi bi-github" role="img">
-</i> 
- </a>
-  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -123,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Mobility per field and gender</h1>
+      <h1 class="quarto-secondary-nav-title">Unpaywall Snapshots</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -138,32 +124,17 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mobility.html" class="sidebar-item-text sidebar-link">General Info</a>
+  <a href="../upw_bfp.html" class="sidebar-item-text sidebar-link">General Info</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../International-Academic-Mobility/mobility_proportion_filed_gender.html" class="sidebar-item-text sidebar-link active">Mobility per field and gender</a>
+  <a href="../Unpaywall_BFP/evidence.html" class="sidebar-item-text sidebar-link">Unpaywall Evidence</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../International-Academic-Mobility/mobility_score_distribution.html" class="sidebar-item-text sidebar-link">Mobility score</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../International-Academic-Mobility/country_gender_field.html" class="sidebar-item-text sidebar-link">Distribution per country</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../International-Academic-Mobility/mobility_flow.html" class="sidebar-item-text sidebar-link">Mobility flows</a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../International-Academic-Mobility/centrality.html" class="sidebar-item-text sidebar-link">Centrality scores</a>
+  <a href="../Unpaywall_BFP/oa_snapshots.html" class="sidebar-item-text sidebar-link active">Unpaywall Snapshots</a>
   </div>
 </li>
     </ul>
@@ -178,8 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Mobility per field and gender</h1>
-<p class="subtitle lead">Proportion of international academic mobility per scientific field and gender of included authors</p>
+<h1 class="title d-none d-lg-block">Unpaywall Snapshots</h1>
 </div>
 
 
@@ -194,49 +164,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="cell">
-<div class="cell-output-display no-overflow-x">
-
-<div>
-<div>
-<label for="MAIN_FIELD-filter">Filter based on field</label>
+<iframe src="https://oapokeh.herokuapp.com/plot" width="130%" height="700px" data-external="1">
+</iframe>
 </div>
-<select id="MAIN_FIELD-filter" onchange="Reactable.setFilter('cars-filter-table', 'MAIN_FIELD', this.value)">
-<option value="">All</option>
-<option>Physical Sciences</option>
-<option>Health Sciences</option>
-<option>Life Sciences</option>
-<option>Social Sciences</option>
-</select>
-</div>
-<hr aria-hidden="false">
-<div id="cars-filter-table" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="cars-filter-table">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"MAIN_FIELD":["Physical Sciences","Physical Sciences","Health Sciences","Health Sciences","Life Sciences","Life Sciences","Social Sciences","Social Sciences"],"gender":["male","female","male","female","male","female","male","female"],"nonmobile":[187143,48396,161941,83107,100478,55132,34681,16288],"mobile":[157812,32634,119508,43916,83067,34915,18973,6364],"percent_mobile":[0.46,0.4,0.42,0.35,0.45,0.39,0.35,0.28]},"columns":[{"accessor":"MAIN_FIELD","name":"Field","type":"character"},{"accessor":"gender","name":"Gender","type":"character"},{"accessor":"nonmobile","name":"Non-mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"accessor":"mobile","name":"Mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"accessor":"percent_mobile","name":"Mobility percentage","type":"numeric","aggregate":"function(values, rows) {\n        let totalmobile = 0\n        let totalnonmobile = 0\n        rows.forEach(function(row) {\n          totalmobile += row['mobile']\n          totalnonmobile += row['nonmobile']\n        })\n        return totalmobile / (totalmobile+totalnonmobile)\n      }","format":{"cell":{"digits":1,"percent":true,"locales":"en-US"},"aggregated":{"digits":1,"percent":true,"locales":"en-US"}},"cell":[{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["46%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"46%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["40%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"40%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["42%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"42%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["45%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"45%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["39%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"39%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["28%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"28%","height":"16px"}},"children":[]}]}]}]}],"pivotBy":["MAIN_FIELD"],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"elementId":"cars-filter-table","dataKey":"07269c2383ed76ef0f5cfcf2e9b9d6ef"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.4.aggregate"],"jsHooks":[]}</script>
-</div>
-</div>
-<div class="cell">
-<style type="text/css">
-.bar-cell {
-  display: flex;
-  align-items: center;
-}
-
-.number {
-  font-size: 13.5px;
-  white-space: pre;
-}
-
-.bar-chart {
-  flex-grow: 1;
-  margin-left: 6px;
-  height: 22px;
-}
-
-.bar {
-  height: 100%;
-}
-</style>
-</div>
-<p>This table reports some descriptive statistics about the authors included in this study, according to their gender, mobility status, and scientific field. Using the filtering option you can choose to display only the results of a specific scientific field, or an overview over all fields. The drop down menu within the fields shows the results broken down by gender.</p>
+<p>(Note: It may take a short moment until the plot is displayed.)</p>
 
 
 
