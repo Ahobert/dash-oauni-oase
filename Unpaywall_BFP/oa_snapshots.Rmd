@@ -11,7 +11,7 @@ output:
 ---
 
 ```{r, echo=FALSE, out.width="130%"}
-knitr::include_url("https://oapokeh.herokuapp.com/plot", height="620px")
+knitr::include_url("https://oapokeh.meketre.de/plot", height="620px")
 ```
 (Note: It may take a short moment until the plot is displayed.)
 
