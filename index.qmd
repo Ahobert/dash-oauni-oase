@@ -3,3 +3,13 @@ title: "OASE/OAUNI Dashboard"
 ---
 
 This dashboard serves as an interactive display of important results obtained in the BMBF projects [OASE](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oase/oase_node.html) and [OAUNI](https://www.wihoforschung.de/wihoforschung/de/bmbf-projektfoerderung/foerderlinien/quantitative-wissenschaftsforschung/oauni/oauni_node.html) within the funding stream [Quantitative research on the science sector](https://www.wihoforschung.de/wihoforschung/en/bmbf-funding-projects/funding-lines/quantitative-research-on-the-science-sector/quantitative-research-on-the-science-sector_node.html).
+
+Browse results obtained in the following studies conducted within the two projects:
+
+[Open access uptake in Germany 2010--2018: adoption in a diverse research landscape](https://ahobert.github.io/dash-oauni-oase/oa_uptake.html)
+
+[Development and Typology of the Data Service Unpaywall](https://ahobert.github.io/dash-oauni-oase/upw_bfp.html)
+
+[The many facets of academic mobility and its impact on scholars\' career](https://ahobert.github.io/dash-oauni-oase/mobility.html)
+
+[Which Factors Drive Open Access Publishing? A Springer Nature Case Study](https://ahobert.github.io/dash-oauni-oase/oa_nature.html)
