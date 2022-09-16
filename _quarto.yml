@@ -4,6 +4,13 @@ project:
 
 website:
   title: "OASE/OAUNI Dashboard"
+  margin-footer: |
+    <img src="BMBF_en.svg" alt="bmbf_sponsored" width="70%"/>
+  page-footer:
+    left: |
+      <img src="GAU_SUB_horizontal_cmyk.png" alt="GAU-SUB" width="60%"/>
+    right: |
+      <img src="gesis_logo.jpg" alt="gesis logo" width="20%"/>
   navbar:
     left:
       - text: "Home"
@@ -21,6 +28,8 @@ website:
     right:
       - text: "Publications"
         href: pubs.qmd
+      - text: "Imprint"
+        href: https://www.sub.uni-goettingen.de/impressum/
       - icon: github
         href: https://github.com/Ahobert/dash-oauni-oase/
   sidebar: 
