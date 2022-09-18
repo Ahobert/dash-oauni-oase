@@ -5,12 +5,12 @@ project:
 website:
   title: "OASE/OAUNI Dashboard"
   margin-footer: |
-    <img src="https://github.com/Ahobert/dash-oauni-oase/blob/main/BMBF_en.svg" alt="bmbf_sponsored" width="70%"/>
+    <img src="https://raw.githubusercontent.com/Ahobert/dash-oauni-oase/3f1593bc67ce7025224bc4e4407a9e9fab0a963a/BMBF_en.svg" alt="bmbf_sponsored" width="70%"/>
   page-footer:
     left: |
-      <img src="https://github.com/Ahobert/dash-oauni-oase/blob/main/GAU_SUB_horizontal_cmyk.png" alt="GAU-SUB" width="60%"/>
+      <img src="https://raw.githubusercontent.com/Ahobert/dash-oauni-oase/main/GAU_SUB_horizontal_cmyk.png" alt="GAU-SUB" width="60%"/>
     right: |
-      <img src="https://github.com/Ahobert/dash-oauni-oase/blob/main/gesis_logo.jpg" alt="gesis logo" width="20%"/>
+      <img src="https://raw.githubusercontent.com/Ahobert/dash-oauni-oase/main/gesis_logo.jpg" alt="gesis logo" width="20%"/>
   navbar:
     left:
       - text: "Home"
