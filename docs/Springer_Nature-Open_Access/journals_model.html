@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.28">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -53,14 +58,14 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="../site_libs/plotly-binding-4.10.1/plotly.js"></script>
 <script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
 <script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
 <script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-<link href="../site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="../site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 <link href="../site_libs/selectize-0.12.4/css/selectize.bootstrap3.css" rel="stylesheet">
 <script src="../site_libs/selectize-0.12.4/js/selectize.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,44 +81,54 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">OASE/OAUNI Dashboard</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../oa_uptake.html">OA Uptake</a>
+    <a class="nav-link" href="../oa_uptake.html">
+ <span class="menu-text">OA Uptake</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../upw_bfp.html">Unpaywall BFP</a>
+    <a class="nav-link" href="../upw_bfp.html">
+ <span class="menu-text">Unpaywall BFP</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../mobility.html">Mobility</a>
+    <a class="nav-link" href="../mobility.html">
+ <span class="menu-text">Mobility</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../oa_nature.html" aria-current="page">OA in Nature</a>
+    <a class="nav-link active" href="../oa_nature.html" aria-current="page">
+ <span class="menu-text">OA in Nature</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pubs.html">Publications</a>
+    <a class="nav-link" href="../pubs.html">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">Imprint</a>
+    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">
+ <span class="menu-text">Imprint</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/Ahobert/dash-oauni-oase/"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -183,6 +198,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -194,8 +210,8 @@ ul.task-list{list-style: none;}
 <div class="container-fluid crosstalk-bscols">
 <div class="row">
 <div class="col-xs-10">
-<div id="htmlwidget-042f95b7982d06028c7c" style="width:100%;height:400px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-042f95b7982d06028c7c">{"x":{"visdat":{"9cbc1cf1658f":["function () ","plotlyVisDat"]},"cur_data":"9cbc1cf1658f","attrs":{"9cbc1cf1658f":{"labels":{},"values":{},"textinfo":"value","marker":{"colors":["grey","#C08DDF","#FFD700","red"]},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"width":405,"height":405,"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"<b>Distrubtion of all journals by business model<\/b>","font":{"size":16}},"legend":{"font":{"size":16}},"xaxis":{"showgrid":false,"zeroline":false,"showticklabels":false},"yaxis":{"showgrid":false,"zeroline":false,"showticklabels":false},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Not Given","Hybrid (Open Choice)","Gold Open Access","Closed Access"],"values":[141,2012,604,381],"textinfo":"value","marker":{"color":"rgba(31,119,180,1)","colors":["grey","#C08DDF","#FFD700","red"],"line":{"color":"rgba(255,255,255,1)"}},"type":"pie","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8d04c32ea90dded3bd4b" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-8d04c32ea90dded3bd4b">{"x":{"visdat":{"11ee735ea5ad":["function () ","plotlyVisDat"]},"cur_data":"11ee735ea5ad","attrs":{"11ee735ea5ad":{"labels":{},"values":{},"textinfo":"value","marker":{"colors":["grey","#C08DDF","#FFD700","red"]},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"width":405,"height":405,"margin":{"b":40,"l":60,"t":25,"r":10},"title":{"text":"<b>Distrubtion of all journals by business model<\/b>","font":{"size":16}},"legend":{"font":{"size":16}},"xaxis":{"showgrid":false,"zeroline":false,"showticklabels":false},"yaxis":{"showgrid":false,"zeroline":false,"showticklabels":false},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"labels":["Not Given","Hybrid (Open Choice)","Gold Open Access","Closed Access"],"values":[141,2012,604,381],"textinfo":"value","marker":{"color":"rgba(31,119,180,1)","colors":["grey","#C08DDF","#FFD700","red"],"line":{"color":"rgba(255,255,255,1)"}},"type":"pie","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <div id="FIELD" class="form-group crosstalk-input-select crosstalk-input">
 <label class="control-label" for="FIELD">Filter based on field</label>
 <div>
@@ -212,14 +228,14 @@ ul.task-list{list-style: none;}
     "Physical Sciences": ["3", "8", "14"],
     "Social Sciences": ["6", "7", "12"]
   },
-  "group": ["SharedData93e20c3f"]
+  "group": ["SharedData223c0d82"]
 }</script>
 </div>
 </div>
 </div>
 <div class="col-xs-10">
-<div id="htmlwidget-c7eca0272889ba0e4047" style="width:100%;height:400px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c7eca0272889ba0e4047">{"x":{"data":[{"orientation":"v","width":[0.0999999999999996,0.0999999999999996,0.0999999999999996,0.0999999999999996,0.0999999999999996],"base":[0,0,0,0,0],"x":[2.9,3,3.1,3.2,2.8],"y":[29,171,18,8,29],"text":["reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  29<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS: 171<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  18<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:   8<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  29<br />Model: Closed Access"],"key":["2","3","4","7","15"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,0,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData93e20c3f","name":"Closed Access","legendgroup":"Closed Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null},{"orientation":"v","width":[0.0999999999999996,0.0999999999999996,0.1,0.1,0.0999999999999999],"base":[0,0,0,0,0],"x":[2.1,2.2,1.8,1.9,2],"y":[132,24,57,142,70],"text":["reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS: 132<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  24<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  57<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS: 142<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  70<br />Model: Gold Open Access"],"key":["5","6","11","13","14"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,215,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData93e20c3f","name":"Gold Open Access","legendgroup":"Gold Open Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null},{"orientation":"v","width":[0.1,0.1,0.1,0.1,0.1],"base":[0,0,0,0,0],"x":[0.8,1.1,1.2,0.9,1],"y":[182,433,397,220,285],"text":["reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 182<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 433<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 397<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 220<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 285<br />Model: Hybrid (Open Choice)"],"key":["1","8","9","10","12"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(192,141,223,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData93e20c3f","name":"Hybrid (Open Choice)","legendgroup":"Hybrid (Open Choice)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null}],"layout":{"margin":{"t":40.5479452054795,"r":7.30593607305936,"b":28.2009132420091,"l":57.7168949771689},"font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,3.6],"tickmode":"array","ticktext":["Hybrid (Open Choice)","Gold Open Access","Closed Access"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["Hybrid (Open Choice)","Gold Open Access","Closed Access"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-21.65,454.65],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Times New Roman","size":17.0029057700291},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"<b> Number of journals <\/b>","font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":17.0029057700291},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363}}},"hovermode":"closest","height":400,"barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"9cbcc263977":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"9cbcc263977","visdat":{"9cbcc263977":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData93e20c3f"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a128e791c63aa785dd6c" style="width:100%;height:400px;" class="plotly html-widget "></div>
+<script type="application/json" data-for="htmlwidget-a128e791c63aa785dd6c">{"x":{"data":[{"orientation":"v","width":[0.0999999999999996,0.0999999999999996,0.0999999999999996,0.0999999999999996,0.0999999999999996],"base":[0,0,0,0,0],"x":[2.9,3,3.1,3.2,2.8],"y":[29,171,18,8,29],"text":["reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  29<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS: 171<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  18<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:   8<br />Model: Closed Access","reorder(Model, desc(Model)): Closed Access<br />NUM_ITEMS:  29<br />Model: Closed Access"],"key":["2","3","4","7","15"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,0,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData223c0d82","name":"Closed Access","legendgroup":"Closed Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null},{"orientation":"v","width":[0.0999999999999996,0.0999999999999996,0.1,0.1,0.0999999999999999],"base":[0,0,0,0,0],"x":[2.1,2.2,1.8,1.9,2],"y":[132,24,57,142,70],"text":["reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS: 132<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  24<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  57<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS: 142<br />Model: Gold Open Access","reorder(Model, desc(Model)): Gold Open Access<br />NUM_ITEMS:  70<br />Model: Gold Open Access"],"key":["5","6","11","13","14"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(255,215,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData223c0d82","name":"Gold Open Access","legendgroup":"Gold Open Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null},{"orientation":"v","width":[0.1,0.1,0.1,0.1,0.1],"base":[0,0,0,0,0],"x":[0.8,1.1,1.2,0.9,1],"y":[182,433,397,220,285],"text":["reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 182<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 433<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 397<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 220<br />Model: Hybrid (Open Choice)","reorder(Model, desc(Model)): Hybrid (Open Choice)<br />NUM_ITEMS: 285<br />Model: Hybrid (Open Choice)"],"key":["1","8","9","10","12"],"type":"bar","textposition":"none","marker":{"autocolorscale":false,"color":"rgba(192,141,223,1)","line":{"width":1.88976377952756,"color":"transparent"}},"set":"SharedData223c0d82","name":"Hybrid (Open Choice)","legendgroup":"Hybrid (Open Choice)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","_isNestedKey":false,"frame":null}],"layout":{"margin":{"t":25.2054794520548,"r":7.30593607305936,"b":12.8584474885845,"l":57.7168949771689},"font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,3.6],"tickmode":"array","ticktext":["Hybrid (Open Choice)","Gold Open Access","Closed Access"],"tickvals":[1,2,3],"categoryorder":"array","categoryarray":["Hybrid (Open Choice)","Gold Open Access","Closed Access"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":null,"family":null,"size":0}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-21.65,454.65],"tickmode":"array","ticktext":["0","100","200","300","400"],"tickvals":[0,100,200,300,400],"categoryorder":"array","categoryarray":["0","100","200","300","400"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"Times New Roman","size":17.0029057700291},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"<b> Number of journals <\/b>","font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":17.0029057700291},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"Times New Roman","size":21.2536322125363}}},"hovermode":"closest","height":400,"barmode":"relative","dragmode":"zoom"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"11ee8623503":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"11ee8623503","visdat":{"11ee8623503":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData223c0d82"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -278,7 +294,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -306,31 +339,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

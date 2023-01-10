@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.28">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -58,8 +63,9 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/react-17.0.0/react.min.js"></script>
 <script src="../site_libs/react-17.0.0/react-dom.min.js"></script>
 <script src="../site_libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/reactable-binding-0.3.0/reactable.js"></script>
+<script src="../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="../site_libs/reactable-0.4.3/reactable.css" rel="stylesheet">
+<script src="../site_libs/reactable-binding-0.4.3/reactable.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -71,44 +77,54 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">OASE/OAUNI Dashboard</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../oa_uptake.html">OA Uptake</a>
+    <a class="nav-link" href="../oa_uptake.html">
+ <span class="menu-text">OA Uptake</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../upw_bfp.html">Unpaywall BFP</a>
+    <a class="nav-link" href="../upw_bfp.html">
+ <span class="menu-text">Unpaywall BFP</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../mobility.html" aria-current="page">Mobility</a>
+    <a class="nav-link active" href="../mobility.html" aria-current="page">
+ <span class="menu-text">Mobility</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../oa_nature.html">OA in Nature</a>
+    <a class="nav-link" href="../oa_nature.html">
+ <span class="menu-text">OA in Nature</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pubs.html">Publications</a>
+    <a class="nav-link" href="../pubs.html">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">Imprint</a>
+    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">
+ <span class="menu-text">Imprint</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/Ahobert/dash-oauni-oase/"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -183,6 +199,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -205,8 +222,8 @@ ul.task-list{list-style: none;}
 </select>
 </div>
 <hr aria-hidden="false">
-<div id="cars-filter-table" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="cars-filter-table">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"MAIN_FIELD":["Physical Sciences","Physical Sciences","Health Sciences","Health Sciences","Life Sciences","Life Sciences","Social Sciences","Social Sciences"],"gender":["male","female","male","female","male","female","male","female"],"nonmobile":[187143,48396,161941,83107,100478,55132,34681,16288],"mobile":[157812,32634,119508,43916,83067,34915,18973,6364],"percent_mobile":[0.46,0.4,0.42,0.35,0.45,0.39,0.35,0.28]},"columns":[{"accessor":"MAIN_FIELD","name":"Field","type":"character"},{"accessor":"gender","name":"Gender","type":"character"},{"accessor":"nonmobile","name":"Non-mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"accessor":"mobile","name":"Mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"accessor":"percent_mobile","name":"Mobility percentage","type":"numeric","aggregate":"function(values, rows) {\n        let totalmobile = 0\n        let totalnonmobile = 0\n        rows.forEach(function(row) {\n          totalmobile += row['mobile']\n          totalnonmobile += row['nonmobile']\n        })\n        return totalmobile / (totalmobile+totalnonmobile)\n      }","format":{"cell":{"digits":1,"percent":true,"locales":"en-US"},"aggregated":{"digits":1,"percent":true,"locales":"en-US"}},"cell":[{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["46%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"46%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["40%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"40%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["42%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"42%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["45%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"45%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["39%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"39%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["28%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"28%","height":"16px"}},"children":[]}]}]}]}],"pivotBy":["MAIN_FIELD"],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"elementId":"cars-filter-table","dataKey":"07269c2383ed76ef0f5cfcf2e9b9d6ef"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.4.aggregate"],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="cars-filter-table" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="cars-filter-table">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"MAIN_FIELD":["Physical Sciences","Physical Sciences","Health Sciences","Health Sciences","Life Sciences","Life Sciences","Social Sciences","Social Sciences"],"gender":["male","female","male","female","male","female","male","female"],"nonmobile":[187143,48396,161941,83107,100478,55132,34681,16288],"mobile":[157812,32634,119508,43916,83067,34915,18973,6364],"percent_mobile":[0.46,0.4,0.42,0.35,0.45,0.39,0.35,0.28]},"columns":[{"id":"MAIN_FIELD","name":"Field","type":"character"},{"id":"gender","name":"Gender","type":"character"},{"id":"nonmobile","name":"Non-mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"id":"mobile","name":"Mobile","type":"numeric","aggregate":"sum","format":{"cell":{"separators":true,"locales":"en-US"},"aggregated":{"separators":true,"locales":"en-US"}}},{"id":"percent_mobile","name":"Mobility percentage","type":"numeric","aggregate":"function(values, rows) {\n        let totalmobile = 0\n        let totalnonmobile = 0\n        rows.forEach(function(row) {\n          totalmobile += row['mobile']\n          totalnonmobile += row['nonmobile']\n        })\n        return totalmobile / (totalmobile+totalnonmobile)\n      }","format":{"cell":{"digits":1,"percent":true,"locales":"en-US"},"aggregated":{"digits":1,"percent":true,"locales":"en-US"}},"cell":[{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["46%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"46%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["40%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"40%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["42%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"42%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["45%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"45%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["39%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"39%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["35%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"35%","height":"16px"}},"children":[]}]}]},{"name":"div","attribs":{"style":{"display":"flex","alignItems":"center"}},"children":[{"name":"span","attribs":{"className":"number"},"children":["28%"]},{"name":"div","attribs":{"style":{"flexGrow":1,"marginLeft":"8px","background":"#e1e1e1"}},"children":[{"name":"div","attribs":{"style":{"background":"#00bfc4","width":"28%","height":"16px"}},"children":[]}]}]}]}],"groupBy":["MAIN_FIELD"],"elementId":"cars-filter-table","dataKey":"dc42a41599eb88e697a94e92b27a1757"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.4.aggregate"],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
@@ -278,7 +295,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -306,31 +340,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

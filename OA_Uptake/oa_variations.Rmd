@@ -1,0 +1,19 @@
+---
+title: "OA percentage across sectors"
+subtitle: ""
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: spacelab
+    source_code: embed
+    fontsize: 16pt
+---
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('boxplot_plotly.html')
+```
+````
+
+OA shares of German research institutions per sector. The color of the boxes groups sectors into universities with a typically high total journal publication output, research-oriented institutes with a medium journal publication output and practise oriented institutions with a comparatively low journal publication output. Colored circles display the OA shares for individual institutions, larger filled points highlight specific institutions upon selection.
