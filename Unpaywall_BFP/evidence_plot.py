@@ -8,16 +8,16 @@ client = bigquery.Client(project='api-project-764811344545')
 unpaywall_snapshots = {
     # 2018-03-29
     'mar18': ['`oadoi_full.upw_Mar18_08_20`'],
-    
+
     # 2018-04-28
     'apr18': ['`oadoi_full.upw_Apr18_08_20`'],
-    
+
     # 2018-06-21
     'jun18': ['`oadoi_full.upw_Jun18_08_20`'],
-    
+
     # 2018-09-27
     'sep18': ['`oadoi_full.upw_Sep18_08_20`'],
-    
+
     # 2019-02-21
     'feb19': ['`oadoi_full.feb_19_mongo_export_2008_2012_full_all_genres`',
               '`oadoi_full.feb_19_mongo_export_2013_Feb2019_full_all_genres`'],
@@ -25,7 +25,7 @@ unpaywall_snapshots = {
     # 2019-04-20
     'apr19': ['`oadoi_full.mongo_export_apr19_2008_2012_full_macos`',
               '`oadoi_full.mongo_export_apr19_2013_Apr2019_full_macos`'],
-    
+
     # 2019-08-16
     'aug19': ['`oadoi_full.upw_Aug19_08_20`'],
 
@@ -36,16 +36,16 @@ unpaywall_snapshots = {
     # 2020-02-25
     'feb20': ['`oadoi_full.mongo_upwFeb20_08_12`',
               '`oadoi_full.mongo_upwFeb20_13_20`'],
-    
+
     # 2020-04-27
     'apr20': ['`oadoi_full.upw_Apr20_08_20`'],
-    
+
     # 2020-10-09
     'oct20': ['`oadoi_full.upw_Oct20_08_20`'],
-    
+
     # 2021-02-18
     'feb21': ['`oadoi_full.upw_Feb21_08_21`'],
-    
+
     # 2021-07-02
     'jul21': ['`oadoi_full.upw_Jul21_08_21`']
 }
@@ -68,7 +68,7 @@ snapshot_dates = {
 
 order = ['mar18', 'apr18', 'jun18', 'sep18', 'feb19', 'apr19', 'aug19',
          'nov19', 'feb20', 'apr20', 'oct20', 'feb21', 'jul21']
-         
+
 df_evidence = pd.DataFrame()
 
 for snapshot in unpaywall_snapshots:
@@ -86,13 +86,13 @@ for snapshot in unpaywall_snapshots:
                            """).to_dataframe()
 
         df2['snapshot'] = snapshot
-        
+
         df2['snapshot_timestamp'] = datetime.datetime(snapshot_dates[snapshot][0],
                                                       snapshot_dates[snapshot][1],
                                                       1)
-        
+
         i = order.index(snapshot)
-        
+
         if order[i] == order [-1]:
             df2['next_snapshot'] = datetime.datetime(2021, 2, 1)
         else:
@@ -101,19 +101,19 @@ for snapshot in unpaywall_snapshots:
                                                      1)
 
         df_evidence = pd.concat([df_evidence, df2], ignore_index=True)
-        
+
 
 df_evidence.rename(columns={'snapshot_timestamp':'Snapshot timestamp',
                             'next_snapshot':'Next snapshot',
                             'evidence': 'Evidence'}, inplace=True)
 
 
-fig = px.timeline(df_evidence_l,
+fig = px.timeline(df_evidence,
                   x_start='Snapshot timestamp',
                   x_end='Next snapshot',
                   y='Evidence',
                   color_discrete_sequence=['#56B4E9'],
-                  width=900,
+                  width=800,
                   height=800)
 
 config = dict({'scrollZoom': False,

@@ -32,7 +32,7 @@ website:
         href: https://www.sub.uni-goettingen.de/impressum/
       - icon: github
         href: https://github.com/Ahobert/dash-oauni-oase/
-  sidebar: 
+  sidebar:
     - title: "Home"
     - title: "About"
       style: "docked"
@@ -45,6 +45,7 @@ website:
       contents:
         - oa_uptake.qmd
         - OA_Uptake/uptake_germany.Rmd
+        - OA_Uptake/oa_variations.Rmd
         - section: "OA share vs. productivity"
           contents:
             - OA_Uptake/scatterplot/scatterplot_uni.Rmd

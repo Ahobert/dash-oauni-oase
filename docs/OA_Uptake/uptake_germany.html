@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.28">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -53,14 +58,14 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="../site_libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<script src="../site_libs/plotly-binding-4.10.1/plotly.js"></script>
 <script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
 <script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
 <link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
 <script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-<link href="../site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet">
-<script src="../site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -72,44 +77,54 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">OASE/OAUNI Dashboard</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../oa_uptake.html" aria-current="page">OA Uptake</a>
+    <a class="nav-link active" href="../oa_uptake.html" aria-current="page">
+ <span class="menu-text">OA Uptake</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../upw_bfp.html">Unpaywall BFP</a>
+    <a class="nav-link" href="../upw_bfp.html">
+ <span class="menu-text">Unpaywall BFP</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../mobility.html">Mobility</a>
+    <a class="nav-link" href="../mobility.html">
+ <span class="menu-text">Mobility</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../oa_nature.html">OA in Nature</a>
+    <a class="nav-link" href="../oa_nature.html">
+ <span class="menu-text">OA in Nature</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../pubs.html">Publications</a>
+    <a class="nav-link" href="../pubs.html">
+ <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">Imprint</a>
+    <a class="nav-link" href="https://www.sub.uni-goettingen.de/impressum/">
+ <span class="menu-text">Imprint</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/Ahobert/dash-oauni-oase/"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -139,6 +154,11 @@ ul.task-list{list-style: none;}
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../OA_Uptake/uptake_germany.html" class="sidebar-item-text sidebar-link active">OA Uptake in Germany</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../OA_Uptake/oa_variations.html" class="sidebar-item-text sidebar-link">OA percentage across sectors</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -203,6 +223,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -214,8 +235,8 @@ ul.task-list{list-style: none;}
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="htmlwidget-8f5664d3772788ca8831" style="width:90%;height:360px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-8f5664d3772788ca8831">{"x":{"data":[{"x":[2010,2011,2012,2013,2014,2015,2016,2017,2018,2018,2017,2016,2015,2014,2013,2012,2011,2010,2010],"y":[30664,33903,37380,40762,42673,46459,52061,54490,55649,107079,106158,103574,99659,96676,95635,91713,87961,83467,30664],"text":["<b> Publication year: 2010 <\/b><br /> Number of articles: 52803","<b> Publication year: 2011 <\/b><br /> Number of articles: 54058","<b> Publication year: 2012 <\/b><br /> Number of articles: 54333","<b> Publication year: 2013 <\/b><br /> Number of articles: 54873","<b> Publication year: 2014 <\/b><br /> Number of articles: 54003","<b> Publication year: 2015 <\/b><br /> Number of articles: 53200","<b> Publication year: 2016 <\/b><br /> Number of articles: 51513","<b> Publication year: 2017 <\/b><br /> Number of articles: 51668","<b> Publication year: 2018 <\/b><br /> Number of articles: 51430","<b> Publication year: 2018 <\/b><br /> Number of articles: 51430","<b> Publication year: 2017 <\/b><br /> Number of articles: 51668","<b> Publication year: 2016 <\/b><br /> Number of articles: 51513","<b> Publication year: 2015 <\/b><br /> Number of articles: 53200","<b> Publication year: 2014 <\/b><br /> Number of articles: 54003","<b> Publication year: 2013 <\/b><br /> Number of articles: 54873","<b> Publication year: 2012 <\/b><br /> Number of articles: 54333","<b> Publication year: 2011 <\/b><br /> Number of articles: 54058","<b> Publication year: 2010 <\/b><br /> Number of articles: 52803","<b> Publication year: 2010 <\/b><br /> Number of articles: 52803"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,255,255,0.8)","dash":"solid"},"fill":"toself","fillcolor":"rgba(204,204,204,0.502)","hoveron":"points","name":"Closed","legendgroup":"Closed","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"white"}},{"x":[2010,2011,2012,2013,2014,2015,2016,2017,2018,2018,2018,2017,2016,2015,2014,2013,2012,2011,2010,2010],"y":[0,0,0,0,0,0,0,0,0,0,55649,54490,52061,46459,42673,40762,37380,33903,30664,0],"text":["<b> Publication year: 2010 <\/b><br /> Number of articles: 30664","<b> Publication year: 2011 <\/b><br /> Number of articles: 33903","<b> Publication year: 2012 <\/b><br /> Number of articles: 37380","<b> Publication year: 2013 <\/b><br /> Number of articles: 40762","<b> Publication year: 2014 <\/b><br /> Number of articles: 42673","<b> Publication year: 2015 <\/b><br /> Number of articles: 46459","<b> Publication year: 2016 <\/b><br /> Number of articles: 52061","<b> Publication year: 2017 <\/b><br /> Number of articles: 54490","<b> Publication year: 2018 <\/b><br /> Number of articles: 55649","<b> Publication year: 2018 <\/b><br /> Number of articles: 55649","<b> Publication year: 2018 <\/b><br /> Number of articles: 55649","<b> Publication year: 2017 <\/b><br /> Number of articles: 54490","<b> Publication year: 2016 <\/b><br /> Number of articles: 52061","<b> Publication year: 2015 <\/b><br /> Number of articles: 46459","<b> Publication year: 2014 <\/b><br /> Number of articles: 42673","<b> Publication year: 2013 <\/b><br /> Number of articles: 40762","<b> Publication year: 2012 <\/b><br /> Number of articles: 37380","<b> Publication year: 2011 <\/b><br /> Number of articles: 33903","<b> Publication year: 2010 <\/b><br /> Number of articles: 30664","<b> Publication year: 2010 <\/b><br /> Number of articles: 30664"],"type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,255,255,0.8)","dash":"solid"},"fill":"toself","fillcolor":"rgba(86,180,233,0.8)","hoveron":"points","name":"Open Access","legendgroup":"Open Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"white"}}],"layout":{"margin":{"t":62.4923204649232,"r":9.29846409298464,"b":85.678704856787,"l":88.3354088833541},"font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2009.6,2018.4],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(217,217,217,1)","ticklen":4.64923204649232,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"tickangle":-0,"showline":true,"linecolor":"rgba(217,217,217,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Publication year","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,112432.95],"tickmode":"array","ticktext":["0","25,000","50,000","75,000","100,000"],"tickvals":[0,25000,50000,75000,100000],"categoryorder":"array","categoryarray":["0","25,000","50,000","75,000","100,000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(217,217,217,1)","ticklen":4.64923204649232,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(217,217,217,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Total articles","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"x":1.2,"y":0.8},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"toImageButtonOptions":{"format":"svg"}},"source":"A","attrs":{"9d3f454c486e":{"x":{},"y":{},"text":{},"fill":{},"type":"scatter"}},"cur_data":"9d3f454c486e","visdat":{"9d3f454c486e":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-6d064ed76d6dbed0651e" style="width:90%;height:360px;"></div>
+<script type="application/json" data-for="htmlwidget-6d064ed76d6dbed0651e">{"x":{"data":[{"x":[2009.992,2010,2010.008,2010.992,2011,2011.008,2011.992,2012,2012.008,2012.992,2013,2013.008,2013.992,2014,2014.008,2014.992,2015,2015.008,2015.992,2016,2016.008,2016.992,2017,2017.008,2017.992,2018,2018.008,2018.008,2018,2017.992,2017.008,2017,2016.992,2016.008,2016,2015.992,2015.008,2015,2014.992,2014.008,2014,2013.992,2013.008,2013,2012.992,2012.008,2012,2011.992,2011.008,2011,2010.992,2010.008,2010,2009.992,2009.992],"y":[0,30664,30689.9120000001,33877.0879999999,33903,33930.8160000001,37352.1839999999,37380,37407.0560000001,40734.9439999999,40762,40777.2880000001,42657.7119999999,42673,42703.2880000001,46428.7119999999,46459,46503.8160000002,52016.1839999998,52061,52080.4320000001,54470.5679999999,54490,54499.272,55639.728,55649,0,0,107079,107071.632,106165.368,106158,106137.328,103594.672,103574,103542.68,99690.3200000002,99659,99635.1359999999,96699.8640000001,96676,96667.672,95643.328,95635,95603.6239999999,91744.3760000001,91713,91682.9839999999,87991.0160000001,87961,87925.0479999998,83502.9520000002,83467,0,0],"text":"<b> Publication year: 2010 <\/b><br /> Number of articles: 52803","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,255,255,0.8)","dash":"solid"},"fill":"toself","fillcolor":"rgba(204,204,204,0.502)","hoveron":"points","name":"Closed","legendgroup":"Closed","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"white"}},{"x":[2009.992,2010,2010.008,2010.992,2011,2011.008,2011.992,2012,2012.008,2012.992,2013,2013.008,2013.992,2014,2014.008,2014.992,2015,2015.008,2015.992,2016,2016.008,2016.992,2017,2017.008,2017.992,2018,2018.008,2018.008,2018.008,2018,2017.992,2017.008,2017,2016.992,2016.008,2016,2015.992,2015.008,2015,2014.992,2014.008,2014,2013.992,2013.008,2013,2012.992,2012.008,2012,2011.992,2011.008,2011,2010.992,2010.008,2010,2009.992,2009.992],"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55649,55639.728,54499.272,54490,54470.5679999999,52080.4320000001,52061,52016.1839999998,46503.8160000002,46459,46428.7119999999,42703.2880000001,42673,42657.7119999999,40777.2880000001,40762,40734.9439999999,37407.0560000001,37380,37352.1839999999,33930.8160000001,33903,33877.0879999999,30689.9120000001,30664,0,0],"text":"<b> Publication year: 2010 <\/b><br /> Number of articles: 30664","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"rgba(255,255,255,0.8)","dash":"solid"},"fill":"toself","fillcolor":"rgba(86,180,233,0.8)","hoveron":"points","name":"Open Access","legendgroup":"Open Access","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hoverlabel":{"bgcolor":"white"}}],"layout":{"margin":{"t":62.4923204649232,"r":9.29846409298464,"b":85.6787048567871,"l":88.3354088833541},"font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2009.5912,2018.4088],"tickmode":"array","ticktext":["2010","2012","2014","2016","2018"],"tickvals":[2010,2012,2014,2016,2018],"categoryorder":"array","categoryarray":["2010","2012","2014","2016","2018"],"nticks":null,"ticks":"outside","tickcolor":"rgba(217,217,217,1)","ticklen":4.64923204649232,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"tickangle":-0,"showline":true,"linecolor":"rgba(217,217,217,1)","linewidth":0.66417600664176,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Publication year","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0,112432.95],"tickmode":"array","ticktext":["0","25,000","50,000","75,000","100,000"],"tickvals":[0,25000,50000,75000,100000],"categoryorder":"array","categoryarray":["0","25,000","50,000","75,000","100,000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(217,217,217,1)","ticklen":4.64923204649232,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(217,217,217,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Total articles","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":15.9402241594022},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":18.5969281859693}},"x":1.2,"y":0.8},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"toImageButtonOptions":{"format":"svg"}},"source":"A","attrs":{"150855f158a1":{"x":{},"y":{},"text":{},"fill":{},"type":"scatter"}},"cur_data":"150855f158a1","visdat":{"150855f158a1":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>The figure highlights what part of journal articles from German research institutions are published in an Open Access publishing model according to Unpaywall. Blue area represents journal articles with at least one freely available full-text, grey area toll-access articles. The tooltip shows the exact numbers per category.</p>
@@ -264,7 +285,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -292,31 +330,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
